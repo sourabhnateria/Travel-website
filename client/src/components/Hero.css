@@ -1161,3 +1161,32 @@
 .destination-header {
   animation: fadeInUp 0.8s ease-out both;
 }
+
+/* Make search bar wrap correctly on mobile */
+.search-form,
+.hero-search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Inputs take full width on small screens */
+@media (max-width: 768px) {
+  .search-form,
+  .hero-search-form {
+    flex-direction: column;
+  }
+
+  .search-form .form-group,
+  .hero-search-form .form-group,
+  .search-form select,
+  .search-form input {
+    width: 100%;
+  }
+
+  .search-button,
+  .hero-search-button {
+    width: 100%;
+    display: block;
+  }
+}
