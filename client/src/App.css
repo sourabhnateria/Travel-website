@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+/* Ensure content pages are visible on mobile */
+main,
+.page-content,
+.content-wrapper {
+  min-height: calc(100vh - 140px); /* 100vh minus navbar height */
+  padding: 20px;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  .page-content,
+  .content-wrapper {
+    min-height: calc(100vh - 220px); /* Adjust for mobile navbar + footer */
+    padding: 20px 15px;
+  }
+}
