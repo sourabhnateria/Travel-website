@@ -778,11 +778,13 @@
     border-radius: 20px;
     padding: 15px;
     margin: 0 15px;
+    width: 90%;
+    
   }
   
   .horizontal-search-form {
     flex-direction: column;
-    height: auto;
+    height: 500px;
     gap: 15px;
   }
   
@@ -1086,61 +1088,7 @@
   transform: translateX(3px);
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .top-destination {
-    padding: 60px 0;
-  }
-  
-  .destinations-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    grid-auto-rows: 250px;
-  }
-  
-  .destination-card.large,
-  .destination-card.medium,
-  .explore-card {
-    grid-row: span 1;
-  }
-  
-  .destination-header {
-    margin-bottom: 40px;
-  }
-  
-  .destination-info {
-    bottom: 20px;
-    left: 20px;
-  }
-  
-  .explore-card {
-    padding: 20px 20px;
-  }
-}
 
-@media screen and (max-width: 480px) {
-  .top-destination-container {
-    padding: 0 15px;
-  }
-  
-  .destinations-grid {
-    gap: 12px;
-    grid-auto-rows: 200px;
-  }
-  
-  .destination-info {
-    bottom: 15px;
-    left: 15px;
-  }
-  
-  .destination-name {
-    font-size: 1.1rem;
-  }
-  
-  .destination-packages {
-    font-size: 0.8rem;
-  }
-}
 
 /* Animation Effects */
 @keyframes fadeInUp {
@@ -1170,23 +1118,450 @@
   gap: 10px;
 }
 
-/* Inputs take full width on small screens */
-@media (max-width: 768px) {
-  .search-form,
-  .hero-search-form {
+
+
+/* ============================================
+   MOBILE RESPONSIVE - 320px to 768px
+   ============================================ */
+
+@media screen and (max-width: 480px) {
+  .hero-text {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 85%;  /* More aggressive reduction */
+    padding: 0;  /* No padding */
+    height: 75%;
+  }
+
+  .hero-section {
+    min-height: 400px;
+  }
+
+  .search-form-container {
+    margin: 0 8px !important;
+    padding: 10px 8px;
+    max-width: calc(50% - 8px);
+  }
+
+  .horizontal-search-form {
     flex-direction: column;
+    height: return;
+    gap: 8px;
   }
 
-  .search-form .form-group,
-  .hero-search-form .form-group,
-  .search-form select,
-  .search-form input {
-    width: 100%;
+  .search-field {
+    width: 50%;
+    padding: 8px 6px;
+    gap: 6px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #f9fafb;
+    flex: none;
   }
 
-  .search-button,
-  .hero-search-button {
+  .field-divider,
+  .date-arrow {
+    display: none !important;
+  }
+
+  .search-button {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    min-height: 44px;
+  }
+
+  .field-label {
+    font-size: 0.65rem;
+  }
+
+  .services-section {
+    padding: 30px 10px;
+    margin-top: -1px;
+  }
+
+ .services-grid {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    gap: 12px;
+  }
+  .service-card {
     width: 100%;
-    display: block;
+    max-width: 280px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .service-icon {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  .service-title {
+    font-size: 0.8rem;
+  }
+
+  .about-section-home {
+    padding: 30px 10px;
+  }
+
+  .about-home-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 5px;
+  }
+
+  .image-slider {
+    height: 250px;
+  }
+
+  .about-content-column {
+    text-align: center;
+  }
+
+  .about-content {
+    padding-left: 0;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .service-item {
+    justify-content: center;
+  }
+
+  .experience-badge {
+    position: static;
+    margin-top: 15px;
+    display: inline-block;
+  }
+
+  .destinations-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    grid-auto-rows: 200px;
+  }
+
+  .destination-card.large,
+  .destination-card.medium,
+  .explore-card {
+    grid-row: span 1;
+  }
+
+  .destination-name {
+    font-size: 1rem;  /* Smaller font */
+    white-space: normal;
+    word-break: break-word;
+  }
+  .destination-packages {
+    font-size: 0.75rem;
+  }
+
+  .explore-title {
+    font-size: 1rem;
+    letter-spacing: 0;
+    word-break: break-word;
+  }
+
+  .explore-description {
+    font-size: 0.8rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .explore-btn {
+    padding: 10px 20px;  /* Tighter padding */
+    font-size: 0.9rem;
+  }
+  .hero-image {
+    width: 90%;
+    padding: 0 10px;
+    height: 80%;
+    margin-top: 10px;
+  }
+   .services-grid {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    gap: 10px;
+  }
+  .service-card {
+    width: calc(100% - 20px);
+    max-width: 280px;
+    height: auto;
+    min-height: 100px;
+    padding: 12px;
+  }
+   .hero-description {
+    font-size: clamp(0.85rem, 1.5vw, 1rem);  /* Smaller on mobile */
+  }
+
+  .image-indicators {
+    bottom: auto;  /* Remove bottom positioning */
+    right: auto;   /* Remove right positioning */
+    position: static !important;
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    gap: 6px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    min-height: 500px;
+    height: auto;
+  }
+
+  .hero-text {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 120px;
+  }
+
+  .hero-image {
+    width: 95%;
+    padding: 0 15px;
+    height: 85%;
+  }
+
+  .search-form-container {
+    margin: 0 20px !important;
+    max-width: calc(100% - 40px);
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .horizontal-search-form {
+    flex-direction: column;
+    height: auto;
+    gap: 12px;
+  }
+
+  .search-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #f9fafb;
+  }
+
+  .field-divider,
+  .date-arrow {
+    display: none;
+  }
+
+  .search-button {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .services-section {
+    padding: 30px 15px;
+    margin-top: -1px;
+  }
+
+  .services-grid {
+    gap: 15px;
+    padding: 0 15px;
+  }
+
+  .service-card {
+    width: 160px;
+    height: 110px;
+    padding: 15px;
+  }
+
+  .service-icon {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+
+  .service-title {
+    font-size: 0.9rem;
+  }
+
+  .about-section-home {
+    padding: 60px 20px;
+  }
+
+  .about-home-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .image-slider {
+    height: 300px;
+  }
+
+  .about-content {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .destination-card.large,
+  .explore-card {
+    grid-row: span 1;
+  }
+  .hero-title {
+    text-align: center;
+  }
+  
+  .hero-description {
+    text-align: center;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+  }
+}
+
+@media screen and (max-width: 645px) {
+  /* Hero Section */
+  .hero-section {
+    min-height: 450px;
+  }
+  
+  .hero-image {
+    width: 85%;
+    height: 60%;
+    padding: 0 5px;
+    margin-top: 10px;
+  }
+  
+  .hero-title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+  }
+  
+  .hero-description {
+    font-size: clamp(0.85rem, 1.8vw, 1rem);
+  }
+  
+  /* Search Form */
+  .search-form-container {
+    margin: 0 10px !important;
+    padding: 12px 10px;
+    max-width: calc(100% - 20px);
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Horizontal Search Form - Stack Vertically */
+  .horizontal-search-form {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+  }
+
+  /* Search Fields - Full Width */
+  .search-field {
+    width: 100%;
+    padding: 10px 8px;
+    gap: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #f9fafb;
+  }
+  
+  /* Location Field - No Special Sizing */
+  .location-field {
+    flex: none;
+  }
+
+  /* Date Field - No Special Sizing */
+  .date-field {
+    flex: none;
+  }
+
+  /* Hide Dividers and Arrows */
+  .field-divider {
+    display: none !important;
+  }
+
+  .date-arrow {
+    display: none !important;
+  }
+
+  /* Field Content */
+  .field-content {
+    flex: 1;
+  }
+
+  /* Location Dropdown - Fix Overflow */
+  .location-field select.field-input {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  /* Search Button - Full Width */
+  .search-button {
+    width: 100%;
+    padding: 12px 16px;
+    margin-top: 8px;
+    font-size: 1rem;
+    height: auto;
+    min-height: 48px;
+  }
+
+  /* Field Label - Better Spacing */
+  .field-label {
+    font-size: 0.7rem;
+    margin-bottom: 4px;
+  }
+
+  /* Field Icon */
+  .field-icon {
+    min-width: 20px;
+    font-size: 1rem;
+  }
+  
+  /* Explore Card */
+  .explore-card {
+    padding: 20px;
+    min-height: 280px;
+  }
+  
+  .explore-title {
+    font-size: 1.2rem;
+  }
+  
+  .explore-description {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  
+  .explore-btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+  
+  /* Navbar */
+  .navbar {
+    padding: 8px 12px;
+  }
+  
+  .menu-icon {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  
+  /* Destination Grid */
+  .destinations-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .destination-card.large,
+  .destination-card.medium {
+    grid-row: span 1;
   }
 }
