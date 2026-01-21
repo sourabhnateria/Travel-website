@@ -91,13 +91,13 @@ const Navbar = () => {
           <div className="nav-logo">
             <div className="logo-container">
               <img 
-                src="/logo192.png" 
+                src="/nn.jpeg" 
                 alt="N N Travel Hub Logo" 
                 className="logo-image"
               />
               <div className="brand-text">
                 <h2 className="company-name">N N Travel Hub</h2>
-                <p className="company-slogan">Discover. Experience. Repeat.</p>
+                <p className="company-slogan">One Hub To Endless Journey</p>
               </div>
             </div>
           </div>

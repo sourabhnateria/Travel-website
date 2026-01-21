@@ -10,7 +10,8 @@
 
 /* Body padding adjustment for fixed navbar */
 body {
-  padding-top: 120px; /* Adjust for both top bar and navbar */
+  padding-top: 120px;
+  /* Adjust for both top bar and navbar */
 }
 
 /* Top Bar Styles */
@@ -23,7 +24,8 @@ body {
   width: 100%;
   top: 0;
   z-index: 1001;
-  transition: transform 0.3s ease-in-out; /* Smooth hide/show transition */
+  transition: transform 0.3s ease-in-out;
+  /* Smooth hide/show transition */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -109,13 +111,15 @@ body {
 /* Main Navbar Styles */
 .navbar {
   position: fixed;
-  top: 50px; /* Adjusted for top bar */
+  top: 50px;
+  /* Adjusted for top bar */
   width: 100%;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 1000;
-  transition: all 0.3s ease-in-out; /* Enhanced transition for auto-hide */
+  transition: all 0.3s ease-in-out;
+  /* Enhanced transition for auto-hide */
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -124,7 +128,8 @@ body {
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
-  top: 0; /* Hide top bar on scroll */
+  top: 0;
+  /* Hide top bar on scroll */
 }
 
 /* Auto-Hide Animation Classes for Navbar */
@@ -138,11 +143,13 @@ body {
 
 /* When both navbar and top bar are hidden */
 .navbar.hidden.scrolled {
-  top: -120px; /* Hide completely including top bar space */
+  top: -120px;
+  /* Hide completely including top bar space */
 }
 
 .navbar.hidden:not(.scrolled) {
-  top: -170px; /* Hide completely including both bars */
+  top: -170px;
+  /* Hide completely including both bars */
 }
 
 .nav-container {
@@ -152,7 +159,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px; /* Increased height for logo + text */
+  height: 80px;
+  /* Increased height for logo + text */
 }
 
 /* Logo Section with Image, Company Name & Slogan */
@@ -174,10 +182,11 @@ body {
 }
 
 .logo-image {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
-  border-radius: 50%; /* Circular logo */
+  border-radius: 50%;
+  /* Circular logo */
   box-shadow: 0 2px 10px rgba(0, 198, 255, 0.2);
   transition: all 0.3s ease;
   border: 2px solid rgba(0, 198, 255, 0.1);
@@ -199,15 +208,19 @@ body {
 
 /* Airplane background icon - made longer and darker */
 .brand-text::before {
-  content: '\f072'; /* FontAwesome plane icon unicode */
+  content: '\f072';
+  /* FontAwesome plane icon unicode */
   font-family: 'Font Awesome 6 Free';
   font-weight: 900;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scaleX(1.3); /* Make airplane longer horizontally */
-  font-size: 3rem; /* Increased size for better visibility */
-  color: rgba(0, 198, 255, 0.18); /* Darker and more visible */
+  transform: translate(-50%, -50%) scaleX(1.3);
+  /* Make airplane longer horizontally */
+  font-size: 3rem;
+  /* Increased size for better visibility */
+  color: rgba(0, 198, 255, 0.18);
+  /* Darker and more visible */
   z-index: -1;
   pointer-events: none;
   transition: all 0.3s ease;
@@ -248,7 +261,8 @@ body {
 }
 
 .logo-container:hover .brand-text::before {
-  color: rgba(0, 198, 255, 0.3); /* Even more visible on hover */
+  color: rgba(0, 198, 255, 0.3);
+  /* Even more visible on hover */
   transform: translate(-50%, -50%) scaleX(1.3) rotate(15deg);
 }
 
@@ -360,122 +374,166 @@ body {
   .nav-menu {
     max-width: 500px;
   }
-  
+
   .nav-link {
     padding: 8px 14px;
     font-size: 0.85rem;
   }
-  
+
   .logo-image {
     width: 45px;
     height: 45px;
   }
-  
+
   .company-name {
     font-size: 1.4rem;
   }
-  
+
   .company-slogan {
     font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 768px) {
+  :root {
+    --topbar-h: 48px;
+    --navbar-h: 65px;
+  }
+
   body {
-    padding-top: 140px; /* Adjusted for mobile top bar */
+    padding-top: calc(var(--topbar-h) + var(--navbar-h));
+    /* Keep content below fixed top-bar + navbar (no visual gap) */
   }
-  
+
   .top-bar {
-    padding: 8px 0;
-  }
-  
-  .top-bar-container {
-    padding: 0 15px;
-    flex-direction: column;
-    gap: 8px;
-  }
-  
-  .contact-info {
-    gap: 15px;
-    font-size: 13px;
-  }
-  
-  .social-media a {
-    width: 28px;
-    height: 28px;
+    padding: 0;
     font-size: 12px;
+    height: var(--topbar-h);
   }
-  
+
+  .top-bar-container {
+    padding: 0 12px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    /* prevent top-bar height changes */
+    height: 100%;
+  }
+
+  .contact-info {
+    gap: 12px;
+    font-size: 11px;
+    flex-wrap: nowrap;
+  }
+
+  .contact-item {
+    font-size: 11px;
+    gap: 5px;
+  }
+
+  .contact-item i {
+    font-size: 11px;
+  }
+
+  .contact-item a {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  .social-media {
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .social-media a {
+    width: 26px;
+    height: 26px;
+    font-size: 11px;
+  }
+
   .navbar {
-    top: 80px; /* Adjusted for mobile top bar */
+    top: var(--topbar-h);
+    /* Always sit directly below top-bar (no gap) */
   }
-  
+
   .navbar.scrolled {
     top: 0;
   }
-  
+
   /* Mobile auto-hide adjustments */
   .navbar.hidden:not(.scrolled) {
-    top: -150px; /* Adjust for mobile top bar height */
+    top: calc(-1 * (var(--topbar-h) + var(--navbar-h)));
+    /* Hide both bars */
   }
-  
+
   .navbar.hidden.scrolled {
-    top: -100px; /* Adjust for mobile navbar height */
+    top: calc(-1 * var(--navbar-h));
+    /* Hide navbar only */
   }
-  
+
   .nav-container {
-    padding: 0 15px;
-    height: 70px; /* Reduced for mobile */
+    padding: 0 12px;
+    height: var(--navbar-h);
+    /* Optimized for mobile */
   }
-  
+
   .logo-container {
     gap: 8px;
+    flex-shrink: 0;
   }
-  
+
   .logo-image {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
   }
-  
+
   .company-name {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.2;
   }
-  
+
   .company-slogan {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
+    line-height: 1.2;
   }
-  
+
   .nav-toggle {
     display: flex;
-  }
-  
-  .nav-menu {
+    z-index: 1005;
     position: relative;
-    left: -100%;
-    top: 70px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: 0;
+    top: 65px;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.98);
-    width: 100%;
-    height: calc(100vh - 70px);
-    text-align: center;
-    transition: 0.3s;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-radius: 0;
+    width: 100%;
+    height: calc(100vh - 65px);
+    text-align: left;
+    transition: transform 0.3s ease;
     margin-left: 0;
     max-width: none;
-    padding: 40px 20px;
+    padding: 20px 15px;
     justify-content: flex-start;
-    gap: 15px;
+    gap: 10px;
     overflow-y: auto;
-    box-shadow: none;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     border: none;
+    z-index: 999;
+    transform: translateX(-100%);
   }
-  
+
   .nav-menu.active {
-    left: 0;
+    transform: translateX(0);
   }
-  
+
   .nav-link {
     padding: 15px 25px;
     margin: 5px 0;
@@ -486,19 +544,24 @@ body {
     flex: none;
     border-radius: 15px;
   }
+
   
   .nav-link:hover {
     border-color: #0072ff;
-    background: rgba(0, 114, 255, 0.1);
+    background: rgba(0, 114, 255, 0.08);
+    transform: translateX(4px);
   }
-  
+
   .nav-link.active {
     background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
     border-color: transparent;
+    color: white;
+    transform: none;
   }
 
   .dropdown-content {
-    position: static;
+    position: relative;
+    margin-left: 20px;
     transform: none;
     opacity: 1;
     visibility: visible;
@@ -590,6 +653,7 @@ body {
 
 /* Mobile Dropdown Menu Overflow Fix - 645px and below */
 @media screen and (max-width: 645px) {
+
   /* Dropdown Content - Prevent Overflow */
   .dropdown-content {
     position: static;
@@ -721,74 +785,103 @@ body {
 /* Extra Small Phones - 480px and Below */
 /* EXTRA SMALL PHONES - 480px and below */
 @media screen and (max-width: 480px) {
+  :root {
+    --topbar-h: 44px;
+    --navbar-h: 60px;
+  }
+
   body {
-    padding-top: 120px;
+    padding-top: calc(var(--topbar-h) + var(--navbar-h));
+    /* Keep content below fixed top-bar + navbar */
+  }
+
+  .top-bar {
+    padding: 0;
+    font-size: 10px;
+    height: var(--topbar-h);
   }
 
   .top-bar-container {
     padding: 0 10px;
+    gap: 8px;
+    height: 100%;
+    flex-wrap: nowrap;
   }
 
   .contact-info {
-    flex-direction: column;
-    gap: 5px;
-    text-align: center;
+    gap: 8px;
+    font-size: 10px;
   }
 
   .contact-item {
-    font-size: 12px;
+    font-size: 10px;
+    gap: 4px;
+  }
+
+  .contact-item i {
+    font-size: 10px;
+  }
+
+  .contact-item a {
+    font-size: 10px;
   }
 
   .social-media {
-    gap: 10px;
+    gap: 6px;
   }
 
   .social-media a {
-    width: 26px;
-    height: 26px;
-    font-size: 11px;
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+  }
+
+  .navbar {
+    top: var(--topbar-h);
   }
 
   /* CRITICAL: Navbar toggle must be visible */
   .nav-toggle {
     display: flex !important;
-    width: 28px;
-    height: 28px;
-    padding: 2px;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
     position: relative;
     z-index: 1005;
   }
 
   .nav-toggle span {
-    width: 20px;
-    height: 2px;
+    width: 22px;
+    height: 2.5px;
+    margin: 3px 0;
   }
 
   .nav-container {
     padding: 0 10px;
-    height: 65px;
+    height: var(--navbar-h);
   }
 
   .nav-menu {
-    top: 65px;
-    height: calc(100vh - 65px);
-    padding: 30px 15px;
+    top: var(--navbar-h);
+    height: calc(100vh - var(--navbar-h));
+    padding: 20px 12px;
   }
 
   .nav-link {
-    padding: 12px 20px;
-    font-size: 1rem;
-    width: 95%;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    width: 100%;
+    min-height: 46px;
   }
 
   .dropdown-link {
-    padding: 8px 16px;
+    padding: 10px 18px;
     font-size: 0.85rem;
   }
 
   .logo-image {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
   }
 
   .company-name {
@@ -796,16 +889,19 @@ body {
   }
 
   .company-slogan {
-    display: none; /* Hide slogan on very small screens */
+    font-size: 0.6rem;
+    display: block;
+    /* Keep visible but smaller */
   }
 
   /* Small mobile auto-hide adjustments */
   .navbar.hidden:not(.scrolled) {
-    top: -130px; /* Adjust for smaller mobile screens */
+    top: calc(-1 * (var(--topbar-h) + var(--navbar-h)));
+    /* Hide both bars */
   }
 
   .navbar.hidden.scrolled {
-    top: -85px;
+    top: calc(-1 * var(--navbar-h));
   }
 }
 
@@ -813,8 +909,15 @@ body {
 
 /* Additional animations for travel theme */
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-2px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-2px);
+  }
 }
 
 .logo-image {
@@ -836,6 +939,7 @@ html {
     transform: translateY(-100%);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -857,11 +961,12 @@ html {
 
 /* Print styles */
 @media print {
+
   .top-bar,
   .navbar {
     display: none;
   }
-  
+
   body {
     padding-top: 0;
   }

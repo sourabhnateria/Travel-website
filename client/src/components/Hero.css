@@ -35,12 +35,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    135deg,
-    rgba(198, 198, 213, 0.6) 0%,
-    rgb(235, 228, 228) 50%,
-    rgba(251, 254, 255, 0.968) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(198, 198, 213, 0.6) 0%,
+      rgb(235, 228, 228) 50%,
+      rgba(251, 254, 255, 0.968) 100%);
 }
 
 /* Hero Content */
@@ -82,7 +80,7 @@
   line-height: 1.6;
   max-width: 700px;
   margin: 0 auto;
-  
+
   opacity: 0.95;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
@@ -91,20 +89,25 @@
 .search-form-container {
   background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(15px);
-  border-radius: 60px; /* Very rounded like screenshot */
-  padding: 8px 12px 8px 24px; /* Asymmetric padding */
+  border-radius: 60px;
+  /* Very rounded like screenshot */
+  padding: 8px 12px 8px 24px;
+  /* Asymmetric padding */
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
   max-width: 850px;
   margin: 0 auto;
-  margin-left: 100px;
+
   border: 1px solid rgba(255, 255, 255, 0.2);
+  width: auto;
+  overflow: visible;
 }
 
 .horizontal-search-form {
   display: flex;
   align-items: left;
   justify-content: space-between;
-  height: 60px; /* Fixed height like screenshot */
+  height: 60px;
+  /* Fixed height like screenshot */
   color: #333;
 }
 
@@ -119,11 +122,13 @@
 }
 
 .location-field {
-  flex: 2; /* Location takes more space */
+  flex: 2;
+  /* Location takes more space */
 }
 
 .date-field {
-  flex: 1.2; /* Dates take less space */
+  flex: 1.2;
+  /* Dates take less space */
 }
 
 .field-icon {
@@ -168,7 +173,8 @@
 }
 
 .field-input select {
-  appearance: none; /* Remove default browser styling */
+  appearance: none;
+  /* Remove default browser styling */
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 20px;
@@ -176,7 +182,8 @@
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 16px;
-  padding-right: 35px; /* Space for dropdown arrow */
+  padding-right: 35px;
+  /* Space for dropdown arrow */
 }
 
 /* Optgroup styling */
@@ -226,7 +233,8 @@
 
 /* Search Button - EXACT Blue Match */
 .search-button {
-  background: #2563eb; /* Exact blue from screenshot */
+  background: #2563eb;
+  /* Exact blue from screenshot */
   color: white;
   border: none;
   border-radius: 45px;
@@ -238,7 +246,8 @@
   box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
   white-space: nowrap;
   min-width: 120px;
-  height: 52px; /* Fixed height to match container */
+  height: 52px;
+  /* Fixed height to match container */
 }
 
 .search-button:hover {
@@ -253,11 +262,13 @@
 
 /* SEPARATE SERVICES SECTION - BELOW HERO */
 .services-section {
-  background: #ffffff; /* Light background to separate from hero */
-  padding:  0;
+  background: #ffffff;
+  /* Light background to separate from hero */
+  padding: 0;
   margin-top: -50px;
   position: relative;
-  z-index: 10; /* Ensure it's above hero */
+  z-index: 10;
+  /* Ensure it's above hero */
 }
 
 .services-container {
@@ -352,13 +363,15 @@
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  background: #f3f4f6; /* Fallback color while images load */
+  background: #f3f4f6;
+  /* Fallback color while images load */
 }
 
-.about-button  a, .explore-btn a {
-    color: #ccc;
-    text-decoration: none;
-    transition: color 0.3s;
+.about-button a,
+.explore-btn a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 /* Image Slider Styles for About Section */
@@ -391,14 +404,16 @@
   position: absolute;
   top: 30px;
   left: 30px;
-  background: #fbbf24; /* Yellow background */
+  background: #fbbf24;
+  /* Yellow background */
   color: #1f2937;
   padding: 25px 30px;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(251, 191, 36, 0.3);
   text-align: center;
   min-width: 140px;
-  z-index: 2; /* Above images but below indicators */
+  z-index: 2;
+  /* Above images but below indicators */
 }
 
 .badge-number {
@@ -439,7 +454,8 @@
 }
 
 .indicator.active {
-  background: #fbbf24; /* Yellow to match badge */
+  background: #fbbf24;
+  /* Yellow to match badge */
   transform: scale(1.2);
 }
 
@@ -464,7 +480,8 @@
 
 .about-subtitle {
   display: inline-block;
-  color: #f59e0b; /* Orange color */
+  color: #f59e0b;
+  /* Orange color */
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -506,7 +523,8 @@
 .service-checkmark {
   width: 20px;
   height: 20px;
-  background: #f59e0b; /* Orange background */
+  background: #f59e0b;
+  /* Orange background */
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -533,7 +551,8 @@
 }
 
 .discover-btn {
-  background: #2563eb; /* Blue background */
+  background: #2563eb;
+  /* Blue background */
   color: white;
   border: none;
   padding: 15px 30px;
@@ -579,7 +598,8 @@
 
 .destination-subtitle {
   display: inline-block;
-  color: #f59e0b; /* Orange color */
+  color: #f59e0b;
+  /* Orange color */
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -614,6 +634,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -625,6 +646,7 @@
     opacity: 0;
     transform: translateX(-50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -636,6 +658,7 @@
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -677,161 +700,8 @@
   animation-play-state: paused;
 }
 
-/* Responsive Design for About Section */
-@media screen and (max-width: 768px) {
-  .about-section-home {
-    padding: 60px 0;
-  }
-  
-  .about-home-container {
-    flex-direction: column;
-    gap: 40px;
-    text-align: center;
-  }
-  
-  .about-content {
-    padding-left: 0;
-  }
-  
-  .image-slider {
-    height: 350px;
-  }
-  
-  .about-image-wrapper {
-    margin-bottom: 0;
-  }
-  
-  .experience-badge {
-    position: static;
-    margin: 20px auto 0;
-    display: inline-block;
-  }
-  
-  .image-indicators {
-    bottom: 10px;
-    right: 15px;
-    gap: 6px;
-  }
-  
-  .indicator {
-    width: 8px;
-    height: 8px;
-  }
-  
-  .service-item {
-    justify-content: flex-start;
-    text-align: left;
-    max-width: 300px;
-    margin: 0 auto 15px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .about-home-container {
-    padding: 0 15px;
-    gap: 30px;
-  }
-  
-  .image-slider {
-    height: 300px;
-  }
-  
-  .experience-badge {
-    padding: 20px 25px;
-    min-width: 120px;
-  }
-  
-  .badge-number {
-    font-size: 2rem;
-  }
-  
-  .badge-text {
-    font-size: 0.8rem;
-  }
-  
-  .about-title {
-    font-size: 1.8rem;
-  }
-  
-  .discover-btn {
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .image-indicators {
-    justify-content: center;
-    position: static;
-    margin-top: 15px;
-  }
-}
 
 
-
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .hero-section {
-    min-height: 600px;
-  }
-  
-  .search-form-container {
-    border-radius: 20px;
-    padding: 15px;
-    margin: 0 15px;
-    width: 90%;
-    
-  }
-  
-  .horizontal-search-form {
-    flex-direction: column;
-    height: 500px;
-    gap: 15px;
-  }
-  
-  .search-field {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.8);
-  }
-  
-  .field-divider,
-  .date-arrow {
-    display: none;
-  }
-  
-  .search-button {
-    width: 100%;
-    padding: 16px;
-    margin-top: 10px;
-  }
-  
-  .services-section {
-    padding: 30px 0;
-    margin-top: -1px;
-  }
-  
-  .services-grid {
-    gap: 15px;
-    padding: 0 15px;
-  }
-  
-  .service-card {
-    width: 160px;
-    height: 100px;
-    padding: 15px;
-  }
-  
-  .service-icon {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
-  }
-  
-  .service-title {
-    font-size: 0.9rem;
-  }
-}
 
 /* Animations */
 @keyframes fadeInUp {
@@ -839,6 +709,7 @@
     opacity: 0;
     transform: translateY(40px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -923,7 +794,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  grid-auto-rows: 180px; /* Base row height */
+  grid-auto-rows: 180px;
+  /* Base row height */
 }
 
 /* Masonry Grid Layout */
@@ -931,7 +803,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  grid-auto-rows: 200px; /* Base row height */
+  grid-auto-rows: 200px;
+  /* Base row height */
 }
 
 /* Destination Cards */
@@ -950,11 +823,13 @@
 
 /* Different Card Sizes */
 .destination-card.large {
-  grid-row: span 2; /* Takes 2 rows */
+  grid-row: span 2;
+  /* Takes 2 rows */
 }
 
 .destination-card.medium {
-  grid-row: span 1.5; /* Takes 1 row */
+  grid-row: span 1.5;
+  /* Takes 1 row */
 }
 
 /* Destination Image Wrapper */
@@ -991,11 +866,9 @@
 }
 
 .destination-card:hover .destination-overlay {
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.4) 0%,
-    rgba(0, 0, 0, 0.7) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.7) 100%);
 }
 
 /* Destination Info */
@@ -1024,7 +897,8 @@
 /* Explore India Card - Red Background */
 .explore-card {
   background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
-  grid-row: span 2; /* Takes 2 rows like large cards */
+  grid-row: span 2;
+  /* Takes 2 rows like large cards */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1096,6 +970,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1124,43 +999,368 @@
    MOBILE RESPONSIVE - 320px to 768px
    ============================================ */
 
-@media screen and (max-width: 480px) {
-  .hero-text {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    margin-bottom: 80px;
-    text-align: center;
+/* ============================================ */
+/* MOBILE RESPONSIVE - ONLY AFFECTS MOBILE */
+/* ============================================ */
+
+/* 768px and below - Tablet/Mobile */
+@media screen and (max-width: 768px) {
+
+  /* Hero Section */
+  .hero-section {
+    min-height: 500px;
+    height: auto;
+    padding-bottom: 20px;
+    margin-top: 0;
+    /* Ensure no gap with navbar */
+  }
+
+  /* Hero Background and Image */
+  .hero-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .hero-image {
-    width: 85%;  /* More aggressive reduction */
-    padding: 0;  /* No padding */
-    height: 75%;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-top: 0;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
   }
 
+  .hero-overlay {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Hero Content */
+  .hero-content {
+    position: relative;
+    padding: 15px 12px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    z-index: 4;
+  }
+
+  /* Hero Text */
+  .hero-text {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 0 12px;
+    width: 100%;
+  }
+
+  .hero-title {
+    text-align: center;
+  }
+
+  .hero-description {
+    text-align: center;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+  }
+
+  /* Search Form Container - Clean White Card */
+  .search-form-container {
+    margin: 0 10px !important;
+    max-width: calc(100% - 20px);
+    padding: 18px;
+    border-radius: 18px;
+    width: auto;
+    position: relative;
+    z-index: 5;
+  }
+
+  /* Stack Form Vertically */
+  .horizontal-search-form {
+    flex-direction: column;
+    height: auto;
+    gap: 16px;
+  }
+
+  /* Search Fields - Full Width White Cards */
+  .search-field {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #ffffff;
+    flex: none;
+  }
+
+  .location-field {
+    flex: none;
+  }
+
+  .date-field {
+    flex: none;
+  }
+
+  /* Hide Dividers and Arrows */
+  .field-divider,
+  .date-arrow {
+    display: none;
+  }
+
+  /* Search Button - Full Width */
+  .search-button {
+    width: 100%;
+    padding: 16px;
+    margin-top: 10px;
+    border-radius: 12px;
+  }
+
+  /* Services Section */
+  .services-section {
+    padding: 40px 12px;
+    margin-top: 0;
+  }
+
+  .services-grid {
+    gap: 12px;
+    padding: 0 8px;
+    justify-content: center;
+  }
+
+  .service-card {
+    width: calc(50% - 6px);
+    max-width: 160px;
+    height: 110px;
+    padding: 15px;
+    min-width: 140px;
+  }
+
+  .service-icon {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+
+  .service-title {
+    font-size: 0.9rem;
+  }
+
+  /* About Section */
+  .about-section-home {
+    padding: 60px 20px;
+  }
+
+  .about-home-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* About services alignment on mobile/tablet */
+  .about-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .service-item {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .image-slider {
+    height: 300px;
+  }
+
+  .about-content {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  /* Destinations Grid */
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .destination-card.large,
+  .explore-card {
+    grid-row: span 1;
+  }
+}
+
+/* 645px and below - Large Mobile */
+@media screen and (max-width: 645px) {
   .hero-section {
-    min-height: 400px;
+    min-height: 450px;
+    padding-bottom: 15px;
   }
 
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-top: 0;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
+  }
+
+  .hero-overlay {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-content {
+    padding: 15px 12px;
+    position: relative;
+    z-index: 4;
+  }
+
+  .hero-text {
+    margin-bottom: 25px;
+    padding: 0 12px;
+  }
+
+  .hero-title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+  }
+
+  .hero-description {
+    font-size: clamp(0.85rem, 1.8vw, 1rem);
+  }
+
+  /* Search Form - Cleaner Mobile Design */
+  .search-form-container {
+    margin: 0 10px !important;
+    max-width: calc(100% - 20px);
+    padding: 18px;
+    border-radius: 18px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .horizontal-search-form {
+    gap: 14px;
+  }
+
+  .search-field {
+    width: 100%;
+    padding: 14px 12px;
+    gap: 10px;
+    flex: none;
+  }
+
+  .search-button {
+    padding: 14px;
+    font-size: 0.95rem;
+    min-height: 50px;
+  }
+
+  .field-label {
+    font-size: 0.7rem;
+  }
+
+  .field-icon {
+    font-size: 1.1rem;
+    min-width: 22px;
+  }
+
+  .explore-card {
+    padding: 20px;
+    min-height: 280px;
+  }
+
+  .explore-title {
+    font-size: 1.2rem;
+  }
+
+  .explore-description {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .explore-btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  .destinations-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .destination-card.large,
+  .destination-card.medium {
+    grid-row: span 1;
+  }
+}
+
+/* 480px and below - Small Mobile */
+@media screen and (max-width: 480px) {
+  .hero-section {
+    min-height: 450px;
+    padding-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-top: 0;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
+  }
+
+  .hero-overlay {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-content {
+    padding: 12px 10px 18px;
+    position: relative;
+    z-index: 4;
+  }
+
+  .hero-text {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 18px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  /* Search Form Container - Like the Image */
   .search-form-container {
     margin: 0 8px !important;
-    padding: 10px 8px;
-    max-width: calc(50% - 8px);
+    padding: 16px;
+    max-width: calc(100% - 20px);
+    border-radius: 16px;
+    position: relative;
+    z-index: 5;
   }
 
   .horizontal-search-form {
     flex-direction: column;
-    height: return;
-    gap: 8px;
+    height: auto;
+    gap: 12px;
   }
 
   .search-field {
-    width: 50%;
-    padding: 8px 6px;
-    gap: 6px;
+    width: 100%;
+    padding: 12px 10px;
+    gap: 8px;
     border: 1px solid #e5e7eb;
     border-radius: 10px;
-    background: #f9fafb;
+    background: #ffffff;
     flex: none;
   }
 
@@ -1170,31 +1370,47 @@
   }
 
   .search-button {
-    padding: 10px 12px;
+    width: 100%;
+    padding: 14px;
     font-size: 0.95rem;
-    min-height: 44px;
+    min-height: 48px;
+    border-radius: 12px;
+    margin-top: 8px;
   }
 
   .field-label {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
+  }
+
+  .field-icon {
+    font-size: 1rem;
+    min-width: 20px;
+  }
+
+  .field-input {
+    font-size: 0.9rem;
   }
 
   .services-section {
-    padding: 30px 10px;
-    margin-top: -1px;
+    padding: 35px 10px;
+    margin-top: 0;
   }
 
- .services-grid {
-    flex-direction: column;
+  .services-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 0 15px;
-    gap: 12px;
+    justify-content: center;
+    padding: 0 5px;
+    gap: 10px;
   }
+
   .service-card {
-    width: 100%;
-    max-width: 280px;
-    height: auto;
-    padding: 15px;
+    width: calc(50% - 5px);
+    max-width: 160px;
+    height: 100px;
+    min-height: 100px;
+    padding: 12px;
   }
 
   .service-icon {
@@ -1207,7 +1423,7 @@
   }
 
   .about-section-home {
-    padding: 30px 10px;
+    padding: 40px 10px;
   }
 
   .about-home-container {
@@ -1217,7 +1433,20 @@
   }
 
   .image-slider {
-    height: 250px;
+    height: 280px;
+  }
+
+  /* Keep About image overlays INSIDE the image on mobile (like desktop) */
+  .about-image-column {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .about-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
   }
 
   .about-content-column {
@@ -1237,15 +1466,45 @@
   }
 
   .experience-badge {
-    position: static;
-    margin-top: 15px;
-    display: inline-block;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    min-width: 110px;
+    z-index: 3;
+  }
+
+  .badge-number {
+    font-size: 2rem;
+  }
+
+  .badge-text {
+    font-size: 0.8rem;
+  }
+
+  .image-indicators {
+    position: absolute !important;
+    bottom: 12px;
+    right: 14px;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    z-index: 3;
   }
 
   .destinations-grid {
     grid-template-columns: 1fr;
     gap: 12px;
     grid-auto-rows: 200px;
+    margin-bottom: 24px;
+    /* keep last card from touching footer */
+  }
+
+  /* Extra bottom space for the Destinations section on mobile */
+  .top-destination {
+    padding-bottom: 60px;
   }
 
   .destination-card.large,
@@ -1255,10 +1514,11 @@
   }
 
   .destination-name {
-    font-size: 1rem;  /* Smaller font */
+    font-size: 1rem;
     white-space: normal;
     word-break: break-word;
   }
+
   .destination-packages {
     font-size: 0.75rem;
   }
@@ -1276,292 +1536,73 @@
   }
 
   .explore-btn {
-    padding: 10px 20px;  /* Tighter padding */
+    padding: 10px 20px;
     font-size: 0.9rem;
   }
-  .hero-image {
-    width: 90%;
-    padding: 0 10px;
-    height: 80%;
-    margin-top: 10px;
-  }
-   .services-grid {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 10px;
-    gap: 10px;
-  }
-  .service-card {
-    width: calc(100% - 20px);
-    max-width: 280px;
-    height: auto;
-    min-height: 100px;
-    padding: 12px;
-  }
-   .hero-description {
-    font-size: clamp(0.85rem, 1.5vw, 1rem);  /* Smaller on mobile */
-  }
 
-  .image-indicators {
-    bottom: auto;  /* Remove bottom positioning */
-    right: auto;   /* Remove right positioning */
-    position: static !important;
-    margin-top: 10px;
-    justify-content: center;
-    display: flex;
-    gap: 6px;
+  .hero-description {
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
   }
 }
 
-@media screen and (max-width: 768px) {
+/* 375px and below - Extra Small Mobile */
+@media screen and (max-width: 375px) {
   .hero-section {
-    min-height: 500px;
-    height: auto;
+    min-height: 380px;
+    padding-bottom: 15px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-top: 0;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
+  }
+
+  .hero-overlay {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-content {
+    padding: 12px 8px;
+    position: relative;
+    z-index: 4;
   }
 
   .hero-text {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 120px;
-  }
-
-  .hero-image {
-    width: 95%;
-    padding: 0 15px;
-    height: 85%;
+    margin-bottom: 18px;
+    padding: 0 8px;
   }
 
   .search-form-container {
-    margin: 0 20px !important;
-    max-width: calc(100% - 40px);
-    padding: 15px;
-    border-radius: 20px;
+    margin: 0 6px !important;
+    padding: 14px;
+    max-width: calc(100% - 16px);
+    border-radius: 14px;
+    position: relative;
+    z-index: 5;
   }
 
   .horizontal-search-form {
-    flex-direction: column;
-    height: auto;
-    gap: 12px;
-  }
-
-  .search-field {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #e5e7eb;
-    border-radius: 10px;
-    background: #f9fafb;
-  }
-
-  .field-divider,
-  .date-arrow {
-    display: none;
-  }
-
-  .search-button {
-    width: 100%;
-    margin-top: 8px;
-  }
-
-  .services-section {
-    padding: 30px 15px;
-    margin-top: -1px;
-  }
-
-  .services-grid {
-    gap: 15px;
-    padding: 0 15px;
-  }
-
-  .service-card {
-    width: 160px;
-    height: 110px;
-    padding: 15px;
-  }
-
-  .service-icon {
-    font-size: 1.8rem;
-    margin-bottom: 8px;
-  }
-
-  .service-title {
-    font-size: 0.9rem;
-  }
-
-  .about-section-home {
-    padding: 60px 20px;
-  }
-
-  .about-home-container {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .image-slider {
-    height: 300px;
-  }
-
-  .about-content {
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .destinations-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-  }
-
-  .destination-card.large,
-  .explore-card {
-    grid-row: span 1;
-  }
-  .hero-title {
-    text-align: center;
-  }
-  
-  .hero-description {
-    text-align: center;
-    font-size: clamp(0.9rem, 2vw, 1.1rem);
-  }
-}
-
-@media screen and (max-width: 645px) {
-  /* Hero Section */
-  .hero-section {
-    min-height: 450px;
-  }
-  
-  .hero-image {
-    width: 85%;
-    height: 60%;
-    padding: 0 5px;
-    margin-top: 10px;
-  }
-  
-  .hero-title {
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
-  }
-  
-  .hero-description {
-    font-size: clamp(0.85rem, 1.8vw, 1rem);
-  }
-  
-  /* Search Form */
-  .search-form-container {
-    margin: 0 10px !important;
-    padding: 12px 10px;
-    max-width: calc(100% - 20px);
-    border-radius: 15px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  }
-  
-  /* Horizontal Search Form - Stack Vertically */
-  .horizontal-search-form {
-    flex-direction: column;
     gap: 10px;
-    height: auto;
   }
 
-  /* Search Fields - Full Width */
   .search-field {
-    width: 100%;
     padding: 10px 8px;
-    gap: 8px;
-    border: 1px solid #e5e7eb;
-    border-radius: 10px;
-    background: #f9fafb;
-  }
-  
-  /* Location Field - No Special Sizing */
-  .location-field {
-    flex: none;
   }
 
-  /* Date Field - No Special Sizing */
-  .date-field {
-    flex: none;
-  }
-
-  /* Hide Dividers and Arrows */
-  .field-divider {
-    display: none !important;
-  }
-
-  .date-arrow {
-    display: none !important;
-  }
-
-  /* Field Content */
-  .field-content {
-    flex: 1;
-  }
-
-  /* Location Dropdown - Fix Overflow */
-  .location-field select.field-input {
-    width: 100%;
-    padding: 8px 12px;
-    font-size: 0.9rem;
-  }
-
-  /* Search Button - Full Width */
   .search-button {
-    width: 100%;
-    padding: 12px 16px;
-    margin-top: 8px;
-    font-size: 1rem;
-    height: auto;
-    min-height: 48px;
-  }
-
-  /* Field Label - Better Spacing */
-  .field-label {
-    font-size: 0.7rem;
-    margin-bottom: 4px;
-  }
-
-  /* Field Icon */
-  .field-icon {
-    min-width: 20px;
-    font-size: 1rem;
-  }
-  
-  /* Explore Card */
-  .explore-card {
-    padding: 20px;
-    min-height: 280px;
-  }
-  
-  .explore-title {
-    font-size: 1.2rem;
-  }
-  
-  .explore-description {
-    font-size: 0.85rem;
-    line-height: 1.5;
-  }
-  
-  .explore-btn {
-    padding: 10px 20px;
-    font-size: 0.85rem;
-  }
-  
-  /* Navbar */
-  .navbar {
-    padding: 8px 12px;
-  }
-  
-  .menu-icon {
-    min-width: 44px;
+    padding: 12px;
+    font-size: 0.9rem;
     min-height: 44px;
   }
-  
-  /* Destination Grid */
-  .destinations-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
+
+  .field-label {
+    font-size: 0.65rem;
   }
-  
-  .destination-card.large,
-  .destination-card.medium {
-    grid-row: span 1;
-  }
+
 }
