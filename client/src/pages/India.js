@@ -47,7 +47,7 @@ export default function India() {
   return(
     <>
           <section className="about-banner-section">
-            <img src={aboutBanner} alt="About Us" className="about-banner-img" />
+            <img src={aboutBanner} alt="About Us" className="about-banner-img" loading="lazy" />
             <div className="about-banner-overlay"></div>
             <h1 className="about-banner-heading">India</h1>
           </section>
@@ -83,8 +83,8 @@ export default function India() {
       </div>
       <div className="india-destinations-grid">
         {destinations.map((dest, i) => (
-          <div className="india-dest-card" key={i}>
-            <img src={dest.img} alt={dest.name} />
+          <div className="india-dest-card" onClick={() => window.open(`/india/${dest.slug}`, '_blank')} key={i}>
+            <img src={dest.img} alt={dest.name} loading="lazy" />
             <div className="india-dest-overlay">
               <span className="india-dest-name">{dest.name}</span>
               <button  className="india-dest-tours"> <a href={`/india/${dest.slug}`} target="_blank" rel="noopener noreferrer" >{dest.tours}</a></button>

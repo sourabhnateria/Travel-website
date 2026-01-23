@@ -73,8 +73,8 @@ export default function World() {
                   </div>
                   <div className="world-destinations-grid">
                     {destinations.map((dest, i) => (
-                      <div className="world-dest-card" key={i}>
-                        <img src={dest.img} alt={dest.name} />
+                      <div className="world-dest-card" onClick={() => window.open(`/international/${dest.slug}`, '_blank')} key={i}>
+                        <img src={dest.img} alt={dest.name} loading="lazy" />
                         <div className="world-dest-overlay">
                           <span className="world-dest-name">{dest.name}</span>
                           <button className="world-dest-tours"><a href={`/international/${dest.slug}`} target="_blank" rel="noopener noreferrer" >{dest.tours}</a></button>

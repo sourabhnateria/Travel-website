@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import './Hero.css';
 import { useNavigate } from 'react-router-dom';
 // Import your background image from src/assets
@@ -18,6 +18,19 @@ import westBengalImg from '../assets/destinations/west-bengal.png';
 import tamilNaduImg from '../assets/destinations/tamil-nadu.png';
 import himachalPradeshImg from '../assets/destinations/himachal-pradesh.png';
 import bhopal from '../assets/destinations/Bhopal/bhopal1.jpg';
+import bhopal1 from '../assets/destinations/Bhopal/bhopal.jpg';
+import bhopal2 from '../assets/destinations/Bhopal/tawa.jpg';
+import bhopal3 from '../assets/destinations/Bhopal/pachmarhi.jpg';
+import madhai from '../assets/destinations/Bhopal/madhai.jpg';
+import gwalior from '../assets/destinations/Gawlior/gwalior_cover.jpg';
+import gwalior1 from '../assets/destinations/Gawlior/gwalior.jpg';
+import gwalior2 from '../assets/destinations/Gawlior/orcha.jpg';
+import gwalior3 from '../assets/destinations/Gawlior/khajuraho.jpg';
+import maheshwar from '../assets/destinations/Maheshwar/hanuwantiya.jpg';
+import maheshwar1 from '../assets/destinations/Maheshwar/maheshwar.png';
+import maheshwar2 from '../assets/destinations/Maheshwar/mandu.jpg';
+
+
 
 
 const Hero = () => {
@@ -152,7 +165,7 @@ const Hero = () => {
       size: "large",
       duration: "6 Days / 5 Nights",
       price: "₹0",
-      images: [madhyaPradeshImg, madhyaPradeshImg, madhyaPradeshImg],
+      images: [bhopal1, bhopal2, bhopal3],
       about: "Experience the rich heritage of Bhopal, Unesco heritage site, etc.",
       highlights: [
         "The City of Lakes",
@@ -210,12 +223,12 @@ const Hero = () => {
     },
     {
       id: 2,
-      name: "Pachmarhi",
-      image: lehLadakhImg,
+      name: "TAWA, MADHAI, PACHMARHI",
+      image: bhopal3,
       size: "large",
       duration: "5 Days / 4 Nights",
       price: "₹0",
-      images: [lehLadakhImg, lehLadakhImg, lehLadakhImg],
+      images: [bhopal2, madhai, bhopal3],
       about: "Discover Pachmarhi, the Queen of Satpura. Explore beautiful waterfalls, ancient caves, and lush green valleys in this hill station.",
       highlights: [
         "Arrival and Tawa Exploration",
@@ -286,12 +299,12 @@ const Hero = () => {
     {
       id: 3,
       name: "GWALIOR, ORCHHA, KHAJURAHO",
-      image: andamanImg,
+      image: gwalior,
       size: "large",
       duration: "5 Days / 4 Night",
       price: "₹0",
-      images: [andamanImg, andamanImg, andamanImg],
-      about: "",
+      images: [gwalior1, gwalior2, gwalior3],
+      about: "This Heritage Circuit traces the royal and spiritual evolution of Madhya Pradesh. From the soaring ramparts of Gwalior Fort and the riverside medieval charm of Orchha, to the world-renowned erotic architecture of the Khajuraho temples.",
       highlights: [
         "Gwalior Fort, Jai Vilas Palace, Tansen Tomb, Gujari Mahal, Gurudwara Data Bandi Chhor Sahib, etc",
         "Orchha Fort, Jahangir Mahal, Raja Ram Mandir, Chaturbhuj Temple etc.",
@@ -342,31 +355,118 @@ const Hero = () => {
     // Add more destinations with similar structure...
     {
       id: 4,
-      name: "Khajuraho",
-      image: kashmirImg,
+      name: "ORCHHA, KHAJURAHO",
+      image: gwalior2,
       size: "large",
-      duration: "2 Days / 1 Night",
-      price: "₹9,999",
-      images: [kashmirImg],
-      about: "UNESCO World Heritage Site famous for stunning temples and intricate sculptures.",
-      highlights: ["Western Group Temples", "Eastern Group Temples", "Light & Sound Show"],
-      included: ["Hotel", "Breakfast", "Guide"],
-      excluded: ["Transport", "Meals"],
-      itinerary: [{day: 1, title: "Temple Tour", description: "Full day temple exploration"}]
+      duration: "4 Days / 3 Night",
+      price: "₹0",
+      images: [ gwalior2, gwalior3],
+      about: "This itinerary connects two of Central India's historical gems: the riverside palaces of Orchha and the famed UNESCO World Heritage temples of Khajuraho.",
+      highlights: ["Orchha Exploration", "Khajuraho Journey", "Khajuraho Marvels & Natural Wonders"],
+      included: [
+        "	The costing is based on per person basis.",
+        "	Meal plan as per hotel tariff",
+        "	AC Sedan will be provided for 2 Pax and Innova Crysta will be given for 4 and above pax for all transfers – pickup from Nagpur to Drop at Bhopal."
+      ],
+      excluded: [
+        "	Anything not mentioned in Inclusions",
+        "	Safari charges are not included",
+        "	Entry Fee for any sightseeing, Monuments etc",
+        "	Air or Train Fare",
+
+      ],
+      itinerary: [
+        {
+          day: 1,
+          title: "Jhansi Arrival & Orchha Exploration",
+          description: ["Arrive at Jhansi Railway Station, then transfer to Orchha (17 Kms).",
+            "Check into Hotel Betwa Retreat, relax, and enjoy a delectable lunch.",
+            "Explore the Ramraja Temple, followed by a delightful evening tea.",
+            "Immerse in the captivating SEL Show, and savor a delicious dinner. Overnight stay at the hotel."
+            
+          ]
+
+        },
+        {
+          day: 2,
+          title: "Orchha Adventure & Khajuraho Journey",
+          description: ["Enjoy breakfast before engaging in optional River Rafting or Half-Day Sightseeing.",
+            "Depart for Khajuraho (170 Kms) with a visit to Dubela Museum on route.",
+            "Check into Payal Hotel, relish evening tea, and attend the SEL Show. Dinner and overnight stay at the hotel."
+            ]
+        },
+        {
+          day: 3,
+          title: "Khajuraho Marvels & Natural Wonders",
+          description: ["Start the day with breakfast and embark on a full-day excursion.",
+            "Explore the Raneh Falls, Ken Gadiyal Sanctuary (25 Kms), and Pandav Falls.",
+            "Enjoy a leisurely lunch and unwind with evening tea. Dinner and overnight stay at the hotel."
+          ]
+        },
+        {
+          day: 4,
+          title: "Departure to Jhansi/Satna",
+          description: ["After breakfast, depart for Jhansi (170 Kms) or Satna (120 Kms) as per your departure schedule.",
+            "Drop-off at Jhansi/Satna Railway Station to conclude the tour."
+          ]
+        } 
+      ]
     },
     {
       id: 5,
-      name: "Gwalior",
-      image: himachalPradeshImg,
+      name: "HANUWANTIYA, MAHESHWAR, MANDU",
+      image: maheshwar2,
       size: "large",
-      duration: "2 Days / 1 Night",
-      price: "₹7,999",
-      images: [himachalPradeshImg],
-      about: "Historic city with magnificent fort and palaces.",
-      highlights: ["Gwalior Fort", "Jai Vilas Palace", "Tansen Tomb"],
-      included: ["Hotel", "Breakfast"],
-      excluded: ["Transport", "Meals"],
-      itinerary: [{day: 1, title: "Fort Visit", description: "Explore Gwalior Fort"}]
+      duration: "4 Days / 3 Night",
+      price: "₹0",
+      images: [maheshwar, maheshwar1, maheshwar2],
+      about: "This 4-day loop from Indore showcases the diverse spirit of Madhya Pradesh, transitioning from the serene island life and water activities at Hanuwantiya on the Tawa Dam to the deep spiritual history of Maheshwar, before concluding amidst the historical grandeur of the fortress city of Mandu.",
+      highlights: ["Maheshwar Exploration", "Discovering Mandu"],
+      included: [
+        "	The costing is based on per person basis.",
+        "	Meal plan as per hotel tariff",
+        "	AC Sedan will be provided for 2 Pax and Innova Crysta will be given for 4 and above pax for all transfers – pickup from Nagpur to Drop at Bhopal."
+      ],
+      excluded: [
+        "	Anything not mentioned in Inclusions",
+        "	Safari charges are not included",
+        "	Entry Fee for any sightseeing, Monuments etc",
+        "	Air or Train Fare",
+
+      ],
+      itinerary: [
+        {
+          day: 1,
+          title: "Indore Arrival & Hanuwantiya Retreat",
+          description: ["Arrive in Indore via morning Train/Flight/Bus. Welcome, check-in, and breakfast/refreshments at the hotel.",
+          "Journey from Indore to Hanuwantiya (130 Kms), arriving at the House Boat. Enjoy lunch and explore the surroundings.",
+          "Evening tea, dinner, and overnight stay at Hanuwantiya."
+          ]
+
+        },
+        {
+          day: 2,
+          title: "Maheshwar Exploration",
+          description: ["Post breakfast, depart for Maheshwar (150 Kms). Check into Narmada Retreat, Maheshwar, and have lunch.",
+            "Explore Maheshwar, take in its sights, and enjoy evening tea, dinner, and an overnight stay.",
+          ]
+        },
+        {
+          day: 3,
+          title: "Discovering Mandu",
+          description: ["After breakfast, head to Mandu (65 Kms). Enjoy a full day of sightseeing, with lunch included.",
+            "Relax with evening tea, dinner, and stay overnight in Mandu."
+          ]
+        },
+        {
+          day: 4,
+          title: "Departure from Mandu",
+          description: ["After breakfast, continue sightseeing in Mandu and have lunch.",
+"Depart for Indore (99 Kms) for your onward journey.",
+"Experience the heritage and beauty of these locations on a 4-day exploration of Indore, Hanuwantiya, Maheshwar, and Mandu."
+          ]
+        } 
+      ]
     },
     {
       id: 6,
@@ -582,7 +682,82 @@ const Hero = () => {
     }
   };
 
+  // define testimonials avatar
+  const DEFAULT_AVATAR =
+  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlgMBIgACEQEDEQH/xAAbAAEBAAIDAQAAAAAAAAAAAAAAAQIGAwQFB//EADkQAAICAgADBQQHBgcAAAAAAAABAgMEEQUGIRIxQVGhE2GRsSJScXJzweEUMjQ1QoEjJDM2YrLw/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD7iAAAAAAHBl5EMelznOMPJy/91A5tnVu4jiUPVl0e15Lq/Q1rOz7smbTum6/Ba7K+B0uncBti43gvutafvg1+R0reYlGTUMbtJf1e01v0Nf2QD3q+ZH217TG+j49me2e1iZdOZX7THmpLxXin70aNs5MXKtxL420y013rzXkBvgPNr41gyrhKd8YSkk3F76e471N9V8O3TZGcfOL2ByAAAAAAAAAAAAAOLIvhj0TtseowW2ahm5luZc7LH0/pj4RR73Mj/wAhHr32L5M1lsA2YsEAEYIwIRgjYBvodvg+W8TiFU+1qEn2Z9ejT6HSbMqrHVZGajGTXhJbT9wH0QHBhXxycWq6CajOKaT8DnAAAAAAAAAAADxuZ/4Or8X8ma0zZuZo7wIP6ti+TNYAEYI2BCMEbANmLYbIAINkZRvPAf5Ri/c/M9A6XBo9nhWJ+FF+h3SAAAAAAAAAAAPN5gj2uF2P6rT9TUNnocayrL862Lm/Zwl2Yx30Wjz2wIQEbANmLYbIAIwRsohGwTYH0XBh7PDx4fVrivQ5zUuUs21ZcsSc5OuUHKKb3pry/sbaQAAAAAAAAAABo3Ek48QyU119pL5nVZ73MuBJW/tlSbg1qzXh7zX9gVsxbGyACMEbKIRgjYBsxbDZi2B7PKacuMx1/TXJv0Ru54XK3DJ4dE8i+LjbbrUX3xj+p7pAAAAAAAAAAAEfVGv8z4cIYtV1NcY9iepdmOuj/X5mwnDlURyceymz92cey/cB8+IzkyqZ42ROm3pKEtfacTKIRgjANmLYbMWA2bzy/gV08Mx52VQdsk59qUVtb/TRqnBcF8Qz4V6fs4vtWP3H0GK0tJaXgQUAAAAAAAAAAAAAAAHg804Vc8T9s1q2rSb+st9zNSN35l/k1/2x+aNHfeUGzFsNmLAEk9IpjLuYR9B4Fg14ODWq+srEpzk+9tr5HonBhfwlH4cfkc5FAAAAAAAAARvSNf4lzGqrHVhQjPT07Jd39gNhOG/Kx8dbvurr+9JLZpWRxfPyP38mcV5Q+ivQ6Mm5NuXVvvbA3DJ5kwKtqt2XP/hHS+LPKyOaMmW1j011LzluTPCZGUdnK4jl5a1kZE5xffHeo/BHUbDZiwABGEQjBGB3sXjXEcVJVZU3FdFGz6S9T1sbm+2PTLxoTX1q3p/B7NZbIwN+xeZuGX9JWSpflbHXquh6tN9N8VKi2FkX4wkmj5Uy12Tqn26pyhLzi9MK+sbB85xuY+KY3T9p9pFeFq7Xr3+ps3A+ZauI2LHyK1TkNfR09xn9nk/cQbAAAPN5gyXjcLscNqU9QT8t9/ps0k2jm+WsXHj52N+n6mrARkYZGUGzFsNkYEAIwiEYIwDZi2GyMCEYIAIwRgGyRnKucZ1ycZxacZLwZGyMD6tgZCy8KjIWv8WCl8UDz+UZOfL2I34dtfCbQIrq84/6eL96X5GsMgAjMWUFGDAAEIyAIhiygDExYAEDIAIzFlAGLMWAB9F5M/2/R96f/ZgAiv/Z";
+  const testimonials = [
+  {
+    quote:
+      "",
+    name: "",
+    role: "",
+    avatar: DEFAULT_AVATAR,
+    accent: "green",
+  },
+  {
+    quote:
+      "",
+    name: "",
+    role: "",
+    avatar: DEFAULT_AVATAR,
+    accent: "blue",
+  },
+  {
+    quote:
+      "",
+    name: "",
+    role: "",
+    avatar: DEFAULT_AVATAR,
+    accent: "purple",
+  },
+  {
+    quote:
+      "",
+    name: "",
+    role: "",
+    avatar: DEFAULT_AVATAR,
+    accent: "red",
+  },
+];
 
+
+  const trackRef = useRef(null);
+  const [index, setIndex] = useState(0);
+
+  // How many cards are visible depends on breakpoint (1/2/3).
+  const pages = useMemo(() => {
+    const w = typeof window !== "undefined" ? window.innerWidth : 1024;
+    if (w >= 1024) return 3; // lg
+    if (w >= 768) return 2; // md
+    return 1; // mobile
+  }, []);
+
+  const maxIndex = Math.max(0, testimonials.length - pages);
+
+  const scrollToIndex = (i) => {
+    const track = trackRef.current;
+    if (!track) return;
+
+    const clamped = Math.max(0, Math.min(i, maxIndex));
+    const firstItem = track.querySelector(".testimonialCarouselItem");
+    if (!firstItem) return;
+
+    const step = firstItem.getBoundingClientRect().width;
+
+    track.scrollTo({
+      left: step * clamped,
+      behavior: "smooth",
+    });
+
+    setIndex(clamped);
+  };
+
+  useEffect(() => {
+    const onResize = () => scrollToIndex(index);
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [index]);
 
   return (
     <>
@@ -761,7 +936,7 @@ const Hero = () => {
               
               {/* Experience Badge Overlay */}
               <div className="experience-badge">
-                <div className="badge-number">19+</div>
+                <div className="badge-number">10+</div>
                 <div className="badge-text">
                   <div>Years of</div>
                   <div>Experience</div>
@@ -930,6 +1105,89 @@ const Hero = () => {
           </div>
         </div>
         
+      </div>
+    </section>
+    {/* testimonial section */}
+    <section id="testimonials" className="testimonialsSection">
+      <div className="testimonialsContainer">
+        <h2 className="testimonialsTitle">What Our Clients Say</h2>
+
+        <div className="testimonialsCarouselWrap">
+          <div
+            ref={trackRef}
+            className="testimonialCarousel"
+            role="region"
+            aria-label="Testimonials"
+          >
+            {testimonials.map((t) => (
+              <div key={t.name} className="testimonialCarouselItem">
+                <div className="testimonialCard">
+                  <p className="testimonialQuote">{t.quote}</p>
+
+                  <div className="testimonialUser">
+                    <img
+                      src={t.avatar}
+                      alt={`${t.name} avatar`}
+                      
+                      className={`testimonialAvatar testimonialAvatar--${t.accent}`}
+                      loading="lazy"
+                    />
+                    <div>
+                      <p className="testimonialName">{t.name}</p>
+                      <p className={`testimonialRole testimonialRole--${t.accent}`}>
+                        {t.role}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <button
+            type="button"
+            className="testimonialNav testimonialNavPrev"
+            onClick={() => scrollToIndex(index - 1)}
+            aria-label="Previous testimonial"
+          >
+            <svg
+              className="testimonialNavIcon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+
+          <button
+            type="button"
+            className="testimonialNav testimonialNavNext"
+            onClick={() => scrollToIndex(index + 1)}
+            aria-label="Next testimonial"
+          >
+            <svg
+              className="testimonialNavIcon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
     {/* ✅ MODAL for MP Destinations */}
