@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="footer-section">
                         <h3>Quick Contact</h3>
                         <p>One of the leading Travel agency In Bhopal,<br/> Madhya Pradesh,<br/> 462044 <br/>
-                            +91 7552421243<br/>
+                            +91 7354251333<br/>
                             nntravelhub@gmail.com</p>
                     </div>
                     <div className="footer-section">
