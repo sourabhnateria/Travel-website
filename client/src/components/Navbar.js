@@ -59,7 +59,7 @@ const Navbar = () => {
           <div className="contact-info">
             <div className="contact-item">
               <i className="fas fa-phone"></i>
-              <a href="tel:+1234567890">+1 (234) 567-890</a>
+              <a href="tel:+1234567890">+91 7354251333</a>
             </div>
             <div className="contact-item">
               <i className="fas fa-envelope"></i>

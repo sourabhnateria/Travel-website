@@ -179,7 +179,7 @@ export default function Contact() {
           </div>
           <div className="contact-text">
             <span className="contact-label">Phone</span>
-            <a href="tel:+919876543210">+91 98765 43210</a>
+            <a href="tel:+919876543210">+91 7354251333</a>
           </div>
         </div>
         

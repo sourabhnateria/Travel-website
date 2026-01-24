@@ -10,12 +10,12 @@ import SrilankaImg from '../assets/world/srilanka.jpg';
 import './World.css';
 
 const destinations = [
-  { name: "Dubai", img: madhyaImg, tours: "4 Tours",slug: "dubai" },
-  { name: "Singapore", img: RajasthanImg, tours: "6 Tours",slug: "singapore" },
-  { name: "Indonesia", img: IndonesiaImg, tours: "6 Tours",slug: "indonesia" },
-  { name: "Thailand", img: ThailandImg, tours: "6 Tours",slug: "thailand" },
-  { name: "Malaysia", img: MalaysiaImg, tours: "6 Tours",slug: "malaysia" },
-  { name: "Srilanka", img: SrilankaImg, tours: "6 Tours",slug: "srilanka" },
+  { name: "Dubai", img: madhyaImg, tours: "",slug: "dubai" },
+  { name: "Singapore", img: RajasthanImg, tours: "",slug: "singapore" },
+  { name: "Indonesia", img: IndonesiaImg, tours: "",slug: "indonesia" },
+  { name: "Thailand", img: ThailandImg, tours: "",slug: "thailand" },
+  { name: "Malaysia", img: MalaysiaImg, tours: "",slug: "malaysia" },
+  { name: "Srilanka", img: SrilankaImg, tours: "",slug: "srilanka" },
   // { name: "Rajasthan", img: RajasthanImg, tours: "6 Tours" },
   // { name: "Rajasthan", img: RajasthanImg, tours: "6 Tours" },
   // { name: "Rajasthan", img: RajasthanImg, tours: "6 Tours" },

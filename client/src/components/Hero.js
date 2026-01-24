@@ -89,36 +89,43 @@ const Hero = () => {
   const services = [
     {
       id: 1,
-      title: "India Tour",
+      title: "Domestic Packages",
       icon: "fas fa-map-marked-alt",
       bgColor: "#a7f3d0", // Light green
       iconColor: "#065f46"
     },
     {
       id: 2,
-      title: "International Tour",
+      title: "International Packages",
       icon: "fas fa-globe-americas",
       bgColor: "#bfdbfe", // Light blue
       iconColor: "#1e40af"
     },
     {
       id: 3,
-      title: "Air Ticket",
+      title: "Flight Bookings",
       icon: "fas fa-plane",
       bgColor: "#93c5fd", // Medium blue
       iconColor: "#1e40af"
     },
     {
       id: 4,
-      title: "Visa Services",
+      title: "Visa",
       icon: "fas fa-passport",
       bgColor: "#7dd3fc", // Sky blue
       iconColor: "#0c4a6e"
     },
     {
       id: 5,
-      title: "Honeymoon Package",
+      title: "Adventure and Activities",
       icon: "fas fa-heart",
+      bgColor: "#ddd6fe", // Light purple
+      iconColor: "#6b21a8"
+    },
+    {
+      id: 6,
+      title: "hotel and transport",
+      icon: "fas fa-bus",
       bgColor: "#ddd6fe", // Light purple
       iconColor: "#6b21a8"
     }
@@ -127,11 +134,11 @@ const Hero = () => {
   
 
   const aboutServices = [
-    'Travel Packages',
-    'Hotel',
-    'Transportation',  
-    'Air Ticket',
-    'Visa'
+    // 'Travel Packages',
+    // 'Hotel',
+    // 'Transportation',  
+    // 'Air Ticket',
+    // 'Visa'
   ];
 
   const aboutImages = [
@@ -587,66 +594,66 @@ const Hero = () => {
   const destinations = [
     {
       id: 1,
-      name: "Madhya Pradesh",
-      packages: "10 Tour Packages",
+      name: "Khajuraho",
+      packages: "",
       image: madhyaPradeshImg,
       size: "large"
     },
     {
       id: 2,
       name: "Leh Ladakh",
-      packages: "6 Tour Packages",
+      packages: "",
       image: lehLadakhImg,
       size: "medium"
     },
     {
       id: 3,
-      name: "Andaman",
-      packages: "5 Tour Packages",
+      name: "Port Blair, Havelock Island",
+      packages: "",
       image: andamanImg,
       size: "medium"
     },
     {
       id: 4,
-      name: "Kashmir",
-      packages: "5 Tour Packages",
+      name: "Srinagar, Gulmarg",
+      packages: "",
       image: kashmirImg,
       size: "medium"
     },
     
     {
       id: 5,
-      name: "Himachal Pradesh",
-      packages: "6 Tour Packages",
+      name: "Shimla, Manali",
+      packages: "",
       image: himachalPradeshImg,
       size: "medium"
     },
     {
       id: 6,
-      name: "Kerala",
-      packages: "8 Tour Packages",
+      name: "Munnar, Kochi",
+      packages: "",
       image: keralaImg,
       size: "medium" // Large card
     },
     {
       id: 7,
-      name: "West Bengal",
-      packages: "5 Tour Packages",
+      name: "Darjeeling, Siliguri",
+      packages: "",
       image: westBengalImg,
       size: "medium"
     },
     {
       id: 8,
-      name: "Tamil Nadu",
-      packages: "5 Tour Packages",
+      name: "Ooty, Kodaikanal",
+      packages: "",
       image: tamilNaduImg,
       size: "medium"
     },
     
     {
       id: 9,
-      name: "Rajasthan",
-      packages: "5 Tour Packages",
+      name: "Royal Rajasthan",
+      packages: "",
       image: rajasthanImg,
       size: "large" // Large card
     },
@@ -971,10 +978,9 @@ const Hero = () => {
               {/* Description */}
               <div className="about-description">
                 <p>
-                  N N Travel Hub is a leading travel agency, established in 2005, 
-                  specializing in providing exceptional travel experiences across India 
-                  and around the world. Trusted by thousands of happy customers, we make 
-                  your travel dreams come true with personalized service and unbeatable prices.
+                  N N Travel Hub is a growing travel company based in Bhopal, Madhya Pradesh, proudly established in 2025. Backed by over 10 years of experience in the travel industry, we are committed to delivering smooth, memorable, and personalized travel experiences to our clients.
+                  We specialize in curating exceptional journeys across India and international destinations, including holiday packages, cultural tours, wildlife adventures, luxury vacations, and spiritual pilgrimages. Our focus on quality service, careful planning, and customer satisfaction has helped us build strong relationships with a steadily expanding base of happy travelers.
+                  At N N Travel Hub , we don’t just organize trips — we craft journeys you will cherish for a lifetime.
                 </p>
               </div>
 
@@ -1089,14 +1095,14 @@ const Hero = () => {
           {/* Explore India Card */}
           <div className="destination-card explore-card">
             <div className="explore-content">
-              <h3 className="explore-title">EXPLORE INDIA</h3>
-              <p className="explore-description">
+              {/* <h3 className="explore-title">EXPLORE INDIA</h3> */}
+              {/* <p className="explore-description">
                 India, a country of diverse heritage, from ancient temples to colonial architecture. 
                 Its landscapes range from serene coastlines to towering mountains, 
                 complemented by lush national parks.
-              </p>
+              </p> */}
               <button className="explore-btn">
-                <a href="./India" target="_blank" rel="noopener noreferrer">Explore Now</a>
+                <a href="./India" target="_blank" rel="noopener noreferrer">Explore More</a>
                 <div className="explore-arrow">
                   <i className="fas fa-arrow-right"></i>
                 </div>
@@ -1396,7 +1402,7 @@ const Hero = () => {
           </div>
           <div className="contact-text">
             <span className="contact-label">Phone</span>
-            <a href="tel:+919876543210">+91 98765 43210</a>
+            <a href="tel:+919876543210">+91 7354251333</a>
           </div>
         </div>
         

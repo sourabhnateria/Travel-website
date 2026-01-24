@@ -72,7 +72,7 @@ export default function About() {
               <div className="about-description" textAlign="center">
                 <p>
                     Welcome to N N Travel Hub, your new gateway to the world. While our company is new, our foundation is built on over 10 years of deep, hands-on experience in the travel industry.<br />
-                    Our founder, Harish Nateriya, has dedicated his career to crafting exceptional travel. Before launching N N Travel Hub, Harish was an integral part of several leading travel agencies, where he successfully planned and delivered countless unforgettable journeys for clients.
+                    Our founder,has dedicated his career to crafting exceptional travel. Before launching N N Travel Hub, he was an integral part of several leading travel agencies, where he successfully planned and delivered countless unforgettable journeys for clients.
                     This decade of experience is the cornerstone of our business. It means we have the established knowledge, industry connections, and proven expertise to manage every detail of your trip.<br />
                     At N N Travel Hub, you get the best of both worlds: the fresh energy and personal attention of a new company, combined with the wisdom and reliability of a seasoned travel veteran. We are here to build lasting relationships with our clients by providing seamless, personalized, and unforgettable travel experiences.
                 </p>
