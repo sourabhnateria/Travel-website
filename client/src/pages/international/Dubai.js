@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Navbar from '../../components/Navbar';
-import aboutBanner from '../../assets/india/madhya-pradesh/mp_cover_photo.jpg';
+import aboutBanner from '../../assets/world/dubai/dubai-cover.jpg';
 //tour-1/id:1
-import pench from '../../assets/india/madhya-pradesh/tour-1/pench.jpg';
-import pench1 from '../../assets/india/madhya-pradesh/tour-1/pench1.jpg';
-import kanha from '../../assets/india/madhya-pradesh/tour-1/kanha.jpg';
-import bandhavgarh from '../../assets/india/madhya-pradesh/tour-1/bandhavgaarh.jpg';
-import bhedaghat from '../../assets/india/madhya-pradesh/tour-1/bhedaghat.jpg';
+import dubai from '../../assets/world/dubai/dubai.jpg';
+import dubai1 from '../../assets/world/dubai/dubai1.jpg';
+import dubai2 from '../../assets/world/dubai/dubai2.jpg';
+import dubai3 from '../../assets/world/dubai/dubai3.jpg';
+
+
 
 import './Dubai.css';
 
@@ -22,8 +23,8 @@ export default function Dubai() {
       name: "DUBAI TOUR",
       duration: "5 Days / 4 Nights",
       price: "0",
-      image: pench,
-      images: [pench1, kanha, bandhavgarh, bhedaghat], // Add your actual images here
+      image: dubai,
+      images: [dubai1, dubai2, dubai3,aboutBanner], // Add your actual images here
       about: " ",
       highlights: [
         // "Explore Pench National Park",
@@ -194,19 +195,15 @@ const handleFormSubmit = async (e) => {
       <section className="world-feature-section">
                         <div className="world-feature-container">
                           <div className="world-feature-text">
-                            <h2>Dubai Tour</h2>
-                            <p>
-                            Explore the dazzling city of Dubai with Travel India Tourism’s carefully curated tour package. Discover iconic landmarks like the Burj Khalifa, the world’s tallest skyscraper, and the stunning Dubai Fountain. Immerse yourself in the vibrant atmosphere of the Dubai Mall, a shopper’s paradise with an array of luxury brands and entertainment options.
-                            </p>
-                            <p>
-                            Visit the historic district of Al Bastakiya, showcasing Dubai’s cultural heritage, and explore the Dubai Museum, housed in an ancient fort. Stroll along the picturesque Jumeirah Beach and capture breathtaking views of the Palm Jumeirah, an engineering marvel.
-                            </p>
-                            <p>
-                              Experience the authentic flavors of Emirati cuisine at local eateries and indulge in a traditional desert safari, complete with dune bashing and a mesmerizing sunset over the golden sands. Take a tranquil abra ride along the Dubai Creek, witnessing the juxtaposition of old and new Dubai.
-                            </p>
-                            <p>
-                              Our tour package guarantees comfortable accommodation, expert guides, and seamless transportation for a hassle-free experience. Whether you’re captivated by the opulent architecture or the bustling souks, Dubai promises a diverse range of experiences. Explore this cosmopolitan oasis with our curated tour and create enduring memories in this dynamic Emirati city.
-                            </p>
+                            <h2>Experience the Magic of Dubai</h2>
+                            <p>Discover the glamour and charm of Dubai with N N Travel Hub’s thoughtfully designed tour experience. From futuristic skylines to rich cultural heritage, Dubai offers an unforgettable blend of tradition and modern luxury.</p>
+                            
+                            <p>Marvel at world-famous attractions such as the Burj Khalifa, the tallest building on the planet, and enjoy the captivating water shows at the Dubai Fountain. Spend time at the iconic Dubai Mall, where shopping, dining, and entertainment come together under one roof.</p>
+                            
+                            <p>Step back in time as you explore Al Bastakiya (Al Fahidi Historical District), reflecting Dubai’s cultural roots, and visit the Dubai Museum, set inside a historic fort. Relax along the scenic Jumeirah Beach, or admire panoramic views of the impressive Palm Jumeirah, a true symbol of modern engineering.</p>
+                            
+                            <p>Savor authentic Emirati cuisine at local restaurants and experience the thrill of a desert safari, featuring dune adventures and a stunning sunset across the desert landscape. Enjoy a peaceful abra ride on Dubai Creek, offering a glimpse into the city’s traditional trading past alongside its modern skyline.</p>
+                            <p>Our Dubai tour experience includes comfortable stays, knowledgeable local support, and well-planned transportation to ensure a smooth and enjoyable journey. Whether you’re fascinated by luxury architecture, lively markets, or cultural experiences, Dubai offers something for every traveler. Let N N Travel Hub help you create lasting memories in this vibrant global destination.</p>
                           </div>
                           <div className="world-feature-image">
 

@@ -27,73 +27,73 @@ export default function Faq() {
               {/* Section Header */}
               <div className="about-header">
                 
-                <h2 className="about-title">N N Travel Hub: FAQs</h2>
+                <h2 className="about-title">Frequently Asked Questions (FAQs)</h2>
               </div>
 
               {/* Description */}
               <div className="about-description" textAlign="center">
                 <p style={{ marginBottom: '1.5em' }}>
-                    <h3 style={{ marginBottom: '-1em' }} >What services does N N Travel Hub offer?</h3> <br/>
-                    N N Travel Hub offers a wide range of services including travel packages across India and to destinations like Dubai, Singapore, Thailand, Sri Lanka, and Malaysia. We also provide customized tour packages, hotel bookings, transportation arrangements, and sightseeing options, all at affordable prices.
+                    <h3 style={{ marginBottom: '-1em' }} >What services does N N Travel Hub provide?</h3> <br/>
+                    N N Travel Hub offers complete travel solutions including domestic and international tour packages, customized itineraries, hotel reservations, local transportation, sightseeing arrangements, and assistance with flight and train bookings.
                 </p>
                 <p style={{ marginBottom: '1.5em' }}>
-                    <h3 style={{ marginBottom: '-1em' }}>How can I book a tour package with N N Travel Hub?</h3> <br/>
-                    Booking with us is easy! You can visit our website at nntravelhub.com to explore our packages and make a booking. Alternatively, you can reach out to us via email at nntravelhub@gmail.com for assistance with your booking.
+                    <h3 style={{ marginBottom: '-1em' }}>How can I book a tour with N N Travel Hub?</h3> <br/>
+                    You can explore our tour options through our website or contact us directly via email at <strong>nntravelhub@gmail.com</strong>. Our team will guide you through the booking process and assist you at every step.
                 </p>
                 <p style={{ marginBottom: '1.5em' }}>
-                    <h3 style={{ marginBottom: '-1em' }} >Can I customize a tour package to suit my preferences and interests?</h3> <br/>
-                    Absolutely! We specialize in creating customized tour packages tailored to your specific preferences, interests, and budget. Simply let us know your requirements, and we’ll work with you to design the perfect itinerary.
+                    <h3 style={{ marginBottom: '-1em' }} >Do you offer customized travel packages?</h3> <br/>
+                    Yes. We specialize in designing personalized travel plans based on your interests, budget, and travel preferences. Simply share your requirements, and we’ll create an itinerary tailored just for you.
                 </p>
                 <p style={{ marginBottom: '1.5em' }}>
-                    <h3 style={{ marginBottom: '-1em' }}>What are the popular destinations offered by N N Travel Hub?</h3> <br/>
-                    Absolutely! We specialize in creating customized tour packages tailored to your specific preferences, interests, and budget. Simply let us know your requirements, and we’ll work with you to design the perfect itinerary.
-                </p>
-
-                <p style={{ marginBottom: '1.5em' }}>
-                    <h3 style={{ marginBottom: '-1em' }} >Do you provide accommodation options as part of your packages?</h3> <br/>
-                    Yes, we do! N N Travel Hub offers a range of accommodation options to suit various budgets and preferences. We can help you book hotels that align with your travel needs.
-                </p>
-                <p style={{ marginBottom: '1.5em' }}>
-                    <h3 style={{ marginBottom: '-1em' }}>What documentation do I need for international travel, such as visas and passports?</h3> <br/>
-                    For international travel, it’s essential to have a valid passport and, in most cases, a visa. Our team can guide you through the visa application process and provide any necessary information regarding documentation requirements for your chosen destination.
-                </p>
-                <p style={{ marginBottom: '1.5em' }}>
-                    <h3 style={{ marginBottom: '-1em' }} >Are there any age restrictions for booking with N N Travel Hub?</h3> <br/>
-                    While there are no strict age restrictions, certain activities or destinations may have specific age limitations for participation. We recommend checking with our team when booking, so we can provide you with accurate information based on your travel preferences.                </p>
-                <p style={{ marginBottom: '1.5em' }}>
-                    <h3 style={{ marginBottom: '-1em' }}>Many Tour Packages Price display ₹0 (Zero)?</h3> <br/>
-                    If tour package prices display as ₹0 (Zero), it’s either a technical error or the new prices haven’t been updated yet.                
-                </p>
-
-
-                <p style={{ marginBottom: '1.5em' }}>
-                    <h3 style={{ marginBottom: '-1em' }} >What types of transportation arrangements can I expect with your packages?</h3> <br/>
-                    We arrange various types of transportation depending on your chosen package. This can include flights, trains, private transfers, or rental cars, ensuring you have convenient and comfortable travel options.                
-                </p>
-                <p style={{ marginBottom: '1.5em' }}>
-                    <h3 style={{ marginBottom: '-1em' }}>How can I get in touch with N N Travel Hub for further assistance?</h3> <br/>
-                    you can reach out to us via email at nntravelhub@gmail.com for any inquiries or assistance you may need. Our dedicated team is ready to help you with any questions you have.
-                </p>
-                <p style={{ marginBottom: '1.5em' }}>
-                    <h3 style={{ marginBottom: '-1em' }} >What is the best time to visit specific destinations in India?</h3> <br/>
-                    The best time to visit different destinations in India can vary based on factors such as weather, festivals, and local events. Our experienced team can provide you with detailed information to help you plan your trip.
-                </p>
-                <p style={{ marginBottom: '1.5em' }}>
-                    <h3 style={{ marginBottom: '-1em' }}>Do you offer any special deals or discounts on your packages?</h3> <br/>
-                    Yes, N N Travel Hub occasionally offers special promotions, discounts, and seasonal deals. Keep an eye on our website for any ongoing offers.
+                    <h3 style={{ marginBottom: '-1em' }}>Which destinations do you cover?</h3> <br/>
+                    We offer travel experiences across India and international destinations such as Dubai, Singapore, Thailand, Sri Lanka, Malaysia, and other popular locations. Destination availability may vary based on season and travel requirements.
                 </p>
 
                 <p style={{ marginBottom: '1.5em' }}>
-                    <h3 style={{ marginBottom: '-1em' }} >Is it possible to make changes to my itinerary after booking?</h3> <br/>
-                    We understand that travel plans can change. Depending on the circumstances and availability, we’ll do our best to accommodate any necessary changes to your itinerary. Please contact us at the earliest convenience if you need to make adjustments.
+                    <h3 style={{ marginBottom: '-1em' }} >Are hotel bookings included in your packages?</h3> <br/>
+                    Yes, accommodation options are available as part of our tour packages. We offer hotels across different budget ranges and help you choose stays that best suit your travel needs.
                 </p>
                 <p style={{ marginBottom: '1.5em' }}>
-                    <h3 style={{ marginBottom: '-1em' }}>What is the cancellation policy for bookings made with N N Travel Hub?</h3> <br/>
-                    Our cancellation policy varies depending on the specific package and service booked. We encourage you to review our detailed cancellation policy on our website or contact us directly for specific information related to your booking.
+                    <h3 style={{ marginBottom: '-1em' }}>Do you help with visas and travel documentation?</h3> <br/>
+                    We provide guidance and support for visa applications for select destinations. Travelers are responsible for holding valid passports and meeting embassy requirements, but our team assists with documentation and application guidance.
                 </p>
                 <p style={{ marginBottom: '1.5em' }}>
-                    <h3 style={{ marginBottom: '-1em' }} >How can I stay updated on N N Travel Hub's latest offers and promotions?</h3> <br/>
-                    To stay updated on our latest offers and promotions, we recommend subscribing to our newsletter on our website. Additionally, you can follow us on our social media platforms for real-time updates on exciting travel deals and experiences.                
+                    <h3 style={{ marginBottom: '-1em' }} >Are there any age restrictions for booking a tour?</h3> <br/>
+                    There are no general age restrictions for booking with us. However, certain activities or destinations may have age-related guidelines. We recommend checking with our team before finalizing your booking.                </p>
+                <p style={{ marginBottom: '1.5em' }}>
+                    <h3 style={{ marginBottom: '-1em' }}>Why do some tour packages show a price of ₹0?</h3> <br/>
+                    If a package displays a price of ₹0, it may be due to pending updates or a technical issue. Please contact our team for accurate pricing details.                
+                </p>
+
+
+                <p style={{ marginBottom: '1.5em' }}>
+                    <h3 style={{ marginBottom: '-1em' }} >What types of transportation are included in your tours?</h3> <br/>
+                    Transportation arrangements depend on the selected package and may include flights, trains, private vehicles, airport transfers, or local transport for sightseeing.                
+                </p>
+                <p style={{ marginBottom: '1.5em' }}>
+                    <h3 style={{ marginBottom: '-1em' }}>Can I modify my itinerary after booking?</h3> <br/>
+                    Changes may be possible depending on availability and service provider policies. We recommend informing us as early as possible if you need to make any adjustments.
+                </p>
+                <p style={{ marginBottom: '1.5em' }}>
+                    <h3 style={{ marginBottom: '-1em' }} >What is your cancellation policy?</h3> <br/>
+                    Cancellation terms vary based on the tour package and services booked. Please refer to our Cancellation & Refund Policy page or contact us for booking-specific details.
+                </p>
+                <p style={{ marginBottom: '1.5em' }}>
+                    <h3 style={{ marginBottom: '-1em' }}>Do you offer discounts or special travel deals?</h3> <br/>
+                    Yes, we occasionally introduce seasonal offers and special promotions. Updates are shared on our website and social media platforms.
+                </p>
+
+                <p style={{ marginBottom: '1.5em' }}>
+                    <h3 style={{ marginBottom: '-1em' }} >What is the best time to visit destinations in India?</h3> <br/>
+                    The ideal travel period depends on the destination, climate, and local events. Our team can help you plan the best time to visit based on your chosen location.
+                </p>
+                <p style={{ marginBottom: '1.5em' }}>
+                    <h3 style={{ marginBottom: '-1em' }}>How can I contact N N Travel Hub for support?</h3> <br/>
+                    For any questions or assistance, you can email us at <strong>nntravelhub@gmail.com</strong>. Our team is always happy to help you plan your journey.
+                </p>
+                <p style={{ marginBottom: '1.5em' }}>
+                    <h3 style={{ marginBottom: '-1em' }} >How can I stay informed about new offers?</h3> <br/>
+                    You can stay updated by subscribing to our newsletter or following us on our social media channels for the latest travel updates and deals.                
                 </p>
                 
 

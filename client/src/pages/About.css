@@ -87,6 +87,17 @@
   .about-main-content {
     padding: 23px 12px;
   }
+  .about-content1-column,
+  .about-content2-column,
+  .about-content3-column,
+  .about-content4-column,
+  .about-content5-column,
+  .about-content6-column {
+    margin-left: 0%;
+  }
+  .about-home-container2{
+    margin-left: 0%;
+  }
 }
 
 .about-section-home2 {
@@ -148,6 +159,7 @@
   .about-content5-column,
   .about-content6-column {
     max-width: 100%;
+    margin-left: 0%;
   }
 }
 
@@ -166,5 +178,13 @@
 
   .about-content-description p {
     font-size: 0.97rem;
+  }
+  .about-content1-column,
+  .about-content2-column,
+  .about-content3-column,
+  .about-content4-column,
+  .about-content5-column,
+  .about-content6-column {
+    margin-left: 0%;
   }
 }

@@ -53,6 +53,7 @@
 .footer .name {
   font-size: x-small;
   color: #9fd548 !important; /* Added !important to override other styles */
+  text-decoration: none;
 }
 .social-links {
     display: flex;

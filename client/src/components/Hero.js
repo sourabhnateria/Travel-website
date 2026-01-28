@@ -29,7 +29,8 @@ import gwalior3 from '../assets/destinations/Gawlior/khajuraho.jpg';
 import maheshwar from '../assets/destinations/Maheshwar/hanuwantiya.jpg';
 import maheshwar1 from '../assets/destinations/Maheshwar/maheshwar.png';
 import maheshwar2 from '../assets/destinations/Maheshwar/mandu.jpg';
-
+import indore from '../assets/destinations/Indore/indore.jpg';
+import indore1 from '../assets/destinations/Indore/maheshwar.jpg';
 
 
 
@@ -477,31 +478,122 @@ const Hero = () => {
     },
     {
       id: 6,
-      name: "Maheshwar",
-      image: keralaImg,
+      name: "INDORE, MAHESHWAR",
+      image: indore,
       size: "large",
-      duration: "1 Day",
-      price: "₹4,999",
-      images: [keralaImg],
-      about: "Holy town on banks of Narmada River.",
-      highlights: ["Ahilya Fort", "Narmada Ghat", "Maheshwari Saree Weaving"],
-      included: ["Guide", "Entry fees"],
-      excluded: ["Hotel", "Transport"],
-      itinerary: [{day: 1, title: "Day Tour", description: "Explore Maheshwar"}]
+      duration: "3 Day/3 Night",
+      price: "₹0",
+      images: [indore, indore1],
+      about: "This 3-day itinerary offers a compelling cultural and scenic journey through the heart of Madhya Pradesh. Starting with the unique 'island life' experience at Hanuwantiya, the tour proceeds to the revered riverside temple town of Omkareshwar and the historical spiritual center of Maheshwar, balancing leisure, devotion, and heritage.",
+      highlights: ["Unique stay on a houseboat at Hanuwantiya dam backwaters.", "Spiritual visits to the Jyotirlinga shrines at Omkareshwar.", "Exploration of the ancient ghats and handloom traditions of Maheshwar."],
+      included: [
+        "	The costing is based on per person basis.",
+        "	Meal plan as per hotel tariff",
+        "	AC Sedan will be provided for 2 Pax and Innova Crysta will be given for 4 and above pax for all transfers – pickup from Nagpur to Drop at Bhopal."
+      ],
+      excluded: [
+        "	Anything not mentioned in Inclusions",
+        "	Safari charges are not included",
+        "	Entry Fee for any sightseeing, Monuments etc",
+        "	Air or Train Fare",
+
+      ],
+      itinerary: [
+        {
+          day: 1, 
+          title: "Arrival in Indore", 
+          description: [
+            "Arrive in Indore via morning Train, Flight, or Bus.",
+            "Welcoming check-in and breakfast/refreshments at the hotel.",
+            "Departure from Indore to Hanuwantiya (130 Kms).",
+            "Upon arrival at Hanuwantiya, settle into the House Boat, followed by lunch and sightseeing.",
+            "Enjoy Evening Tea, Dinner, and Overnight stay at Hanuwantiya."
+          ]
+        },
+        {
+          day: 2,
+          title: "Exploration of Omkareshwar and Maheshwar",
+          description: [
+            "Begin the day with breakfast before heading to Maheshwar (150 Kms).",
+            "En-route, stop for lunch and sightseeing at Omkareshwar (85 Kms).",
+            "Arrival in Maheshwar and check-in at Narmada Retreat.",
+            "Evening Tea, Dinner, and Overnight stay in Maheshwar."
+          ]
+        },
+        {
+          day: 3,
+          title: "Maheshwar Sightseeing and Return to Indore",
+          description: [
+            "Start the day with breakfast and a sightseeing tour in Maheshwar.",
+            "Enjoy lunch and commence the journey back to Indore (95 Kms).",
+          ]
+        },
+      ]
     },
     {
       id: 7,
-      name: "Ujjain",
+      name: "UJJAIN, MAHESHWAR",
       image: westBengalImg,
       size: "large",
-      duration: "2 Days / 1 Night",
-      price: "₹6,999",
+      duration: "3 Days / 2 Night",
+      price: "₹0",
       images: [westBengalImg],
-      about: "One of the seven sacred cities for Hindus.",
-      highlights: ["Mahakaleshwar Temple", "Ram Ghat", "Kal Bhairav Temple"],
-      included: ["Hotel", "Breakfast", "Guide"],
-      excluded: ["Transport", "Meals"],
-      itinerary: [{day: 1, title: "Temple Tour", description: "Visit holy temples"}]
+      about: "The journey begins in the ancient city of Ujjain, home to the Mahakaleshwar Jyotirlinga, before tracing the Narmada River to the sacred island of Omkareshwar and concluding in the historic ghats of Maheshwar.",
+      highlights: ["Mahakaleshwar Temple", "Omkar Mandhata and Rajarajeshwara Temples.", "Maheshwar Fort and serene Narmada riverbanks"],
+      included: [
+        "	The costing is based on per person basis.",
+        "	Meal plan as per hotel tariff",
+        "	AC Sedan will be provided for 2 Pax and Innova Crysta will be given for 4 and above pax for all transfers – pickup from Nagpur to Drop at Bhopal."
+      ],
+      excluded: [
+        "	Anything not mentioned in Inclusions",
+        "	Safari charges are not included",
+        "	Entry Fee for any sightseeing, Monuments etc",
+        "	Air or Train Fare",
+
+      ],
+      itinerary: [
+        {
+          day: 1, 
+          title: "Arrival at Indore", 
+          description: [
+            "Arrival at Indore Railway Station",
+            "Warm welcome and breakfast/refreshments at the hotel",
+            "Departure for Ujjain (55 Kms)",
+            "Check-In at Hotel Shipra Residency and lunch",
+            "Sightseeing and Darshan",
+            "Evening Tea",
+            "SEL Show Dinner",
+            "Overnight stay at Hotel Shipra Residency"
+          ]
+        },
+        {
+          day: 2,
+          title: "Ujjain Sightseeing",
+          description: [
+            "Breakfast at the hotel",
+            "Half-day sightseeing in Ujjain",
+            "Lunch",
+            "Departure for Maheshwar (150 Kms)",
+            "En-route visit Omkar Mandhata Temple and Siddhanath Temple in Omkareshwar (131 Kms)",
+            "Arrival at Maheshwar",
+            "Check-In at Hotel Narmada Resort",
+            "Evening Tea",
+            "Dinner",
+            "Overnight stay at Hotel Narmada Resort"
+          ]
+        },
+        {
+          day: 3,
+          title: "Maheshwar Exploration and Departure",
+          description: [
+            "Breakfast at the hotel",
+            "Half-day sightseeing including a visit to Rajarajeshwara Temple and Maheshwar Fort",
+            "Lunch",
+            "Departure for Indore (95 Kms)"
+          ]
+        }
+      ]
     },
     {
       id: 8,
@@ -899,7 +991,7 @@ const Hero = () => {
       <section className="services-section" id="services">
         <div className="services-container">
           <div className="services-header">
-            <h2 className="services-title">Our Services</h2>
+            <h2 className="services-title">What We Offer</h2>
           </div>
           
           <div className="services-grid">
@@ -1015,7 +1107,7 @@ const Hero = () => {
             <div className="destination-header">
               <div className="destination-subtitle-wrapper">
                 <div className="subtitle-line"></div>
-                <span className="destination-subtitle">Madhya Pradesh</span>
+                <span className="destination-subtitle" style={{ color: "#0072ff" }}>Madhya Pradesh</span>
                 <div className="subtitle-line"></div>
               </div>
               <h3 className="destination-title">EXPLORE TOUR PACKAGES OF B2B MADHYA PRADESH</h3>
@@ -1058,13 +1150,12 @@ const Hero = () => {
         <div className="destination-header">
           <div className="destination-subtitle-wrapper">
             <div className="subtitle-line"></div>
-            <span className="destination-subtitle">DESTINATIONS</span>
+            <span className="destination-subtitle" style={{ color: "#0072ff" }}>DESTINATIONS</span>
             <div className="subtitle-line"></div>
           </div>
           <h2 className="destination-title">TOP DESTINATIONS</h2>
           <p className="destination-description">
-            Discover India's enchanting destinations, from the tranquil seas to majestic mountains. With 
-            N N Travel Hub
+            Travel across India’s stunning destinations, from calm seaside escapes to scenic mountain views, with N N Travel Hub.
           </p>
         </div>
 
@@ -1211,12 +1302,13 @@ const Hero = () => {
               <button className="slider-btn prev" onClick={prevImage}>‹</button>
               <button className="slider-btn next" onClick={nextImage}>›</button>
               
-              <div className="image-indicators">
+              <div className="image-indicators" style={{ color: "#0072ff" }}>
                 {selectedDestination.images.map((_, index) => (
                   <span
                     key={index}
                     className={`indicator ${index === currentImageIndex ? 'active' : ''}`}
-                    onClick={() => setCurrentImageIndex(index)}
+                    onClick={() => setCurrentImageIndex(index)} 
+                    style={{ color: "#0072ff" }}
                   ></span>
                 ))}
               </div>
@@ -1241,7 +1333,7 @@ const Hero = () => {
                 <ul className="highlights-list">
                   {selectedDestination.highlights.map((highlight, index) => (
                     <li key={index}>
-                      <i className="fas fa-star"></i> {highlight}
+                      <i className="fas fa-star" style={{ color: "#0072ff" }}></i> {highlight}
                     </li>
                   ))}
                 </ul>
@@ -1446,7 +1538,7 @@ const Hero = () => {
     </div>
   </div>
 
-  <a href="https://wa.me/919876543210" className="whatsapp-float" target="_blank" rel="noreferrer" aria-label="Chat with us on WhatsApp">
+  <a href="https://wa.me/917354251333" className="whatsapp-float" target="_blank" rel="noreferrer" aria-label="Chat with us on WhatsApp">
     <i className="fab fa-whatsapp"></i>
   </a>
 </section>

@@ -27,79 +27,65 @@ export default function TermsAndConditions() {
               {/* Section Header */}
               <div className="about-header">
                 
-                <h2 className="about-title">N N Travel Hub: T & C</h2>
+                <h2 className="about-title">Terms & Conditions - N N Travel Hub</h2>
               </div>
 
               {/* Description */}
               <div className="about-description" textAlign="center">
                 <p style={{ marginBottom: '1em' }}>
-                   Welcome to N N Travel Hub.! We are delighted to have you on board as a valued traveler. Before you embark on your journey with us, it is essential to familiarize yourself with our terms and conditions to ensure a smooth and enjoyable experience.
+                   Welcome to N N Travel Hub. By booking a tour or using our services, you agree to the following terms and conditions. We encourage you to read them carefully to ensure a smooth and pleasant travel experience.
                 </p>
                 <p style={{ marginBottom: '1em' }}>
-                  <strong>Reservation Confirmation:</strong><br/> Upon selecting your desired tour package, a reservation will be made upon receipt of the specified booking amount. Please ensure that all personal details provided are accurate.
+                  <strong>Booking Confirmation:</strong><br/> A booking is considered confirmed only after the required booking amount is received. Travelers are responsible for providing correct and complete personal details at the time of booking.
                 </p>
                 <p style={{ marginBottom: '1em' }}>
-                  <strong>Booking and Payment:</strong> <ul ><li>All bookings are subject to availability.</li>
-                  <li>A deposit or full payment may be required at the time of booking.</li>
-                  <li>Payment methods accepted may include credit cards, bank transfers, or other methods as specified.</li></ul>
+                  <strong>Booking & Payments:</strong> <ul ><li>All bookings are subject to availability.</li>
+                  <li>Depending on the tour, either a partial payment or full payment may be required at the time of booking.</li>
+                  <li>Accepted payment methods will be communicated during the booking process.</li></ul>
                 </p><p style={{ marginBottom: '1em' }}>
-                  <strong>Payment Schedule:</strong><br/> The payment schedule is as follows:
+                  <strong>Payment Schedule:</strong><br/> Unless otherwise specified, the standard payment structure is:
                   <ul>
-                    <li><strong>Booking Amount:</strong> A non-refundable booking amount is required to secure your reservation.</li>
-                    <li><strong>Second Installment:</strong> Due 60 days before the departure date.</li>
-                    <li><strong>Final Payment:</strong> Due 30 days before the departure date.</li>
+                    <li><strong>Booking Amount:</strong> Required to secure the reservation (non-refundable).</li>
+                    <li><strong>Second Installment:</strong> Payable 60 days prior to the departure date.</li>
+                    <li><strong>Final Payment:</strong> Payable 30 days prior to the departure date.</li>
+                    <p>Failure to follow the payment schedule may result in cancellation of the booking.</p>
                   </ul>
                 </p><p style={{ marginBottom: '1em' }}>
-                  <strong>Cancellation Policy:</strong><br/>Cancellation Charges <br/> In the event of a cancellation, the following charges will apply:
+                  <strong>Cancellation & Refund Policy:</strong><br/>If a booking is cancelled, the following cancellation charges will apply: <br/> 
                   <ul>
-                    <li>More than 60 days before departure: Booking amount is non-refundable.</li>
-                    <li>31-60 days before departure: 50% of the tour cost.</li>
-                    <li>Less than 30 days before departure: 100% of the total package cost.</li>
-                    <li>Cancellation policies may vary depending on the specific tour packag</li>
-                    <li>Refunds, if applicable, will be processed according to the cancellation policy in effect at the time of booking.</li>
-                    <li>Travel insurance is recommended to cover cancellation fees in case of unexpected events.</li>
+                    <li>More than 60 days before departure: Booking amount will be retained.</li>
+                    <li>31-60 days before departure: 50% of the tour cost will be charged.</li>
+                    <li>Less than 30 days before departure: 100% of the tour cost will be charged.</li>
+                    <p>Cancellation policies may vary based on the specific tour or service booked. Any applicable refunds will be processed as per the policy in effect at the time of booking. We strongly recommend purchasing travel insurance to cover unexpected cancellations.</p>
                   </ul>
                 </p><p style={{ marginBottom: '1em' }}>
-                  <strong>Itinerary Changes:</strong> 
-                  <ul>
-                    <li>N N Travel Hub reserves the right to alter tour itineraries due to circumstances beyond its contro</li>
-                    <li>Changes, if necessary, will be communicated to travelers as soon as possible.</li>
-                  </ul>
+                  <strong>Changes to Itinerary:</strong> 
+                  <p>N N Travel Hub reserves the right to modify tour itineraries due to factors beyond our control, such as weather conditions, operational requirements, or safety concerns. Any changes will be communicated to travelers at the earliest possible time.</p>
                 </p><p style={{ marginBottom: '1em' }}>
                   <strong>Travel Documents:</strong>
-                  <ul>
-                    <li>Travelers are responsible for ensuring they have valid passports, visas, and any required travel documents.</li>
-                    <li>N N Travel Hub may provide guidance, but ultimate responsibility lies with the traveler.</li>
-                  </ul>
+                  <p>Travelers must ensure they carry valid passports, visas, and any other required travel documents. While we may offer guidance, the final responsibility for documentation lies with the traveler.</p>
                 </p><p style={{ marginBottom: '1em' }}>
-                  <strong>Health and Medical Considerations:</strong> 
-                  <ul>
-                    <li>Travelers with medical conditions or special requirements should inform N N Travel Hub at the time of booking.</li>
-                    <li>It is the traveler’s responsibility to seek medical advice and vaccinations as needed before the trip.</li>
-                  </ul>
+                  <strong>Health & Medical Requirements:</strong> 
+                  <p>Travelers with existing medical conditions or special needs must inform us at the time of booking. It is the traveler’s responsibility to obtain necessary medical advice, vaccinations, or medications before travel.</p>
                 </p><p style={{ marginBottom: '1em' }}>
                   <strong>Travel Insurance:</strong> 
-                  <ul>
-                    <li>Travel insurance is strongly recommended to cover unforeseen events, including trip cancellation, medical emergencies, and lost luggage.</li>
-                  </ul>
+                  <p>Travel insurance is highly recommended to protect against unforeseen situations such as medical emergencies, trip cancellations, delays, or loss of personal belongings.</p>
                 </p><p style={{ marginBottom: '1em' }}>
                   <strong>Responsibility and Liability:</strong>
-                  <ul>
-                    <li>N N Travel Hub acts as a tour operator and is not responsible for losses or damages to personal property.</li>
-                    <li>N N Travel Hub is not liable for any injuries, accidents, or other mishaps that may occur during the trip.</li>
-                  </ul>
+                  <p>N N Travel Hub acts as a travel service provider and shall not be held responsible for loss, damage, or theft of personal belongings. We are also not liable for injuries, accidents, delays, or disruptions caused by third parties or circumstances beyond our control.</p>
                 </p><p style={{ marginBottom: '1em' }}>
-                  <strong>Traveler's Responsibility:</strong>
+                  <strong>Traveler's Responsibilities:</strong>
                   <ul>
-                    <li>Travelers are responsible for their personal belongings and valuables throughout the trip.</li>
-                    <li>Travelers are also responsible for following the instructions of the tour guide and cooperating with fellow travelers.</li>
+                    <li>Travelers are responsible for their personal belongings throughout the journey.</li>
+                    <li>Travelers are expected to follow tour guidelines, respect local customs, and cooperate with fellow travelers and tour staff.</li>
                   </ul> 
                 </p>
                 <p style={{ marginBottom: '1em' }}>
                   <strong>Complaints and Disputes:</strong>
                   <ul>
-                    <li>Any complaints or disputes should be brought to the attention of N N Travel Hub promptly, and efforts will be made to resolve them.</li>
-                    
+                    <li>Any concerns or complaints should be reported to N N Travel Hub as soon as possible so that we can attempt a timely resolution. Disputes, if any, will be handled in good faith and resolved through mutual discussion.</li>
+                    For any questions related to these Terms & Conditions, please contact us via our website or email us at:
+                    <strong> nntravelhub@gmail.com</strong>
                   </ul> 
                 </p>
                 

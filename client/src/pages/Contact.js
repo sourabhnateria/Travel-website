@@ -71,7 +71,7 @@ export default function Contact() {
                               width="100%"
                               height="400"
                               style={{ border: 0 }}
-                              title="Dubai Location Map"
+                              title="bhopal Location Map"
                               src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_MAPS_KEY}&q=bhopal,madhyapradesh&zoom=12`}
                               allowFullScreen
                               className="about-banner-img"

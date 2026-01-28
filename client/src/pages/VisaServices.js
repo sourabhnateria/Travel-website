@@ -14,9 +14,9 @@ import aboutBanner from '../assets/Visa.jpg';
 // import maheshwar from '../assets/india/madhya-pradesh/tour-2/maheshwar.jpg';
 // import sailani from '../assets/india/madhya-pradesh/tour-2/sailani.jpg';
 //tour-3/id:3
-import ukImage from '../assets/Visa.jpg';
-import franceImage from '../assets/Visa.jpg';
-import swissImage from '../assets/Visa.jpg';
+// import ukImage from '../assets/Visa.jpg';
+// import franceImage from '../assets/Visa.jpg';
+// import swissImage from '../assets/Visa.jpg';
 
 import './India.css';
 import './VisaServices.css';
@@ -124,13 +124,15 @@ const handleFormSubmit = async (e) => {
 const toggleVisa = (id) => {
   setOpenVisaId(prev => (prev === id ? null : id));
 };
-
+  const uk = "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg";
+  const franceImage = "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg";
+  const swissImage = "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg";
   const visaCards = [
   {
     id: 1,
     country: "United Kingdom",
     flag: "",
-    image: ukImage, // import this at top
+    image: uk, // import this at top
     dates: null,
     note: "coming soon!",
   },
@@ -166,9 +168,18 @@ const toggleVisa = (id) => {
       <section className="india-feature-section">
             <div className="india-feature-container">
               <div className="india-feature-text">
-                <h2>Visa Biometric Services In Bhopal</h2>
+                <h2>Complete Visa Support Services</h2>
                 <p>
-Welcome to N N Travel Hub your premier destination for UK visa services in Bhopal, Madhya Pradesh. We specialize in assisting individuals to secure permanent residency through top-notch immigration consultation services. Renowned as a leading tourist and business visa consultant, we cater to diverse travel needs. Our comprehensive services include facilitating UK tourist visas, along with visa assistance for France and Switzerland. With a commitment to excellence, we ensure travellers receive invaluable support throughout their visa application journey. Trust our expertise as the best visa agents in Bhopal for a seamless experience.               </p>
+Welcome to N N Travel Hub, your reliable source for visa guidance and travel documentation assistance in Bhopal, Madhya Pradesh. We support individuals and families by offering structured guidance, document verification, and step-by-step assistance throughout the visa application process.
+</p>
+<p>
+Our team provides visa support for UK visitor visas as well as selected European destinations including France and Switzerland. Whether you’re planning a holiday or a short business visit, we help ensure your application is prepared carefully and submitted with clarity.
+</p>
+<p>
+At N N Travel Hub, we focus on simplifying the visa process by offering accurate information, document checking, and application assistance. Please note that visa approvals are solely decided by the respective embassies or consulates; however, we remain committed to supporting you at every stage with honesty and professionalism.
+</p>
+<p>
+With attention to detail, timely updates, and personalized support, our goal is to make your international travel planning smooth, informed, and stress-free.</p>
               </div>
               <div className="india-feature-image">
                 <div className="contact-info-card">
@@ -190,7 +201,7 @@ Welcome to N N Travel Hub your premier destination for UK visa services in Bhopa
           </div>
           <div className="contact-text">
             <span className="contact-label">Phone</span>
-            <a href="tel:+919876543210">+91 98765 43210</a>
+            <a href="tel:+919876543210">+91 7354251333</a>
           </div>
         </div>
         

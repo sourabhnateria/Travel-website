@@ -28,9 +28,9 @@ const Footer = () => {
                     <div className="footer-section">
                         <h4>Connect</h4>
                         <div className="social-links">
-                            <a href="./faq" target="_blank" rel="noopener noreferrer">FAQ</a>
-                            <a href="./Contact" target="_blank" rel="noopener noreferrer">Get in touch</a>
-                            <a href="career" target="_blank" rel="noopener noreferrer">Careers</a>
+                            <a href="./faq"  rel="noopener noreferrer">FAQ</a>
+                            <a href="./Contact"  rel="noopener noreferrer">Get in touch</a>
+                            <a href="career"  rel="noopener noreferrer">Careers</a>
                             
                         </div>
                     </div>

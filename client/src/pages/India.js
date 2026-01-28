@@ -23,23 +23,23 @@ import './India.css';
 
 // List of states, you can expand with all 16 like in your screenshot.
 const destinations = [
-  { name: "Madhya Pradesh", img: madhyaImg, tours: "4 Tours", slug: "madhya-pradesh" },
-  { name: "Uttar Pradesh", img: UttarPradeshImg, tours: "6 Tours", slug: "uttar-pradesh" },
-  { name: "Rajasthan", img: RajasthanImg, tours: "6 Tours", slug: "rajasthan" },
-  { name: "Gujarat", img: GujaratImg, tours: "6 Tours", slug: "gujarat" },
-  { name: "Daman & Diu", img: DamanImg, tours: "6 Tours", slug: "daman" },
-  { name: "Maharashtra", img: MaharashtraImg, tours: "6 Tours", slug: "maharashtra" },
-  { name: "Himachal Pradesh", img: HimachalImg, tours: "6 Tours", slug: "himachal-pradesh" },
-  { name: "Jammu & Kashmir", img: JammuImg, tours: "6 Tours", slug: "jammu-kashmir" },
-  { name: "Ladakh", img: LadakhImg, tours: "6 Tours", slug: "ladakh" },
-  { name: "Uttarakhand", img: UttarakhandImg, tours: "6 Tours", slug: "uttarakhand" },
-  { name: "Goa", img: GoaImg, tours: "6 Tours", slug: "goa" },
-  { name: "Kerala", img: KeralaImg, tours: "6 Tours", slug: "kerala" },
-  { name: "Karnataka", img: KarnatakaImg, tours: "6 Tours", slug: "karnataka" },
-  { name: "Tamil Nadu", img: TamilImg, tours: "6 Tours", slug: "tamil-nadu" },
-  { name: "Andhra Pradesh", img: AndhraImg, tours: "6 Tours", slug:"andhra-pradesh" },
-  { name: "Andman & Nikobar", img: AndmanImg, tours: "6 Tours", slug: "andman-nicobar" },
-  // { name: "Rajasthan", img: RajasthanImg, tours: "6 Tours" },
+  { name: "Madhya Pradesh", img: madhyaImg, tours: "", slug: "madhya-pradesh" },
+  { name: "Uttar Pradesh", img: UttarPradeshImg, tours: "", slug: "uttar-pradesh" },
+  { name: "Rajasthan", img: RajasthanImg, tours: "", slug: "rajasthan" },
+  { name: "Gujarat", img: GujaratImg, tours: "", slug: "gujarat" },
+  { name: "Daman & Diu", img: DamanImg, tours: "", slug: "daman" },
+  { name: "Maharashtra", img: MaharashtraImg, tours: "", slug: "maharashtra" },
+  { name: "Himachal Pradesh", img: HimachalImg, tours: "", slug: "himachal-pradesh" },
+  { name: "Jammu & Kashmir", img: JammuImg, tours: "", slug: "jammu-kashmir" },
+  { name: "Ladakh", img: LadakhImg, tours: "", slug: "ladakh" },
+  { name: "Uttarakhand", img: UttarakhandImg, tours: "", slug: "uttarakhand" },
+  { name: "Goa", img: GoaImg, tours: "", slug: "goa" },
+  { name: "Kerala", img: KeralaImg, tours: "", slug: "kerala" },
+  { name: "Karnataka", img: KarnatakaImg, tours: "", slug: "karnataka" },
+  { name: "Tamil Nadu", img: TamilImg, tours: "", slug: "tamil-nadu" },
+  { name: "Andhra Pradesh", img: AndhraImg, tours: "", slug:"andhra-pradesh" },
+  { name: "Andman & Nikobar", img: AndmanImg, tours: "", slug: "andman-nicobar" },
+  // { name: "Rajasthan", img: RajasthanImg, tours: "" },
   
 ];
 
@@ -55,13 +55,16 @@ export default function India() {
           <section className="india-feature-section">
       <div className="india-feature-container">
         <div className="india-feature-text">
-          <h2>Travel India</h2>
+          <h2>Discover India</h2>
           <p>
-          Exploring India's tourist destinations and culture festivals promises an enriching journey filled with diversity and warmth. India's vast landscape is a canvas of experiences waiting to be discovered. Begin your adventure by visiting the Taj Mahal in Agra, a stunning symbol of love, and immerse yourself in the cultural tapestry of Delhi's historic sites. Dive into Rajasthan's royal heritage in Jaipur and Udaipur, where you'll encounter majestic palaces and vibrant bazaars. Travel to Kerala to unwind in tranquil backwaters or bask in the sun on Goa's beautiful beaches. Experience the spiritual essence of Varanasi along the sacred Ganges River.
+          Traveling across India is a journey through vibrant cultures, timeless traditions, and breathtaking landscapes. Each region offers a unique story, creating experiences that are both enriching and unforgettable.
           </p>
           <p>
-          But it's not just about the destinations; India's culture festivals are a vibrant tapestry. Witness Diwali's dazzling lights, Holi's colorful celebrations, and the unity of Eid. Embrace the welcoming spirit of the Indian people who greet you with open hearts. Explore bustling markets, savor mouthwatering cuisine, and be captivated by traditional dance and music performances. India's blend of tradition and modernity creates an unforgettable experience for travelers seeking both cultural immersion and warm hospitality. Come, explore, and discover the incredible India.
+          Begin your exploration with iconic landmarks like the Taj Mahal in Agra, a masterpiece of architecture and emotion. Walk through the historic streets of Delhi, where ancient monuments and modern life exist side by side. Experience the royal charm of Rajasthan in cities such as Jaipur and Udaipur, known for their grand palaces, colorful markets, and rich heritage. Head south to Kerala to relax amidst peaceful backwaters, or enjoy the lively coastal atmosphere and golden beaches of Goa. Discover spiritual depth in Varanasi, where age-old rituals unfold along the sacred banks of the Ganges.
           </p>
+          <p>India’s magic extends beyond its destinations into its celebrations and daily life. Festivals like Diwali, Holi, and Eid reflect the country’s unity, joy, and cultural richness. From flavorful regional cuisine and bustling bazaars to classical music and traditional dance, every moment offers something new to experience.
+          </p>
+          <p>With its perfect balance of tradition and modern living, India welcomes travelers with warmth and authenticity. Explore its diversity, connect with its people, and create memories that stay with you long after the journey ends.</p>
         </div>
         <div className="india-feature-image">
           <img src={tajMahalImg} alt="Taj Mahal" />
@@ -72,9 +75,9 @@ export default function India() {
     <section className="india-destinations-section">
       <div className="india-destinations-header">
         <div className="destination-subtitle-row">
-          <span className="destination-line"></span>
-          <span className="destination-subtitle">DESTINATIONS</span>
-          <span className="destination-line"></span>
+          <span className="destination-line" style={{backgroundColor:"#0072ff"}}></span>
+          <span className="destination-subtitle" style={{color:"#0072ff"}}>DESTINATIONS</span>
+          <span className="destination-line" style={{backgroundColor:"#0072ff"}}></span>
         </div>
         <h2 className="india-destinations-title">EXPLORE INDIA</h2>
         <p className="india-destinations-text">
@@ -83,11 +86,11 @@ export default function India() {
       </div>
       <div className="india-destinations-grid">
         {destinations.map((dest, i) => (
-          <div className="india-dest-card" onClick={() => window.open(`/india/${dest.slug}`, '_blank')} key={i}>
-            <img src={dest.img} alt={dest.name} loading="lazy" />
+          <div className="india-dest-card" onClick={() => window.open(`/india/${dest.slug}`, '_self')} key={i}>
+            <img src={dest.img} alt={dest.name} />
             <div className="india-dest-overlay">
               <span className="india-dest-name">{dest.name}</span>
-              <button  className="india-dest-tours"> <a href={`/india/${dest.slug}`} target="_blank" rel="noopener noreferrer" >{dest.tours}</a></button>
+              {/* <button  className="india-dest-tours"> <a href={`/india/${dest.slug}`} target="_blank" rel="noopener noreferrer" >{dest.tours}</a></button> */}
             </div>
           </div>
         ))}

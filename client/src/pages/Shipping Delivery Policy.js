@@ -27,25 +27,25 @@ export default function ShippingDeliveryPolicy() {
               {/* Section Header */}
               <div className="about-header">
                 
-                <h2 className="about-title">N N Travel Hub: Shipping & Delivery Policy</h2>
+                <h2 className="about-title">Shipping & Delivery Policy - N N Travel Hub</h2>
               </div>
 
               {/* Description */}
               <div className="about-description" textAlign="center">
                 <p style={{marginBottom: '1em'}}>
-                  At N N Travel Hub, we provide high-quality travel-related services and do not sell any physical products. Our services include tour packages, hotel bookings, car rentals, sightseeing arrangements, flight tickets, and train reservations.
+                  N N Travel Hub offers travel-related services and does not deal in the sale or shipment of physical products. Our services include tour packages, hotel reservations, transportation arrangements, sightseeing services, and flight or train ticket bookings.
                 </p>
                 <p style={{marginBottom: '1em'}}>
-                  As we deal exclusively in services, there is no physical shipping involved. All confirmed bookings, vouchers, tickets, and travel documents are delivered electronically via email or messaging platforms to the contact details provided by the client at the time of booking.
+                  Since our offerings are service-based, no physical shipping is required. All booking confirmations, travel vouchers, tickets, and related documents are shared digitally through email, WhatsApp, or other messaging platforms using the contact details provided at the time of booking.
                 </p>
                 <p style={{marginBottom: '1em'}}>
-                  For clients who visit our office in person, we are happy to hand over all necessary documents directly during office hours.
+                  Clients who prefer in-person assistance may collect printed documents from our office during working hours, subject to prior confirmation.
                 </p>
                 <p style={{marginBottom: '1em'}}>
-                  We strive to ensure that all documents and service information are shared accurately, securely, and on time, so your travel experience remains seamless and worry-free.
+                  We make every effort to ensure that all travel documents and service details are delivered accurately, securely, and within the agreed timeline to support a smooth travel experience.
                 </p>
                 <p style={{marginBottom: '1em'}}>
-                  For any assistance or questions related to document delivery, feel free to reach out to our customer support team.
+                  If you have any questions or require assistance regarding document delivery, please contact our support team through our website or provided contact channels.
                 </p>
               </div>
 

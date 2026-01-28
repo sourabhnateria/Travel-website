@@ -27,26 +27,29 @@ export default function CancellationPolicy() {
               {/* Section Header */}
               <div className="about-header">
                 
-                <h2 className="about-title">N N Travel Hub: Cancellation and Refund Policy</h2>
+                <h2 className="about-title">Cancellation and Refund Policy - N N Travel Hub</h2>
               </div>
 
               {/* Description */}
               <div className="about-description" textAlign="center" >
                 <p style={{ marginBottom: '1em' }}>
-                  At N N Travel Hub we understand that travel plans can change. Our cancellation and refund policy is designed to be transparent and fair, keeping your convenience in mind.
+                  At N N Travel Hub, we understand that travel plans may change due to unforeseen circumstances. Our cancellation and refund policy is structured to be transparent and easy to understand while maintaining fairness for both travelers and service providers.
                 </p>
                 <p style={{ marginBottom: '1em' }}>
-                  <strong>Cancellation Charges:</strong><br/>
+                  <strong>Cancellation Charges</strong><br/>
+                  If a booking is cancelled, the following charges will apply:<br/>
                   <ul style={{ marginBottom: '1em' }}>
-                    <li>More than 60 days before departure: The booking amount is non-refundable.</li>
-                    <li>31–60 days before departure: A charge of 50% of the total tour cost will apply.</li>
-                    <li>30 days or less before departure: 100% of the tour cost will be charged as cancellation.</li>
+                    <li>More than 60 days before departure: The booking amount paid will be retained and is non-refundable.</li>
+                    <li>Between 31 and 60 days before departure: 50% of the total tour cost will be charged as a cancellation fee.</li>
+                    <li>30 days or less before departure: The full tour cost will be charged as cancellation.</li>
                   </ul>
-                  Please note that cancellation policies may vary based on specific tour packages or promotional deals. Kindly refer to the individual tour terms at the time of booking.<br/> <br/>
-                  Refunds, if applicable, will be processed as per the cancellation terms mentioned and are subject to standard banking timelines.<br/>
-
-Your satisfaction is our priority, and we aim to make every step of your journey—from planning to cancellation—clear and reliable.
+                  Cancellation terms may differ for certain tour packages, special offers, or third-party services. Travelers are advised to review the specific conditions applicable to their booking at the time of confirmation
                 </p>
+                <p style={{ marginBottom: '1em' }}>
+                  <strong>Refund Processing</strong><br/>
+                  Any eligible refunds will be processed according to the applicable cancellation terms. Refund timelines may vary depending on banking procedures and payment methods used.<br/>
+                  Our aim is to keep the cancellation process clear and dependable, ensuring you have the right information to plan your travel decisions with confidence.
+                </p>  
               </div>
 
               

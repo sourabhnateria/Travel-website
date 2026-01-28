@@ -27,23 +27,33 @@ export default function PrivacyPolicy() {
               {/* Section Header */}
               <div className="about-header">
                 
-                <h2 className="about-title">N N Travel Hub: Privacy Policy</h2>
+                <h2 className="about-title">Privacy Policy - N N Travel Hub</h2>
               </div>
 
               {/* Description */}
               <div className="about-description" textAlign="center">
                 <p style={{ marginBottom: '1em' }}>
-                    N N Travel Hub is committed to protect your privacy. This notice is to explain our online information practices and the choices you can make about the way information is collected and used. N N Travel Hub will only use the information it collects for the purposes of enhancing your experience and providing you with a more personalized trip-planning process. At no time will we sell, trade, or rent your personal information to any third parties.</p>
+                    At N N Travel Hub, we respect your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website or use our services.</p>
 
-<p style={{ marginBottom: '1em' }}>How N N Travel Hub Uses the Information It Collects: There will be times when we will ask you for personal information. In order to ensure the integrity of your personal information, all of your data is stored in our secure databases.</p>
+<p style={{ marginBottom: '1em' }}><strong>Information We Collect:</strong> We may collect personal details such as your name, email address, phone number, country, and postal code when you voluntarily submit information through our website forms. This information is collected only when you choose to share it with us.</p>
+<p ><strong>How We Use Your Information:</strong></p><ul style={{ marginBottom: '1em' }}>The information you provide is used solely to:
 
-<p style={{ marginBottom: '1em' }}><strong>Reservation Requests:</strong> You can request that N N Travel Hub reserve a trip for you by submitting a Reservation Request Form. completing the required fields mentioned in the Booking Form. For the Booking Request, N N Travel Hub will require that you submit information including name, e-mail address, telephone number, postal code and country to enable N N Travel Hub to efficiently process your request. Use of this service is completely voluntary and you therefore have a choice whether or not to join N N Travel Hub and disclose this information.</p>
+<li style={{ marginLeft: "20px" }}>Respond to your travel inquiries</li>
 
-<p style={{ marginBottom: '1em' }}><strong>Questions to Expert:</strong> N N Travel Hub visitors can request that N N Travel Hub contact them via e-mail or phone call regarding a specific travel question submitted online. In this case, N N Travel Hub will request your e-mail address so that we may reach you quickly and easily. Use of this service is completely voluntary and you therefore have a choice whether or not to disclose this information.</p>
-<p style={{ marginBottom: '1em' }}><strong>Law Enforcement:</strong> Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).</p>
-<p style={{ marginBottom: '1em' }}><strong>Customer Reviews:</strong> When you submit a trip review to share with fellow travelers, you have the choice of providing your e-mail address if you’d like to talk directly with others about the trip. If you have any questions about the security at our Web site, please send an e-mail to <strong>nntravelhub@gmail.com</strong></p>
+<li style={{ marginLeft: "20px" }}>Assist with trip planning and booking requests</li>
 
-<p style={{ marginBottom: '1em' }}>If you have any questions about this privacy policy statement or the practices of this site, you can e-mail us at <strong>nntravelhub@gmail.com</strong> or via our Contact Us page
+<li style={{ marginLeft: "20px" }}>Communicate with you regarding services you have requested</li>
+<li style={{ marginLeft: "20px" }}>Improve our customer service and user experience</li>
+
+<li style={{ marginLeft: "20px" }}>We do not sell, rent, or trade your personal information to third parties.</li>
+</ul>
+<p style={{ marginBottom: '1em' }}><strong>Booking & Reservation Requests:</strong> When you submit a booking or reservation request, we collect the necessary details required to process your request efficiently. Providing this information is completely voluntary, and you may choose not to proceed if you prefer not to share personal details.</p>
+
+<p style={{ marginBottom: '1em' }}><strong>Travel Queries & Support Requests:</strong> If you contact us through the website for travel-related questions, we may request your contact details so our team can respond to you via email or phone. Sharing this information is optional and based on your consent.</p>
+<p style={{ marginBottom: '1em' }}><strong>Data Security:</strong> We take reasonable measures to protect your personal information. All collected data is stored securely and accessed only by authorized personnel for legitimate business purposes.</p>
+<p style={{ marginBottom: '1em' }}><strong>Legal Requirements:</strong> In certain situations, we may be required to disclose personal information if mandated by law or in response to lawful requests from government or legal authorities.</p>
+<p style={{ marginBottom: '1em' }}><strong>Customer Feedback & Reviews:</strong> If you choose to submit reviews or feedback, you may optionally share your email address to allow communication related to your review. This information is shared only with your consent.</p>
+<p style={{ marginBottom: '1em' }}><strong>Contact Information:</strong> If you have any questions or concerns about this Privacy Policy or how your information is handled, you can contact us at: <strong>nntravelhub@gmail.com</strong> or through our Contact page on the website.
                 </p>
               </div>
 

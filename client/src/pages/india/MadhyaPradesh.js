@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from '../../components/Navbar';
-import aboutBanner from '../../assets/india/madhya-pradesh/mp_cover_photo.jpg';
+import aboutBanner from '../../assets/india/madhya-pradesh/tour-1/bandhavgaarh.jpg';
 //tour-1/id:1
 import pench from '../../assets/india/madhya-pradesh/tour-1/pench.jpg';
 import pench1 from '../../assets/india/madhya-pradesh/tour-1/pench1.jpg';

@@ -194,7 +194,7 @@ const handleFormSubmit = async (e) => {
       <section className="world-feature-section">
                         <div className="world-feature-container">
                           <div className="world-feature-text">
-                            <h2>Dubai Tour</h2>
+                            <h2>Discover the Wonders of Singapore</h2>
                             <p>
                             Explore the dazzling city of Dubai with Travel India Tourism’s carefully curated tour package. Discover iconic landmarks like the Burj Khalifa, the world’s tallest skyscraper, and the stunning Dubai Fountain. Immerse yourself in the vibrant atmosphere of the Dubai Mall, a shopper’s paradise with an array of luxury brands and entertainment options.
                             </p>

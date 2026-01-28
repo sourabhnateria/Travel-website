@@ -9,36 +9,43 @@ export default function About() {
     const services = [
     {
       id: 1,
-      title: "India Tour",
+      title: "Domestic Packages",
       icon: "fas fa-map-marked-alt",
       bgColor: "#a7f3d0", // Light green
       iconColor: "#065f46"
     },
     {
       id: 2,
-      title: "International Tour",
+      title: "International Packages",
       icon: "fas fa-globe-americas",
       bgColor: "#bfdbfe", // Light blue
       iconColor: "#1e40af"
     },
     {
       id: 3,
-      title: "Air Ticket",
+      title: "Flight Bookings",
       icon: "fas fa-plane",
       bgColor: "#93c5fd", // Medium blue
       iconColor: "#1e40af"
     },
     {
       id: 4,
-      title: "Visa Services",
+      title: "Visa",
       icon: "fas fa-passport",
       bgColor: "#7dd3fc", // Sky blue
       iconColor: "#0c4a6e"
     },
     {
       id: 5,
-      title: "Honeymoon Package",
+      title: "Adventure and Activities",
       icon: "fas fa-heart",
+      bgColor: "#ddd6fe", // Light purple
+      iconColor: "#6b21a8"
+    },
+    {
+      id: 5,
+      title: "hotel and transport",
+      icon: "fas fa-bus",
       bgColor: "#ddd6fe", // Light purple
       iconColor: "#6b21a8"
     }
@@ -71,16 +78,25 @@ export default function About() {
               {/* Description */}
               <div className="about-description" textAlign="center">
                 <p>
-                    Welcome to N N Travel Hub, your new gateway to the world. While our company is new, our foundation is built on over 10 years of deep, hands-on experience in the travel industry.<br />
-                    Our founder,has dedicated his career to crafting exceptional travel. Before launching N N Travel Hub, he was an integral part of several leading travel agencies, where he successfully planned and delivered countless unforgettable journeys for clients.
-                    This decade of experience is the cornerstone of our business. It means we have the established knowledge, industry connections, and proven expertise to manage every detail of your trip.<br />
-                    At N N Travel Hub, you get the best of both worlds: the fresh energy and personal attention of a new company, combined with the wisdom and reliability of a seasoned travel veteran. We are here to build lasting relationships with our clients by providing seamless, personalized, and unforgettable travel experiences.
+                   N N Travel Hub is a travel company built on experience, trust, and a genuine passion for helping people explore the world. While our brand is newly established, our expertise comes from over 10 years of hands-on experience in the travel industry.
+                </p>
+                <p>
+Our founder has spent a decade working with well-known travel agencies, planning and managing a wide range of domestic and international trips. From customized itineraries to smooth trip execution, this experience has shaped a deep understanding of what travelers truly need—comfort, reliability, and personalized service.
+</p>
+                <p>
+At N N Travel Hub, we bring together the fresh approach of a modern travel company and the practical knowledge of a seasoned travel professional. Every trip we design is carefully planned, keeping your preferences, budget, and comfort in mind.
+</p>
+                <p>
+We are committed to delivering seamless, personalized, and memorable travel experiences. Whether you are planning a leisure holiday, a family trip, or a special getaway, our goal is to make your journey stress-free and truly enjoyable.
+</p>
+                <p>
+With a strong focus on customer satisfaction and long-term relationships, N N Travel Hub is here to turn your travel plans into unforgettable experiences.
                 </p>
               </div>
 
               <div className="services-container">
           <div className="services-header">
-            <h2 className="services-title">Our Services</h2>
+            <h2 className="services-title">What We Offer</h2>
           </div>
           
           <div className="services-grid">
@@ -116,13 +132,13 @@ export default function About() {
             <div className="about-content1">
               <div className="about-content-header">
                 
-                <h2 className="about-content-title">Tour Packages:</h2>
+                <h2 className="about-content-title">Customized Tour Experiences:</h2>
               </div>
 
               {/* Description */}
               <div className="about-content-description">
                 <p>
-                  Our meticulously designed tour packages cater to a wide spectrum of preferences and interests. From the bustling streets of Delhi to the tranquil backwaters of Kerala, we, the Best Travel Agents In Bhopal, offer a diverse array of experiences that capture the essence of India's myriad landscapes, cultures, and traditions.
+                  We create thoughtfully planned tour experiences to suit different travel styles and interests. From lively cities to peaceful natural destinations across India, our packages are designed to showcase the country’s rich culture, landscapes, and traditions. Each itinerary is carefully curated to ensure comfort, enjoyment, and memorable moments throughout your journey.
                 </p>
               </div>
               
@@ -137,13 +153,13 @@ export default function About() {
               {/* Section Header */}
               <div className="about-content-header">
                 
-                <h2 className="about-content-title">Hotel Booking:</h2>
+                <h2 className="about-content-title">Comfortable Stay Arrangements:</h2>
               </div>
 
               {/* Description */}
               <div className="about-content-description">
                 <p>
-                  We, the Best Travel Agents In Bhopal, understand the importance of comfortable accommodation while traveling. Through our extensive network of partner hotels, we ensure that our clients have access to a range of options, from budget-friendly stays to luxurious resorts.
+                  A good trip starts with the right place to stay. We help you choose accommodations that match your preferences and budget, whether you are looking for economical hotels or premium resorts. Our partnerships with trusted properties allow us to offer reliable and comfortable lodging options for every traveler.
                 </p>
               </div>
               
@@ -157,13 +173,13 @@ export default function About() {
               {/* Section Header */}
               <div className="about-content-header">
                 
-                <h2 className="about-content-title">Transport Services:</h2>
+                <h2 className="about-content-title">Travel & Local Transportation:</h2>
               </div>
 
               {/* Description */}
               <div className="about-content-description">
                 <p>
-                  Seamless transportation is the backbone of any successful travel experience. We are best Travel Agency In Bhopal, N N Travel Hub provides a range of transport options, including private cars, buses, and trains, ensuring that our clients can explore India at their own pace and convenience.</p>
+                  Reliable transportation plays a key role in a smooth travel experience. We arrange convenient travel options including private vehicles, buses, and train bookings, allowing you to move freely and comfortably during your trip. Our goal is to make your travel stress-free from start to finish.</p>
               </div>
               
 
@@ -176,13 +192,13 @@ export default function About() {
               {/* Section Header */}
               <div className="about-content-header">
                 
-                <h2 className="about-content-title">Flight Booking:</h2>
+                <h2 className="about-content-title">Domestic & International Flight Bookings:</h2>
               </div>
 
               {/* Description */}
               <div className="about-content-description">
                 <p>
-                  With access to a vast database of airlines and flight routes, we, as the Best Travel Agents In Bhopal, facilitate hassle-free flight bookings, ensuring that our clients can reach their desired destinations with ease.</p>
+                  We assist with quick and easy flight reservations by comparing multiple airlines and routes. From short domestic flights to international journeys, we ensure efficient booking options that suit your schedule and travel needs.</p>
               </div>
               
 
@@ -194,13 +210,13 @@ export default function About() {
               {/* Section Header */}
               <div className="about-content-header">
                 
-                <h2 className="about-content-title">Visa Assistance:</h2>
+                <h2 className="about-content-title">Visa Support Services:</h2>
               </div>
 
               {/* Description */}
               <div className="about-content-description">
                 <p>
-                  Navigating the complexities of visa applications can be a daunting task. Our dedicated team of experts, recognized as the Best Visa Agents In Bhopal, provides comprehensive assistance in securing visas for both domestic and international travel, simplifying the process for our clients.</p>
+                  Applying for a visa can often feel confusing and time-consuming. Our team offers step-by-step guidance to help you with visa applications for both domestic and international destinations. We aim to make the process simple, clear, and hassle-free.</p>
               </div>
               
 
@@ -212,22 +228,124 @@ export default function About() {
               {/* Section Header */}
               <div className="about-content-header">
                 
-                <h2 className="about-content-title">Tour India and International:</h2>
+                <h2 className="about-content-title">Global Travel Planning:</h2>
               </div>
 
               {/* Description */}
               <div className="about-content-description">
                 <p>
-                  Whether it's the vibrant streets of New York or the serene landscapes of Bali, N N Travel Hub extends its expertise in curating international travel experiences. Our itineraries are designed to offer a perfect blend of exploration, relaxation, and cultural immersion.
+                  Beyond India, we also specialize in international travel planning. Whether you are dreaming of a city adventure or a relaxing island escape, we design international itineraries that balance sightseeing, relaxation, and cultural experiences—tailored to your travel goals.
                   </p>
               </div>
               
 
             </div>
           </div>
+          </div>
+      </section>
+      <div className="services-header">
+            <h2 className="services-title">Why Choose N N Travel Hub?</h2>
+          </div>
+      <section className="about-section-home2" id="about">
+        <div className="about-home-container2">
+          
+          {/* Left Column - Auto-Changing Image Slider */}
+          <div className="about-content1-column">
+            <div className="about-content1">
+              <div className="about-content-header">
+                
+                <h2 className="about-content-title">Experienced Travel Guidance:</h2>
+              </div>
 
+              {/* Description */}
+              <div className="about-content-description">
+                <p>
+                  While N N Travel Hub is a growing brand, it is backed by over 10 years of hands-on experience in the travel industry. Our deep understanding of travel planning helps us anticipate challenges and deliver smooth, well-organized trips.
+                </p>
+              </div>
+              
+              
+            </div>
+          </div>
 
-        </div>
+          {/* Right Column - Content */}
+          <div className="about-content2-column">
+            <div className="about-content2">
+              
+              {/* Section Header */}
+              <div className="about-content-header">
+                
+                <h2 className="about-content-title">Personalized Travel Planning:</h2>
+              </div>
+
+              {/* Description */}
+              <div className="about-content-description">
+                <p>
+                  We believe every traveler is different. That’s why we focus on understanding your preferences, budget, and travel goals before designing your itinerary. Your trip is planned around your needs—not a fixed template.
+                </p>
+              </div>
+              
+
+            </div>
+          </div>
+
+          <div className="about-content3-column">
+            <div className="about-content3">
+              
+              {/* Section Header */}
+              <div className="about-content-header">
+                
+                <h2 className="about-content-title">Transparent & Honest Service:</h2>
+              </div>
+
+              {/* Description */}
+              <div className="about-content-description">
+                <p>
+                  From planning and bookings to on-trip assistance, we stay connected with you throughout your journey. Our team is always available to support you before, during, and after your trip.</p>
+              </div>
+              
+
+            </div>
+          </div>
+
+          <div className="about-content4-column">
+            <div className="about-content4">
+              
+              {/* Section Header */}
+              <div className="about-content-header">
+                
+                <h2 className="about-content-title">Reliable Partners & Services:</h2>
+              </div>
+
+              {/* Description */}
+              <div className="about-content-description">
+                <p>
+                  We work with trusted hotels, transport providers, and service partners to ensure safety, comfort, and quality at every step of your travel experience.</p>
+              </div>
+              
+
+            </div>
+          </div>
+          <div className="about-content5-column">
+            <div className="about-content5">
+              
+              {/* Section Header */}
+              <div className="about-content-header">
+                
+                <h2 className="about-content-title">Customer Satisfaction First:</h2>
+              </div>
+
+              {/* Description */}
+              <div className="about-content-description">
+                <p>
+                  Your satisfaction is our priority. We aim to build long-term relationships by delivering dependable service, attention to detail, and travel experiences you’ll want to relive and recommend.</p>
+              </div>
+              
+
+            </div>
+          </div>
+          
+          </div>
       </section>
 
       {/* Add more sections/content below */}
