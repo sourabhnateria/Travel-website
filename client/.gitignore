@@ -19,7 +19,7 @@
 .env.test.local
 .env.production.local
 /website pages.zip
-/src/assets
+
 
 
 npm-debug.log*
