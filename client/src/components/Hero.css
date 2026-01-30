@@ -1216,6 +1216,25 @@
   .explore-card {
     grid-row: span 1;
   }
+
+  .whatsapp-float {
+  position:fixed;
+  width:50px;
+  height:50px;
+  bottom:50px;
+  right:90px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+ }
+
+  .fab.fa-whatsapp {
+  margin-top:9px;
+ }
 }
 
 /* 645px and below - Large Mobile */
@@ -1323,6 +1342,24 @@
   .destination-card.medium {
     grid-row: span 1;
   }
+  .whatsapp-float {
+  position:fixed;
+  width:50px;
+  height:50px;
+  bottom:50px;
+  right:90px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+ }
+
+  .fab.fa-whatsapp {
+  margin-top:9px;
+ }
 }
 
 /* 480px and below - Small Mobile */
@@ -1567,6 +1604,24 @@
   .hero-description {
     font-size: clamp(0.85rem, 1.5vw, 1rem);
   }
+  .whatsapp-float {
+  position:fixed;
+  width:50px;
+  height:50px;
+  bottom:50px;
+  right:90px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+ }
+
+  .fab.fa-whatsapp {
+  margin-top:9px;
+ }
 }
 
 /* 375px and below - Extra Small Mobile */
@@ -1628,6 +1683,24 @@
   .field-label {
     font-size: 0.65rem;
   }
+  .whatsapp-float {
+  position:fixed;
+  width:50px;
+  height:50px;
+  bottom:50px;
+  right:90px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+ }
+
+  .fab.fa-whatsapp {
+  margin-top:9px;
+ }
 
 }
 
