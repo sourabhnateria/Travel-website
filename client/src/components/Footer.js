@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import './Footer_v2.css';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
