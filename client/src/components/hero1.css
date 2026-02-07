@@ -1,13 +1,13 @@
 /* Hero Section */
 .hero-section {
-  position: absolute;
+  position: relative;
   height: 100%;
   min-height: 700px;
   display: flex;
   /* margin-top: 110px; */
   align-items: center;
   justify-content: left;
-  /* margin-bottom: -1px; */
+  margin-bottom: -1px;
   overflow: hidden;
 }
 
@@ -107,12 +107,12 @@
   padding: 12px 12px 8px 24px;
   /* Asymmetric padding */
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-  max-width: 550px;
+  max-width: 500px;
   margin: 0 auto;
 
   border: 1px solid rgba(255, 255, 255, 0.2);
   width: auto;
-  overflow: visible;
+  overflow:visible;
 }
 
 .horizontal-search-form {
@@ -189,7 +189,7 @@
 }
 
 .field-input select {
-  appearance: none;
+  appearance:initial;
   /* Remove default browser styling */
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -313,7 +313,7 @@
   flex-wrap: wrap;
 }
 
-/* .service-card {
+.service-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -324,12 +324,12 @@
   padding: 20px;
   transition: all 0.3s ease;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-} */
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
 
 .service-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 30px 35px rgba(0, 0, 0, 0.15);
 }
 
 .service-icon {
@@ -353,7 +353,7 @@
 
 /* About Section for Home Page - Two Column Layout */
 .about-section-home {
-  /* padding: 80px 0; */
+  padding: 80px 0;
   background: #ffffff;
   position: relative;
   margin: 0;
@@ -443,7 +443,7 @@
   position: absolute;
   perspective: 1000px;
   transform: rotateY(-15deg) rotateX(10deg);
-  top: 30px;
+  top: 10px;
   right: 30px;
   background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
   /* Yellow background */
@@ -505,17 +505,11 @@
 
 /* Image Indicators (Dots) */
 .image-indicators {
-  /* position: absolute;
+  position: absolute;
   bottom: 15px;
   right: 20px;
   display: flex;
   gap: 8px;
-  z-index: 3; */
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
   z-index: 3;
 }
 
@@ -690,17 +684,18 @@
 }
 
 /* Right Column - Content */
-/* .top-destination-column {
+.top-destination-column,.mp-destination-column {
   flex: 1;
-} */
+}
 
-/* .destination-content {
+.destination-content, .mpdestination-content {
   padding-left: 20px;
-} */
+}
 
 /* Section Header */
-.destination-header , .mpdestination-header {
-  margin-bottom: 30px;
+.destination-header, .mpdestination-header {
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .destination-subtitle, .mpdestination-subtitle {
@@ -716,13 +711,15 @@
   margin-bottom: 10px;
 }
 
-.destination-title, .destination-title {
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
+.destination-title, .mpdestination-title {
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   color: #1f2937;
-  margin: 8px 0 0 0;
+  margin: 8px 0 20px 0;
   line-height: 1.2;
 }
+
+
 
 /* Description */
 .destination-description {
@@ -867,17 +864,12 @@
   position: relative;
 }
 
-.top-destination-container , .mp-destination-container {
+.top-destination-container, .mp-destination-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Section Header */
-.destination-header, .mpdestination-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
 
 .destination-subtitle-wrapper, .mpdestination-subtitle-wrapper {
   display: flex;
@@ -894,22 +886,9 @@
   background:#0072ff;
 }
 
-.destination-subtitle, .mpdestination-subtitle {
-  /* color: #f59e0b; */
-  color:#0072ff;
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
 
-.destination-title, .mpdestination-title {
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 700;
-  color: #1f2937;
-  margin-bottom: 20px;
-  line-height: 1.2;
-}
+
+
 
 .destination-description {
   font-size: 1rem;
@@ -920,7 +899,7 @@
 }
 
 .mpdestinations-grid {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   grid-auto-rows: 180px;
@@ -930,14 +909,14 @@
 /* Masonry Grid Layout */
 .destinations-grid {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   grid-auto-rows: 200px;
   /* Base row height */
 }
 
 /* Destination Cards */
-.destination-card {
+.destination-card, .mpdestination-card {
   border-radius: 15px;
   overflow: hidden;
   cursor: pointer;
@@ -945,7 +924,7 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-.destination-card:hover {
+.destination-card:hover, .mpdestination-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
@@ -962,46 +941,41 @@
 }
 
 /* Destination Image Wrapper */
-.destination-image-wrapper {
+.destination-image-wrapper, .mpdestination-image-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.destination-image {
+.destination-image, .mpdestination-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
 
-.destination-card:hover .destination-image {
+.destination-card:hover .destination-image .mpdestination-card:hover .mpdestination-image {
   transform: scale(1.1);
 }
 
 /* Overlay */
-.destination-overlay {
+.destination-overlay, .mpdestination-overlay  {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.3) 0%,
-    rgb(255, 255, 255) 10%
-  ); */
   transition: background 0.3s ease;
 }
 
-.destination-card:hover .destination-overlay {
+.destination-card:hover .destination-overlay .mpdestination-card:hover .mpdestination-overlay {
   background: linear-gradient(135deg,
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0.7) 100%);
 }
 
 /* Destination Info */
-.destination-info {
+.destination-info , .mpdestination-info {
   position: absolute;
   bottom: 25px;
   left: 25px;
@@ -1009,14 +983,14 @@
   z-index: 2;
 }
 
-.destination-name {
+.destination-name , .mpdestination-name {
   font-size: clamp(1.2rem, 2vw, 1.5rem);
   font-weight: 700;
   margin: 0 0 5px 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.destination-packages {
+.destination-packages , .mpdestination-packages {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 500;
@@ -1106,11 +1080,11 @@
   }
 }
 
-.destinations-grid {
+.destinations-grid , .mpdestinations-grid {
   animation: fadeInUp 0.8s ease-out 0.3s both;
 }
 
-.destination-header {
+.destination-header, .mpdestination-header {
   animation: fadeInUp 0.8s ease-out both;
 }
 
@@ -1160,7 +1134,7 @@
     min-height: 500px;
     height: auto;
     padding-bottom: 20px;
-    margin-top: -50px;
+    margin-top: 0;
     /* Ensure no gap with navbar */
   }
 
@@ -1300,9 +1274,9 @@
   }
 
   /* About Section */
-  /* .about-section-home { */
-    /* padding: 60px 20px; */
-  /* } */
+  .about-section-home {
+    padding: 60px 20px;
+  }
 
   .about-home-container {
     flex-direction: column;
@@ -1311,8 +1285,8 @@
 
   /* About services alignment on mobile/tablet */
   .about-services {
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 12px;
   }
@@ -1492,7 +1466,7 @@
   .hero-section {
     min-height: 450px;
     padding-bottom: 15px;
-    margin-top: -10;
+    margin-top: 0;
   }
 
   .hero-image {
@@ -1530,13 +1504,13 @@
     padding: 16px;
     max-width: calc(100% - 20px);
     border-radius: 16px;
-    position: relative;
-    z-index: 5;
+    position:static;
+    z-index: 10;
   }
 
   .horizontal-search-form {
     flex-direction: column;
-    height: auto;
+    height:auto;
     gap: 12px;
   }
 
@@ -1546,7 +1520,7 @@
     gap: 8px;
     border: 1px solid #e5e7eb;
     border-radius: 10px;
-    background: #ffffff;
+    background: transparent;
     flex: none;
   }
 
@@ -1651,7 +1625,7 @@
     justify-content: center;
   }
 
-  .experience-badge {
+  /* .experience-badge {
     position: absolute;
     top: 14px;
     left: 14px;
@@ -1659,8 +1633,33 @@
     border-radius: 14px;
     min-width: 110px;
     z-index: 3;
-  }
+  } */
 
+  .experience-badge {
+  position: absolute;
+  perspective: 1000px;
+  transform: rotateY(-15deg) rotateX(10deg);
+  top: 760px;
+  right: 0px;
+  background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+  /* Yellow background */
+  color: #1f2937;
+  padding: 25px 30px;
+  border-radius: 15px;
+  /* box-shadow: 0 10px 30px rgba(251, 191, 36, 0.3); */
+  box-shadow: 
+    10px 10px 20px rgba(0,0,0,0.3), 
+    -1px -1px 0px rgba(255,255,255,0.2);
+  transition: transform 0.3s ease;
+  text-align: center;
+  min-width: 120px;
+  min-height: 60px;
+  z-index: 2;
+  /* Above images but below indicators */
+}
+.experience-badge:hover {
+  transform: rotateY(0deg) rotateX(0deg) scale(1.05);
+}
   .badge-number {
     font-size: 2rem;
   }
@@ -1747,6 +1746,35 @@
   .fab.fa-whatsapp {
   margin-top:9px;
  }
+ .mpdestination-card {
+  background: linear-gradient(13deg, #1e3c72 0%, #2a5298 100%);
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.35),
+    0 4px 6px -4px rgba(0, 0, 0, 0.35);
+  position: relative;
+  height: 200px;
+  display:flex;
+  flex: 0 0 85%;
+  /* flex-direction:column; */
+  /* transition: box-shadow 250ms ease;  */
+  margin-top: 5%;
+  }
+}
+
+@media (min-width:481px) and (max-width: 990px) {
+  .mpdestination-card {
+  background: linear-gradient(13deg, #1e3c72 0%, #2a5298 100%);
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.35),
+    0 4px 6px -4px rgba(0, 0, 0, 0.35);
+  position: relative;
+  height: 200px;
+  display:flex;
+  flex: 0 0 45%;
+  /* flex-direction:column; */
+  /* transition: box-shadow 250ms ease;  */
+  margin-top: 5%;
+  }
 }
 
 /* 375px and below - Extra Small Mobile */
@@ -2010,79 +2038,122 @@
   height: 1.5rem;
 }
 
-@media (max-width: 420px) {
+/* @media (max-width: 420px) {
   .testimonialNavPrev { left: 0.25rem; }
   .testimonialNavNext { right: 0.25rem; }
+} */
+
+/* service slider  */
+.services-slider {
+  overflow: hidden; /* Hides cards outside the view */
+  width: 100%;
+  padding: 20px 10px;
+  position:relative;
 }
+
+.slider-track {
+  display: flex;
+  width: calc(50px * 10); /* (Card width + Gap) * total cards (original + dup) */
+  animation: scroll 20s linear infinite; /* Adjust '30s' for speed */
+}
+
+.slider-track:hover {
+  animation-play-state:paused; /* Optional: Stops sliding on hover */
+}
+
+.service-card {
+  flex-shrink: 0;
+  
+  width: 200px;
+  height: 120px; /* Fixed width for consistent sliding */
+  margin: 0 10px; /* The gap */
+  /* height: 200px; */
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Move by half the total track width (since we duplicated the items) */
+    transform: translateX(calc(-250px * 6)); 
+  }
+}
+
 
 /* mp destination */
 
-/* .mpdestinations-grid {
-  display: flex;
+.mpdestinations-grid {
+  /* display: flex; */
+  display:flex;
   overflow-x: auto;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  padding-bottom: 0.25rem;
-} */
+  /* padding-bottom: 0.25rem; */
+}
 
 /* Hide scrollbar */
 .mpdestinations-grid {
   scrollbar-width: none;
 }
 .mpdestinations-grid::-webkit-scrollbar {
-  display: none;
+  display:flex;
 }
 
-/* .destination-card { */
-   /* width: 100%; */
-  /* padding: 1rem; */
-  /* scroll-snap-align: start;
+/* .mpdestination-card {
+   width: 100%;
+  scroll-snap-align: start;
   flex: 0 0 100%;
-  box-sizing: border-box; */
-  /* flex: 0 0 100%; Default mobile: 1 card per view */
+  flex: 0 0 100%; /*Default mobile: 1 card per view */
   /* min-width: 100%;
-  max-width: 100%; */
-  /* box-sizing: border-box; */
+  max-width: 100%;
+  max-height: 20%; */
+  
 /* } */
 
 @media (min-width: 768px) {
-  .destination-card {
+  .mpdestination-card {
     flex-basis: 100%;
   }
 }
 
 @media (min-width: 1024px) {
-  .destination-card {
+  .mpdestination-card {
    flex: 0 0 33.3333%; /* 3 cards per view */
     min-width: 33.3333%;
     max-width: 33.3333%;
   }
 }
 
-/* .destination-card {
-  /* background: linear-gradient(13deg, #1e3c72 0%, #2a5298 100%); */
-  /* padding: ; */
-  /* border-radius: 0.75rem;
+.mpdestination-card {
+  background: linear-gradient(13deg, #1e3c72 0%, #2a5298 100%);
+  border-radius: 0.75rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.35),
     0 4px 6px -4px rgba(0, 0, 0, 0.35);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  transition: box-shadow 250ms ease;
-  margin-top: 5%; */
-/* } */
+  position: relative;
+  height: 300px;
+  display:flexs;
+  flex-direction:column;
+  /* transition: box-shadow 250ms ease;  */
+  margin-top: 5%;
+}
 
-/* .destination-card:hover {
-  /* margin-top: 5%; */
-  /* box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.45),
+/* .mpdestination-card:hover {
+  margin-top: 5%;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.45),
     0 8px 10px -6px rgba(0, 0, 0, 0.45);
-    border-radius: 0.75rem; */
-/* } */
+    border-radius: 0.75rem;
+} */
 
 .mpdestinationsNav {
   position: absolute;
-  top: 50%;
+  top: 70%;
   margin-left: 30px;
   margin-right: 30px;
   transform: translateY(-80%);
@@ -2108,56 +2179,21 @@
     0 10px 15px -3px rgba(0, 0, 0, 0.35);
 }
 
-.mpdestinationsNavPrev { left: 0; }
-.mpdestinationsNavNext { right: 0; }
+.mpdestinationsNavPrev { left: -25px; }
+.mpdestinationsNavNext { right: -25px; }
 
 .mpdestinationsNavIcon {
   width: 1.5rem;
   height: 1.5rem;
 }
 
-@media (max-width: 420px) {
-  .mpdestinationsNavPrev { left: 0.25rem; }
-  .mpdestinationsNavNext { right: 0.25rem; }
-}
-
-/* service slider  */
-.services-slider {
-  overflow: hidden; /* Hides cards outside the view */
-  width: 100%;
-  padding: 20px 0;
-  position: relative;
-}
-
-.slider-track {
-  display: flex;
-  width: calc(50px * 12); /* (Card width + Gap) * total cards (original + dup) */
-  animation: scroll 20s linear infinite; /* Adjust '30s' for speed */
-}
-
-.slider-track:hover {
-  animation-play-state: paused; /* Optional: Stops sliding on hover */
-}
-
-.service-card {
-  flex-shrink: 0;
-  width: 200px;
-  height: 120px; /* Fixed width for consistent sliding */
-  margin: 0 10px; /* The gap */
-  /* height: 200px; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15px;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
+@media (min-width: 380px) and (max-width: 780px) {
+  /* .mpdestinationsNavPrev { left: 0.25rem; }
+  .mpdestinationsNavNext { right: 0.25rem; } */
+  .mpdestinationsNav{
+    display: none !important;
   }
-  100% {
-    /* Move by half the total track width (since we duplicated the items) */
-    transform: translateX(calc(-250px * 6)); 
+  .experience-badge{
+    display: none !important;
   }
 }

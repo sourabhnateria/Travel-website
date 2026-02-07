@@ -4,8 +4,9 @@
   height: 380px;
   min-height: 220px;
   overflow: hidden;
-  display: flex;
-  align-items: flex-end;
+ display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .world-banner-img {
   position: absolute;
@@ -24,7 +25,8 @@
 .world-banner-heading {
   position: relative;
   z-index: 3;
-  margin: 0 0 38px 48px;
+  margin: 200px 0 0 0;
+  
   font-size: 4.1vw;
   font-weight: 800;
   color: #fff;

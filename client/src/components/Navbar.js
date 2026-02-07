@@ -9,6 +9,7 @@ const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true); // New state for navbar visibility
   const [lastScrollY, setLastScrollY] = useState(0); // Track last scroll position
   const [pagesDropdown, setPagesDropdown] = useState(false);
+  const [destinationDropdown, setDestinationDropdown] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,7 +55,7 @@ const Navbar = () => {
   return (
     <>
       {/* Top bar with contact info and social media */}
-      <div className={`top-bar ${isVisible ? 'visible' : 'hidden'}`}>
+      {/* <div className={`top-bar ${isVisible ? 'visible' : 'hidden'}`}>
         <div className="top-bar-container">
           <div className="contact-info">
             <div className="contact-item">
@@ -82,7 +83,7 @@ const Navbar = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main navbar */}
       <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isVisible ? 'visible' : 'hidden'}`}>
@@ -103,21 +104,42 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
+          <div className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`} style={{marginRight:`50px`}}>
             <NavLink to="/" className="nav-link" onClick={() => setIsMobileMenuOpen(false)} end>
               Home
             </NavLink>
             <NavLink to="/about" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
               About
             </NavLink>
-            <NavLink to="/b2b" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
-              B2B
-            </NavLink>
-            <NavLink to="/india" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
+            
+            {/* <NavLink to="/india" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
               India
             </NavLink>
             <NavLink to="/world" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
               World
+            </NavLink> */}
+            <div
+              className="nav-link dropdown"
+              onMouseEnter={() => setDestinationDropdown(true)}
+              onMouseLeave={() => setDestinationDropdown(false)}
+              onClick={() => setDestinationDropdown(!destinationDropdown)}
+              tabIndex={0}
+            >
+              Destinations <i className="fas fa-angle-down"></i>
+              <div className={`dropdown-content${destinationDropdown ? ' show' : ''}`} style={{marginLeft:`-25px`}}>
+                <NavLink to="/india" className="dropdown-link" onClick={() => setIsMobileMenuOpen(false)}>
+              India
+            </NavLink>
+            <NavLink to="/world" className="dropdown-link" onClick={() => setIsMobileMenuOpen(false)}>
+              International
+            </NavLink>
+              </div>
+            </div>
+            <NavLink to="/event" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
+              Events
+            </NavLink>
+            <NavLink to="/b2b" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
+              B2B
             </NavLink>
             {/* Dropdown for Visa Services & Blogs */}
             <div
@@ -132,11 +154,15 @@ const Navbar = () => {
                 <NavLink to="/visa-services" className="dropdown-link" onClick={() => setIsMobileMenuOpen(false)}>Visa Services</NavLink>
                 <NavLink to="/blogs" className="dropdown-link" onClick={() => setIsMobileMenuOpen(false)}>Blogs</NavLink>
               </div>
-            </div>
+            </div >
             <NavLink to="/contact" className="nav-link" onClick={() => setIsMobileMenuOpen(false)}>
               Contact
             </NavLink>
           </div>
+          <div className="contact-item">
+              <i className="fas fa-phone"></i>
+              <a href="tel:+1234567890">+91 7354251333</a>
+            </div>
           
           {/* <div className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
             {navItems.map((item) => (

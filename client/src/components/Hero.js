@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
-import './Hero.css';
+import './hero1.css';
 import { useNavigate } from 'react-router-dom';
 // Import your background image from src/assets
 import heroImage from '../assets/your-hero-image.png'; // Update with your image name
@@ -36,10 +36,13 @@ import indore1 from '../assets/destinations/Indore/maheshwar.jpg';
 
 const Hero = () => {
   const navigate = useNavigate();
+ 
+  const [isHovered, setIsHovered] = React.useState(false);
+
 
   const [location, setLocation] = useState('');
-  const [checkIn, setCheckIn] = useState('');
-  const [checkOut, setCheckOut] = useState('');
+  // const [checkIn, setCheckIn] = useState('');
+  // const [checkOut, setCheckOut] = useState('');
 
   // ✅ NEW: State for modal
   const [selectedDestination, setSelectedDestination] = useState(null);
@@ -81,7 +84,7 @@ const Hero = () => {
     if (route) {
       navigate(route);
     } else {
-      console.log('Search:', { location, checkIn, checkOut });
+      console.log('Search:', { location });
       alert(`Searching for: ${location}`);
     }
   };
@@ -143,9 +146,9 @@ const Hero = () => {
   ];
 
   const aboutImages = [
-    aboutImage1,
-    aboutImage2,
-    aboutImage3,
+    // aboutImage1,
+    // aboutImage2,
+    // aboutImage3,
     aboutImage4
   ];
 
@@ -170,7 +173,7 @@ const Hero = () => {
       id: 1,
       name: "BHOPAL, TAWA, MADHAI, PACHMARHI",
       image: bhopal,
-      size: "large",
+      size: "medium",
       duration: "6 Days / 5 Nights",
       price: "₹0",
       images: [bhopal1, bhopal2, bhopal3],
@@ -233,7 +236,7 @@ const Hero = () => {
       id: 2,
       name: "TAWA, MADHAI, PACHMARHI",
       image: bhopal3,
-      size: "large",
+      size: "medium",
       duration: "5 Days / 4 Nights",
       price: "₹0",
       images: [bhopal2, madhai, bhopal3],
@@ -308,7 +311,7 @@ const Hero = () => {
       id: 3,
       name: "GWALIOR, ORCHHA, KHAJURAHO",
       image: gwalior,
-      size: "large",
+      size: "medium",
       duration: "5 Days / 4 Night",
       price: "₹0",
       images: [gwalior1, gwalior2, gwalior3],
@@ -365,7 +368,7 @@ const Hero = () => {
       id: 4,
       name: "ORCHHA, KHAJURAHO",
       image: gwalior2,
-      size: "large",
+      size: "medium",
       duration: "4 Days / 3 Night",
       price: "₹0",
       images: [ gwalior2, gwalior3],
@@ -424,7 +427,7 @@ const Hero = () => {
       id: 5,
       name: "HANUWANTIYA, MAHESHWAR, MANDU",
       image: maheshwar2,
-      size: "large",
+      size: "medium",
       duration: "4 Days / 3 Night",
       price: "₹0",
       images: [maheshwar, maheshwar1, maheshwar2],
@@ -480,7 +483,7 @@ const Hero = () => {
       id: 6,
       name: "INDORE, MAHESHWAR",
       image: indore,
-      size: "large",
+      size: "medium",
       duration: "3 Day/3 Night",
       price: "₹0",
       images: [indore, indore1],
@@ -534,7 +537,7 @@ const Hero = () => {
       id: 7,
       name: "UJJAIN, MAHESHWAR",
       image: westBengalImg,
-      size: "large",
+      size: "medium",
       duration: "3 Days / 2 Night",
       price: "₹0",
       images: [westBengalImg],
@@ -599,7 +602,7 @@ const Hero = () => {
       id: 8,
       name: "Omkareshwar",
       image: tamilNaduImg,
-      size: "large",
+      size: "medium",
       duration: "1 Day",
       price: "₹3,999",
       images: [tamilNaduImg],
@@ -613,7 +616,7 @@ const Hero = () => {
       id: 9,
       name: "Jabalpur",
       image: rajasthanImg,
-      size: "large",
+      size: "medium",
       duration: "2 Days / 1 Night",
       price: "₹8,999",
       images: [rajasthanImg],
@@ -689,28 +692,32 @@ const Hero = () => {
       name: "Khajuraho",
       packages: "",
       image: madhyaPradeshImg,
-      size: "large"
+      size: "large",
+      mapUrl:`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_MAPS_KEY}&q=khajuraho&zoom=12`
     },
     {
       id: 2,
       name: "Leh Ladakh",
       packages: "",
       image: lehLadakhImg,
-      size: "medium"
+      size: "medium",
+      mapUrl:`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_MAPS_KEY}&q=leh ladakh&zoom=12`
     },
     {
       id: 3,
       name: "Port Blair, Havelock Island",
       packages: "",
       image: andamanImg,
-      size: "medium"
+      size: "medium",
+      mapUrl:`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_MAPS_KEY}&q=Andaman and Nicobar Islands&zoom=10`
     },
     {
       id: 4,
       name: "Srinagar, Gulmarg",
       packages: "",
       image: kashmirImg,
-      size: "medium"
+      size: "medium",
+      mapUrl:`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_MAPS_KEY}&q=srinagar&zoom=12`
     },
     
     {
@@ -718,28 +725,32 @@ const Hero = () => {
       name: "Shimla, Manali",
       packages: "",
       image: himachalPradeshImg,
-      size: "medium"
+      size: "medium",
+      mapUrl:`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_MAPS_KEY}&q=shimla&zoom=10`
     },
     {
       id: 6,
       name: "Munnar, Kochi",
       packages: "",
       image: keralaImg,
-      size: "medium" // Large card
+      size: "medium" ,// Large card,
+      mapUrl:`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_MAPS_KEY}&q=munnar&zoom=12`
     },
     {
       id: 7,
       name: "Darjeeling, Siliguri",
       packages: "",
       image: westBengalImg,
-      size: "medium"
+      size: "medium",
+      mapUrl:`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_MAPS_KEY}&q=darjeeling&zoom=12`
     },
     {
       id: 8,
       name: "Ooty, Kodaikanal",
       packages: "",
       image: tamilNaduImg,
-      size: "medium"
+      size: "medium",
+      mapUrl:`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_MAPS_KEY}&q=ooty&zoom=12`
     },
     
     {
@@ -747,7 +758,8 @@ const Hero = () => {
       name: "Royal Rajasthan",
       packages: "",
       image: rajasthanImg,
-      size: "large" // Large card
+      size: "large", // Large card,
+      mapUrl:`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_MAPS_KEY}&q=jaipur&zoom=12`
     },
   ];
 
@@ -821,7 +833,9 @@ const Hero = () => {
 
 
   const trackRef = useRef(null);
+  const mptrackRef = useRef(null);
   const [index, setIndex] = useState(0);
+  const [mpindex, setmpIndex] = useState(0);
 
   // How many cards are visible depends on breakpoint (1/2/3).
   const pages = useMemo(() => {
@@ -832,6 +846,8 @@ const Hero = () => {
   }, []);
 
   const maxIndex = Math.max(0, testimonials.length - pages);
+  const maxIndex1 = Math.max(0, mpdestinations.length - pages);
+  
 
   const scrollToIndex = (i) => {
     const track = trackRef.current;
@@ -850,6 +866,31 @@ const Hero = () => {
 
     setIndex(clamped);
   };
+
+  const scrollToIndex1 = (i) => {
+    const track = mptrackRef.current;
+    if (!track) return;
+
+    const clamped = Math.max(0, Math.min(i, maxIndex1));
+    const firstItem = track.querySelector(".mpdestination-card");
+    if (!firstItem) return;
+
+    const step = firstItem.getBoundingClientRect().width;
+
+    track.scrollTo({
+      left: step * clamped,
+      behavior: "smooth",
+    });
+
+    setmpIndex(clamped);
+  };
+
+  useEffect(() => {
+    const onResize = () => scrollToIndex1(mpindex);
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mpindex])
 
   useEffect(() => {
     const onResize = () => scrollToIndex(index);
@@ -893,12 +934,13 @@ const Hero = () => {
                   <i className="fas fa-map-marker-alt"></i>
                 </div>
                 <div className="field-content">
-                  <label className="field-label">Location</label>
+                  {/* <label className="field-label">Location</label> */}
                   <select
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
                     className="field-input"
                     required
+                    
                   >
                     <option value="">Select Destination</option>
                     <option value="India">India - All Destinations</option>
@@ -927,11 +969,11 @@ const Hero = () => {
 
 
               {/* Vertical Divider */}
-              <div className="field-divider"></div>
+              {/* <div className="field-divider"></div> */}
 
 
               {/* Check In Date */}
-              <div className="search-field date-field">
+              {/* <div className="search-field date-field">
                 <div className="field-icon">
                   <i className="fas fa-calendar-alt"></i>
                 </div>
@@ -945,17 +987,17 @@ const Hero = () => {
                     min={new Date().toISOString().split('T')[0]}
                   />
                 </div>
-              </div>
+              </div> */}
 
 
               {/* Arrow Icon */}
-              <div className="date-arrow">
+              {/* <div className="date-arrow">
                 <i className="fas fa-arrow-right"></i>
-              </div>
+              </div> */}
 
 
               {/* Check Out Date */}
-              <div className="search-field date-field">
+              {/* <div className="search-field date-field">
                 <div className="field-icon">
                   <i className="fas fa-calendar-check"></i>
                 </div>
@@ -969,11 +1011,11 @@ const Hero = () => {
                     min={checkIn || new Date().toISOString().split('T')[0]}
                   />
                 </div>
-              </div>
+              </div> */}
 
 
               {/* Vertical Divider */}
-              <div className="field-divider"></div>
+              {/* <div className="field-divider"></div> */}
 
 
               {/* Search Button */}
@@ -987,8 +1029,106 @@ const Hero = () => {
         </div>
       </section>
 
+      
+      {/* About Section with Auto-Changing Images */}
+      <section className="about-section-home" id="about"  style={{backgroundColor:`#dbecf2`}} >
+        <div className="about-home-container">
+          {/* about header */}
+          
+          
+          {/* Left Column - Auto-Changing Image Slider */}
+          <div className="about-image-column"style={{backgroundColor:`#dbecf2`}}>
+            <div className="about-image-wrapper">
+              {/* <div className="image-slider">
+                {aboutImages.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image}
+                    alt={`Travel Experience ${index + 1}`}
+                    className={`about-image ${
+                      index === currentImageIndex ? 'active' : ''
+                    }`}
+                  />
+                ))}
+              </div> */}
+              
+              {/* Experience Badge Overlay */}
+              {/* <div className="experience-badge">
+                <div className="badge-number">10+</div>
+                <div className="badge-text">
+                  <div>Years of</div>
+                  <div>Experience</div>
+                </div>
+              </div> */}
+
+              {/* Image Indicators */}
+              {/* <div className="image-indicators">
+                {aboutImages.map((_, index) => (
+                  <button
+                    key={index}
+                    className={`indicator ${
+                      index === currentImageIndex ? 'active' : ''
+                    }`}
+                    onClick={() => setCurrentImageIndex(index)}
+                  />
+                ))}
+              </div> */}
+            </div>
+          </div>
+
+          {/* Right Column - Content */}
+          <div className="about-content-column"style={{backgroundColor:`powderblue` , boxShadow:`10px 10px 20px 0px rgba(0, 0, 0, 0.2`, padding:`0 10px 10px 0`, borderRadius:`20px`}}>
+            <div className="about-content">
+              
+              {/* Section Header */}
+              <div className="about-header">
+                <span className="about-subtitle"><h2>ABOUT US</h2></span>
+                <h2 className="about-title">N N Travel Hub</h2>
+              </div>
+              <div className="experience-badge" style={{textDecoration:`3d`}}>
+                <div className="badge-number">10+</div>
+                <div className="badge-text">
+                  <div>Years of</div>
+                  <div>Experience</div>
+                </div>
+              </div>
+              {/* Description */}
+              <div className="about-description">
+                <p>
+                  N N Travel Hub is a growing travel company based in Bhopal, Madhya Pradesh, proudly established in 2025. Backed by over 10 years of experience in the travel industry, we are committed to delivering smooth, memorable, and personalized travel experiences to our clients.
+                  We specialize in curating exceptional journeys across India and international destinations, including holiday packages, cultural tours, wildlife adventures, luxury vacations, and spiritual pilgrimages. Our focus on quality service, careful planning, and customer satisfaction has helped us build strong relationships with a steadily expanding base of happy travelers.
+                  At N N Travel Hub , we don’t just organize trips — we craft journeys you will cherish for a lifetime.
+                </p>
+              </div>
+
+              {/* Services List with Checkmarks */}
+              {/* <div className="about-services">
+                {aboutServices.map((service, index) => (
+                  <div key={index} className="service-item">
+                    <div className="service-checkmark">
+                      <i className="fas fa-check"></i>
+                    </div>
+                    <span className="service-name">{service}</span>
+                  </div>
+                ))}
+              </div> */}
+
+              {/* Discover More Button */}
+              <div className="about-button">
+                <button className="discover-btn" >
+                  <a href="./About" target="_blank" rel="noopener noreferrer">Discover More</a>
+                  <i className="fas fa-arrow-right"></i>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>  
+
       {/* Separate Our Services Section - Below Hero */}
-      <section className="services-section" id="services">
+      {/* <section className="services-section" id="services">
         <div className="services-container">
           <div className="services-header">
             <h2 className="services-title">What We Offer</h2>
@@ -1012,126 +1152,65 @@ const Hero = () => {
             ))}
           </div>
         </div>
-      </section>
-      {/* About Section with Auto-Changing Images */}
-      <section className="about-section-home" id="about">
-        <div className="about-home-container">
-          
-          {/* Left Column - Auto-Changing Image Slider */}
-          <div className="about-image-column">
-            <div className="about-image-wrapper">
-              <div className="image-slider">
-                {aboutImages.map((image, index) => (
-                  <img
-                    key={index}
-                    src={image}
-                    alt={`Travel Experience ${index + 1}`}
-                    className={`about-image ${
-                      index === currentImageIndex ? 'active' : ''
-                    }`}
-                  />
-                ))}
-              </div>
-              
-              {/* Experience Badge Overlay */}
-              <div className="experience-badge">
-                <div className="badge-number">10+</div>
-                <div className="badge-text">
-                  <div>Years of</div>
-                  <div>Experience</div>
-                </div>
-              </div>
+      </section> */}
 
-              {/* Image Indicators */}
-              <div className="image-indicators">
-                {aboutImages.map((_, index) => (
-                  <button
-                    key={index}
-                    className={`indicator ${
-                      index === currentImageIndex ? 'active' : ''
-                    }`}
-                    onClick={() => setCurrentImageIndex(index)}
-                  />
-                ))}
-              </div>
+      <section className="services-section" id="services">
+  <div className="services-container">
+    <div className="services-header">
+      <h2 className="services-title">What We Offer</h2>
+    </div>
+    
+    <div className="services-slider">
+      <div className="slider-track">
+        {/* Render original list + duplicated list for seamless loop */}
+        {[...services, ...services].map((service, index) => (
+          <div 
+            key={`${service.id}-${index}`} 
+            className="service-card"
+            style={{ backgroundColor: service.bgColor, background:'transparent'}}
+          >
+            <div className="service-icon" style={{ color: service.iconColor, zIndex:`2`,backdropFilter:`blur(20)` } }>
+              <i className={service.icon}></i>
             </div>
+            <h3 className="service-title">{service.title}</h3>
           </div>
-
-          {/* Right Column - Content */}
-          <div className="about-content-column">
-            <div className="about-content">
-              
-              {/* Section Header */}
-              <div className="about-header">
-                <span className="about-subtitle"><h2>ABOUT US</h2></span>
-                <h2 className="about-title">N N Travel Hub</h2>
-              </div>
-
-              {/* Description */}
-              <div className="about-description">
-                <p>
-                  N N Travel Hub is a growing travel company based in Bhopal, Madhya Pradesh, proudly established in 2025. Backed by over 10 years of experience in the travel industry, we are committed to delivering smooth, memorable, and personalized travel experiences to our clients.
-                  We specialize in curating exceptional journeys across India and international destinations, including holiday packages, cultural tours, wildlife adventures, luxury vacations, and spiritual pilgrimages. Our focus on quality service, careful planning, and customer satisfaction has helped us build strong relationships with a steadily expanding base of happy travelers.
-                  At N N Travel Hub , we don’t just organize trips — we craft journeys you will cherish for a lifetime.
-                </p>
-              </div>
-
-              {/* Services List with Checkmarks */}
-              <div className="about-services">
-                {aboutServices.map((service, index) => (
-                  <div key={index} className="service-item">
-                    <div className="service-checkmark">
-                      <i className="fas fa-check"></i>
-                    </div>
-                    <span className="service-name">{service}</span>
-                  </div>
-                ))}
-              </div>
-
-              {/* Discover More Button */}
-              <div className="about-button">
-                <button className="discover-btn" >
-                  <a href="./About" target="_blank" rel="noopener noreferrer">Discover More</a>
-                  <i className="fas fa-arrow-right"></i>
-                </button>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
        {/* ✅ MP Destinations Section with Click Handler */}
-        <section className='top-destination' id="mpdestinations">
-          <div className="top-destination-container">
+        <section className='mp-destination' id="mpdestinations">
+          <div className="mp-destination-container">
             
-            <div className="destination-header">
-              <div className="destination-subtitle-wrapper">
-                <div className="subtitle-line"></div>
-                <span className="destination-subtitle" style={{ color: "#0072ff" }}>Madhya Pradesh</span>
-                <div className="subtitle-line"></div>
+            <div className="mpdestination-header">
+              <div className="mpdestination-subtitle-wrapper">
+                <div className="mpsubtitle-line"></div>
+                <span className="mpdestination-subtitle" style={{ color: "#0072ff" }}>Madhya Pradesh</span>
+                <div className="mpsubtitle-line"></div>
               </div>
-              <h3 className="destination-title">EXPLORE TOUR PACKAGES OF B2B MADHYA PRADESH</h3>
+              <h3 className="mpdestination-title">EXPLORE TOUR PACKAGES OF B2B MADHYA PRADESH</h3>
             </div>
 
-            <div className="mpdestinations-grid">
+            <div className="mpdestinations-grid" ref={mptrackRef} role="region">
               {mpdestinations.map((destination) => (
                 <div 
                   key={destination.id} 
-                  className={`destination-card ${destination.size}`}
+                  className={`mpdestination-card ${destination.size}`}
                   onClick={() => handleDestinationClick(destination)}
                   style={{ cursor: 'pointer' }}
                 >
-                  <div className="destination-image-wrapper">
+                  <div className="mpdestination-image-wrapper">
                     <img 
                       src={destination.image} 
                       alt={destination.name}
                       className="destination-image"
                     />
                     
-                    <div className="destination-overlay"></div>
+                    <div className="mpdestination-overlay"></div>
                     
-                    <div className="destination-info">
-                      <h3 className="destination-name">{destination.name}</h3>
+                    <div className="mpdestination-info">
+                      <h3 className="mpdestination-name">{destination.name}</h3>
                       {/* <span className="destination-packages">{destination.duration}</span>
                       <span className="destination-price">{destination.price}</span> */}
                     </div>
@@ -1139,10 +1218,53 @@ const Hero = () => {
                 </div>
               ))}
             </div>
+            <button
+            type="button"
+            className="mpdestinationsNav mpdestinationsNavPrev"
+            onClick={() => scrollToIndex1(mpindex - 1)}
+            aria-label="Previous mpdestinations"
+          >
+            <svg
+              className="mpdestinationsNavIcon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+
+          <button
+            type="button"
+            className="mpdestinationsNav mpdestinationsNavNext"
+            onClick={() => scrollToIndex1(mpindex + 1)}
+            aria-label="Next mpdestinations"
+          >
+            <svg
+              className="mpdestinationsNavIcon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
             
           </div>
         </section>
-      </section>
+      
       <section className='top-destination' id="destinations">
       <div className="top-destination-container">
         
@@ -1160,17 +1282,46 @@ const Hero = () => {
         </div>
 
         {/* Destinations Grid */}
-        <div className="destinations-grid">
+        <div className="destinations-grid" >
           {destinations.map((destination) => (
             <div 
               key={destination.id} 
               className={`destination-card ${destination.size}`}
+              onMouseEnter={()=> setIsHovered(destination.id)}
+              onMouseLeave={() => setIsHovered(false)}
+              // style={{backgroundColor:`transparent` , perspective:`1000px`, height:`400px`} }
             >
+              <div className="destination-card-inner"
+                style={{position:`relative`, 
+                  width:`100%`,
+                  height:`100%`,
+                   textAlign:`center`,
+                   transition:`transform 1s`,
+                   transformStyle:`preserve-3d`,
+                   transform:isHovered===destination.id ? `rotateY(180deg)`: `rotateY(0)`
+                  }}
+
+              >
+    
+              {/* FRONT SIDE (Your existing content) */}
+              <div className="destination-card-front"
+                style={{position:`absolute`,
+                  width:`100%`,
+                  height:`100%`,
+                  backface: `hidden`, /* Hides the back when the front is visible */
+                  WebkitBackfaceVisibility:`hidden`,
+                  borderRadius: `0.75rem`,
+                  overflow: `hidden`,
+                  // backgroundColor:`#bbb`
+                }}
+              >
+
               <div className="destination-image-wrapper">
                 <img 
                   src={destination.image} 
                   alt={destination.name}
                   className="destination-image"
+                  
                 />
                 <div className="destination-overlay"></div>
                 
@@ -1180,6 +1331,38 @@ const Hero = () => {
                   <span className="destination-packages">{destination.packages}</span>
                 </div>
               </div>
+            </div>
+
+            {/* BACK SIDE (The Map) */}
+            <div className="destination-card-back"
+              style={{position:`absolute`,
+                  width:`100%`,
+                  height:`100%`,
+                  backface: `hidden`,
+                  backfaceVisibility:`hidden`, /* Hides the back when the front is visible */
+                  // backface: `hidden`,
+                  borderRadius: `0.75rem`,
+                  overflow: `hidden`,
+                  backgroundColor:`#f1f1f1`,
+                  color:`white`,
+                  transform:`rotateY(180deg)`,
+                  display:`flex`,
+                  alignItems:`center`,
+                  justifyContent:`center`,
+                  WebkitBackfaceVisibility:`hidden`
+                }}
+            >
+              <iframe
+              
+                title={`map-${destination.name}`}
+                src={destination.mapUrl} // Add map URLs to your destinations array
+                width="100%"
+                height="100%"
+                style={{ border: 0, borderRadius:`0.75rem`, }}
+                loading="lazy"
+              ></iframe>
+            </div>
+            </div>
             </div>
           ))}
           

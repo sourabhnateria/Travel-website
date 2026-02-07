@@ -47,7 +47,7 @@ export default function India() {
   return(
     <>
           <section className="about-banner-section">
-            <img src={aboutBanner} alt="About Us" className="about-banner-img" loading="lazy" />
+            <img src={aboutBanner} alt="About Us" className="india-banner-img" loading="lazy" />
             <div className="about-banner-overlay"></div>
             <h1 className="about-banner-heading">India</h1>
           </section>

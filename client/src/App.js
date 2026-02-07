@@ -41,6 +41,7 @@ import Malaysia from './pages/international/Malaysia';
 import Singapore from './pages/international/Singapore';
 import Srilanka from './pages/international/Srilanka';
 import Thailand from './pages/international/Thailand';
+import Event from './pages/Events';
 
 function App() {
     return (
@@ -52,6 +53,7 @@ function App() {
           <Route path="/b2b" element={<B2b />} />
           <Route path="/india" element={<India />} />
           <Route path="/world" element={<World />} />
+          <Route path="/event" element={<Event />} />
           <Route path="/visa-services" element={<VisaServices />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

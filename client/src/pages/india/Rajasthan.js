@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Navbar from '../../components/Navbar';
-import aboutBanner from '../../assets/india/Uttar-Pradesh/up_cover_photo.jpg';
+import aboutBanner from '../../assets/india/rajasthan/rajasthan_banner.jpg';
 //tour-1/id:1
-import pench from '../../assets/india/madhya-pradesh/tour-1/pench.jpg';
-import pench1 from '../../assets/india/madhya-pradesh/tour-1/pench1.jpg';
-import kanha from '../../assets/india/madhya-pradesh/tour-1/kanha.jpg';
-import bandhavgarh from '../../assets/india/madhya-pradesh/tour-1/bandhavgaarh.jpg';
-import bhedaghat from '../../assets/india/madhya-pradesh/tour-1/bhedaghat.jpg';
+// import pench from '../../assets/india/madhya-pradesh/tour-1/pench.jpg';
+// import pench1 from '../../assets/india/madhya-pradesh/tour-1/pench1.jpg';
+// import kanha from '../../assets/india/madhya-pradesh/tour-1/kanha.jpg';
+// import bandhavgarh from '../../assets/india/madhya-pradesh/tour-1/bandhavgaarh.jpg';
+// import bhedaghat from '../../assets/india/madhya-pradesh/tour-1/bhedaghat.jpg';
 
 
 import './MadhyaPradesh.css';
@@ -16,15 +16,15 @@ export default function MadhyaPradesh() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [openItineraryDay, setOpenItineraryDay] = useState(null);
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
-
+  const default_image = "https://i.sstatic.net/LnEYQ.jpg";
   const tourPackages = [
     {
       id: 1,
       name: "Jaipur Ranthmabhore Tour",
       duration: "5 Days / 4 Nights",
       price: "0",
-      image: pench,
-      images: [pench1, kanha, bandhavgarh, bhedaghat], // Add your actual images here
+      image: default_image,
+      images: [default_image,default_image,default_image,default_image], // Add your actual images here
       about: "",
       highlights: [
         

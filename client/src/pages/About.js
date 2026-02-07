@@ -59,7 +59,7 @@ export default function About() {
       <section className="about-banner-section">
         <img src={aboutBanner} alt="About Us" className="about-banner-img" />
         <div className="about-banner-overlay"></div>
-        <h1 className="about-banner-heading">About Us</h1>
+        <h1 className="about-banner-heading"  >About Us</h1>
       </section>
 
       <section className="about-section-home" id="about">
@@ -94,7 +94,7 @@ With a strong focus on customer satisfaction and long-term relationships, N N Tr
                 </p>
               </div>
 
-              <div className="services-container">
+              {/* <div className="services-container">
           <div className="services-header">
             <h2 className="services-title">What We Offer</h2>
           </div>
@@ -116,7 +116,31 @@ With a strong focus on customer satisfaction and long-term relationships, N N Tr
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
+
+        <div className="services-container">
+    <div className="services-header">
+      <h2 className="services-title">What We Offer</h2>
+    </div>
+    
+    <div className="services-slider">
+      <div className="slider-track">
+        {/* Render original list + duplicated list for seamless loop */}
+        {[...services, ...services].map((service, index) => (
+          <div 
+            key={`${service.id}-${index}`} 
+            className="service-card"
+            style={{ backgroundColor: service.bgColor, background:'transparent'}}
+          >
+            <div className="service-icon" style={{ color: service.iconColor, zIndex:`2`,backdropFilter:`blur(20)` } }>
+              <i className={service.icon}></i>
+            </div>
+            <h3 className="service-title">{service.title}</h3>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
 
             </div>
           </div>
