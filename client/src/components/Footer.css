@@ -58,7 +58,7 @@
 .social-links {
     display: flex;
     flex-direction: column;
-    font-style: calc(viewBox);
+    /* font-style: calc(viewBox); */
     
     gap: 15px;
 }
