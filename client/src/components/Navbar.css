@@ -5,35 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Body padding adjustment for fixed navbar */
-/* body {
-  padding-top: 120px;
-  /* Adjust for both top bar and navbar */
-/* } */
-
-/* Top Bar Styles */
-/* .top-bar {
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-  color: white;
-  padding: 10px 0;
-  font-size: 14px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1001;
-  transition: transform 0.3s ease-in-out;
-  /* Smooth hide/show transition */
-  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Auto-Hide Animation Classes for Top Bar */
-/* .top-bar.visible {
-  transform: translateY(0);
-} */
-
-/* .top-bar.hidden {
-  transform: translateY(-100%);
-} */
 
 .top-bar-container {
   max-width: 1200px;
@@ -397,32 +368,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  /* /* :root {
-    --topbar-h: 48px;
-    --navbar-h: 65px;
-  } */
+
 
   body {
     padding-top: calc(var(--topbar-h) + var(--navbar-h));
-    /* Keep content below fixed top-bar + navbar (no visual gap) */
   }
-
-  /* .top-bar {
-    padding: 0;
-    font-size: 12px;
-    height: var(--topbar-h);
-  } */
-
-  /* .top-bar-container {
-    padding: 0 12px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: nowrap; */
-    /* prevent top-bar height changes */
-    /* height: 0%; */
-  /* } */
 
   .contact-info {
     gap: 12px;
@@ -457,8 +407,7 @@
 
   .navbar {
     margin-top: 0%;
-    /* top: var(--topbar-h); */
-    /* Always sit directly below top-bar (no gap) */
+    
   }
 
   .navbar.scrolled {
@@ -468,7 +417,7 @@
   /* Mobile auto-hide adjustments */
   .navbar.hidden:not(.scrolled) {
     top: calc(-1 * (var(--topbar-h) + var(--navbar-h)));
-    /* Hide both bars */
+    
   }
 
   .navbar.hidden.scrolled {
@@ -798,20 +747,7 @@
     padding-top: calc(var(--topbar-h) + var(--navbar-h));
     /* Keep content below fixed top-bar + navbar */
   }
-
-  /* .top-bar {
-    padding: 0;
-    font-size: 10px;
-    /* height: var(--topbar-h); */
-  /* } */ */
-
-  /* .top-bar-container {
-    padding: 0 10px;
-    gap: 8px;
-    /* height: 100%; */
-    /* flex-wrap: nowrap;
-  } */ */ */
-
+  
   .contact-info {
     gap: 8px;
     font-size: 10px;
