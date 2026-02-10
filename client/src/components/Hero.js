@@ -1031,53 +1031,9 @@ const Hero = () => {
 
       
       {/* About Section with Auto-Changing Images */}
-      <section className="about-section-home" id="about"  style={{backgroundColor:`#dbecf2`}} >
-        <div className="about-home-container">
-          {/* about header */}
-          
-          
-          {/* Left Column - Auto-Changing Image Slider */}
-          <div className="about-image-column"style={{backgroundColor:`#dbecf2`}}>
-            <div className="about-image-wrapper">
-              {/* <div className="image-slider">
-                {aboutImages.map((image, index) => (
-                  <img
-                    key={index}
-                    src={image}
-                    alt={`Travel Experience ${index + 1}`}
-                    className={`about-image ${
-                      index === currentImageIndex ? 'active' : ''
-                    }`}
-                  />
-                ))}
-              </div> */}
-              
-              {/* Experience Badge Overlay */}
-              {/* <div className="experience-badge">
-                <div className="badge-number">10+</div>
-                <div className="badge-text">
-                  <div>Years of</div>
-                  <div>Experience</div>
-                </div>
-              </div> */}
-
-              {/* Image Indicators */}
-              {/* <div className="image-indicators">
-                {aboutImages.map((_, index) => (
-                  <button
-                    key={index}
-                    className={`indicator ${
-                      index === currentImageIndex ? 'active' : ''
-                    }`}
-                    onClick={() => setCurrentImageIndex(index)}
-                  />
-                ))}
-              </div> */}
-            </div>
-          </div>
-
-          {/* Right Column - Content */}
-          <div className="about-content-column"style={{backgroundColor:`powderblue` , boxShadow:`10px 10px 20px 0px rgba(0, 0, 0, 0.2`, padding:`0 10px 10px 0`, borderRadius:`20px`}}>
+      <section className="about-section-home" id="about"  style={{backgroundColor:`#dbecf2`,alignItems:`center`}} >
+        {/* <div className="about-home-container"> */}
+          <div className="about-content-column"style={{backgroundColor:`powderblue` , boxShadow:`10px 10px 20px 0px rgba(0, 0, 0, 0.2`, padding:`0 10px 10px 0`, borderRadius:`20px`,alignItems:`center`}}>
             <div className="about-content">
               
               {/* Section Header */}
@@ -1124,7 +1080,7 @@ const Hero = () => {
             </div>
           </div>
 
-        </div>
+        {/* </div> */}
       </section>  
 
       {/* Separate Our Services Section - Below Hero */}
