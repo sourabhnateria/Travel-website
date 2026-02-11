@@ -1031,14 +1031,12 @@ const Hero = () => {
 
       
       {/* About Section with Auto-Changing Images */}
-      <section className="about-section-home" id="about"  style={{backgroundColor:`#dbecf2`,alignItems:`center`}} >
-        {/* <div className="about-home-container"> */}
+      <section className="about-section-home" id="about"  style={{backgroundColor:`#dbecf2`,alignItems:`center`}} >        
           <div className="about-content-column"style={{backgroundColor:`powderblue` , boxShadow:`10px 10px 20px 0px rgba(0, 0, 0, 0.2`, padding:`0 10px 10px 0`, borderRadius:`20px`,alignItems:`center`}}>
             <div className="about-content">
-              
               {/* Section Header */}
               <div className="about-header">
-                <span className="about-subtitle"><h2>ABOUT US</h2></span>
+                <span className="about-subtitle" ><h2>ABOUT US</h2></span>
                 <h2 className="about-title">N N Travel Hub</h2>
               </div>
               <div className="experience-badge" style={{textDecoration:`3d`}}>
@@ -1079,8 +1077,6 @@ const Hero = () => {
 
             </div>
           </div>
-
-        {/* </div> */}
       </section>  
 
       {/* Separate Our Services Section - Below Hero */}
