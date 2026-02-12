@@ -63,9 +63,6 @@ export default function About() {
       </section>
 
       <section className="about-section-home" id="about">
-        <div className="about-home-container">
-         
-          {/* Right Column - Content */}
           <div className="about-content-column">
             <div className="about-content">
               
@@ -81,71 +78,47 @@ export default function About() {
                    N N Travel Hub is a travel company built on experience, trust, and a genuine passion for helping people explore the world. While our brand is newly established, our expertise comes from over 10 years of hands-on experience in the travel industry.
                 </p>
                 <p>
-Our founder has spent a decade working with well-known travel agencies, planning and managing a wide range of domestic and international trips. From customized itineraries to smooth trip execution, this experience has shaped a deep understanding of what travelers truly need—comfort, reliability, and personalized service.
-</p>
+                Our founder has spent a decade working with well-known travel agencies, planning and managing a wide range of domestic and international trips. From customized itineraries to smooth trip execution, this experience has shaped a deep understanding of what travelers truly need—comfort, reliability, and personalized service.
+                </p>
                 <p>
-At N N Travel Hub, we bring together the fresh approach of a modern travel company and the practical knowledge of a seasoned travel professional. Every trip we design is carefully planned, keeping your preferences, budget, and comfort in mind.
-</p>
+                At N N Travel Hub, we bring together the fresh approach of a modern travel company and the practical knowledge of a seasoned travel professional. Every trip we design is carefully planned, keeping your preferences, budget, and comfort in mind.
+                </p>
                 <p>
-We are committed to delivering seamless, personalized, and memorable travel experiences. Whether you are planning a leisure holiday, a family trip, or a special getaway, our goal is to make your journey stress-free and truly enjoyable.
-</p>
+                We are committed to delivering seamless, personalized, and memorable travel experiences. Whether you are planning a leisure holiday, a family trip, or a special getaway, our goal is to make your journey stress-free and truly enjoyable.
+                </p>
                 <p>
-With a strong focus on customer satisfaction and long-term relationships, N N Travel Hub is here to turn your travel plans into unforgettable experiences.
+                With a strong focus on customer satisfaction and long-term relationships, N N Travel Hub is here to turn your travel plans into unforgettable experiences.
                 </p>
               </div>
 
-              {/* <div className="services-container">
-          <div className="services-header">
-            <h2 className="services-title">What We Offer</h2>
-          </div>
-          
-          <div className="services-grid">
-            {services.map((service) => (
-              <div 
-                key={service.id} 
-                className="service-card"
-                style={{ backgroundColor: service.bgColor }}
-              >
-                <div 
-                  className="service-icon"
-                  style={{ color: service.iconColor }}
-                >
-                  <i className={service.icon}></i>
-                </div>
-                <h3 className="service-title">{service.title}</h3>
+                  <div className="services-container">
+              <div className="services-header">
+                <h2 className="services-title">What We Offer</h2>
               </div>
-            ))}
-          </div>
-        </div> */}
-
-        <div className="services-container">
-    <div className="services-header">
-      <h2 className="services-title">What We Offer</h2>
-    </div>
-    
-    <div className="services-slider">
-      <div className="slider-track">
-        {/* Render original list + duplicated list for seamless loop */}
-        {[...services, ...services].map((service, index) => (
-          <div 
-            key={`${service.id}-${index}`} 
-            className="service-card"
-            style={{ backgroundColor: service.bgColor, background:'transparent'}}
-          >
-            <div className="service-icon" style={{ color: service.iconColor, zIndex:`2`,backdropFilter:`blur(20)` } }>
-              <i className={service.icon}></i>
+              
+              <div className="services-slider">
+                <div className="slider-track">
+                  {/* Render original list + duplicated list for seamless loop */}
+                  {[...services, ...services].map((service, index) => (
+                    <div 
+                      key={`${service.id}-${index}`} 
+                      className="service-card"
+                      style={{ backgroundColor: service.bgColor, background:'transparent'}}
+                    >
+                      <div className="service-icon" style={{ color: service.iconColor, zIndex:`2`,backdropFilter:`blur(20)` } }>
+                        <i className={service.icon}></i>
+                      </div>
+                      <h3 className="service-title">{service.title}</h3>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
-            <h3 className="service-title">{service.title}</h3>
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
 
             </div>
           </div>
 
-        </div>
+       
       </section>
 
       <section className="about-section-home2" id="about">

@@ -2,7 +2,8 @@
   position: relative;
   width: 100%;
   height: 380px;
-  min-height: 220px;
+  margin-top: 80px;
+  /* min-height: 220px; */
   overflow: hidden;
   display: flex;
   align-items: center;
