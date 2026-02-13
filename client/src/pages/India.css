@@ -77,12 +77,22 @@
   align-items: flex-start;
 }
 .india-feature-image img {
-  width: 400px;
+  width: 600px;
   height: 400px;
   margin-top: 70px;
   object-fit: cover;
   border-radius: 0px;
   box-shadow: 0 4px 24px rgba(188, 200, 230, 0.15);
+}
+
+.enquiry-form-card {
+  position: relative;
+  width: 320px;
+  height: auto;
+  /* background: #0072ff; */
+  padding: 18px;
+  border-radius: 7px;
+  box-shadow: 0 6px 22px rgba(30,52,106,.09);
 }
 
 @media (max-width: 1100px) {
@@ -218,4 +228,12 @@
   .india-destinations-title { font-size: 1.25rem; }
   .india-dest-card { width: 95vw; max-width: 400px; height: 200px; }
   .india-destinations-grid { gap: 5px; }
+}
+
+@media screen and (max-width: 500px) {
+  .enquiry-form-card {
+    width: 100%;
+    padding: 12px;
+  }
+  
 }

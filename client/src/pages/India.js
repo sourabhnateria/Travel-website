@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 // import { Link } from 'react-router-dom';
 import aboutBanner from '../assets/india/india-banner.jpg';
 import tajMahalImg from '../assets/india/content-image.png';
@@ -44,6 +45,64 @@ const destinations = [
 ];
 
 export default function India() {
+  const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      phone: '',
+      location: '',
+      notes: ''
+    });
+    const [formSubmitted, setFormSubmitted] = useState(false);
+    
+    const handleFormChange = (e) => {
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value
+      });
+    };
+    
+    const handleFormSubmit = async (e) => {
+      e.preventDefault();
+      
+      try {
+        const response = await fetch('http://localhost:5000/api/enquiry', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            ...formData,
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            location: formData.location,  // ✅ Send tour name as location
+            notes: formData.notes,
+            // tourName: selectedTour.name,
+            // tourPrice: selectedTour.price,
+            // tourDuration: selectedTour.duration
+          }),
+        });
+    
+        if (response.ok) {
+          setFormSubmitted(true);
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            location: '',
+            notes: ''
+          });
+          
+          // Reset success message after 5 seconds
+          setTimeout(() => {
+            setFormSubmitted(false);
+          }, 5000);
+        }
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        alert('Failed to submit enquiry. Please try again.');
+      }
+    };
   return(
     <>
           <section className="about-banner-section">
@@ -67,7 +126,82 @@ export default function India() {
           <p>With its perfect balance of tradition and modern living, India welcomes travelers with warmth and authenticity. Explore its diversity, connect with its people, and create memories that stay with you long after the journey ends.</p>
         </div>
         <div className="india-feature-image">
-          <img src={tajMahalImg} alt="Taj Mahal" />
+          <div className="enquiry-form-card">
+            <h4>Send Enquiry</h4>
+            {formSubmitted ? (
+              <div className="success-message">
+                <i className="fas fa-check-circle"></i>
+                <h5>Thank You!</h5>
+                <p>We have received your enquiry. Our team will get back to you within 24 hours.</p>
+              </div>
+            ) : (
+              <form onSubmit={handleFormSubmit} className="enquiry-form">
+                <div className="form-group">
+                  <label>Name *</label>
+                  <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleFormChange}
+                    placeholder="Your full name"
+                    required
+                  />
+                </div>
+                
+                <div className="form-group">
+                  <label>Email *</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleFormChange}
+                    placeholder="your.email@example.com"
+                    required
+                  />
+                </div>
+                
+                <div className="form-group">
+                  <label>Phone *</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleFormChange}
+                    placeholder="+91 XXXXX XXXXX"
+                    required
+                  />
+                </div>
+                
+                <div className="form-group">
+                  <label>Location *</label>
+                  <input
+                    type="text"
+                    name="location"
+                    value={formData.location}
+                    onChange={handleFormChange}
+                    placeholder="Location you are interested in"
+                    required
+                  />
+                </div>
+                
+                <div className="form-group">
+                  <label>Additional Requirements</label>
+                  <textarea
+                    name="notes"
+                    value={formData.notes}
+                    onChange={handleFormChange}
+                    placeholder="Tell us about any special requirements, preferences, or questions..."
+                    rows="4"
+                  ></textarea>
+                </div>
+                
+                <button type="submit" className="submit-enquiry-btn">
+                  <i className="fas fa-paper-plane"></i> Send Enquiry
+                </button>
+              </form>
+            )}
+          </div>
+          {/* <img src={tajMahalImg} alt="Taj Mahal" /> */}
         </div>
       </div>
     </section>
