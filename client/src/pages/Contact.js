@@ -83,7 +83,7 @@ export default function Contact() {
   {/* <h3>Book This Tour</h3> */}
   <div className="enquiry-contact-grid">
     {/* Enquiry Form - Left Side */}
-    <div className="enquiry-form-card">
+    <div className="enquiry-form-card" style={{width:`auto`}}>
       <h4>Send Enquiry</h4>
       {formSubmitted ? (
         <div className="success-message">
