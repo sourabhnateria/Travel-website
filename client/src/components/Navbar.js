@@ -159,10 +159,10 @@ const Navbar = () => {
               Contact
             </NavLink>
           </div>
-          <div className="contact-item">
+          <div className="contact-item" style={{gap:`5px`}}>
               <i className="fas fa-phone"></i>
-              <a href="tel:+1234567890">+91 7354251333</a>
-            </div>
+              <a href="tel:+91 7354251333">+91 7354251333</a>
+          </div>
           
           {/* <div className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
             {navItems.map((item) => (

@@ -67,7 +67,8 @@ export default function Contact() {
     <>
 
     <section className="about-banner-section">
-            <iframe
+              <img src={bannerImage} alt="Contact Us" className="about-banner-img" />
+            {/* <iframe
                               width="100%"
                               height="400"
                               style={{ border: 0 }}
@@ -75,13 +76,13 @@ export default function Contact() {
                               src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_MAPS_KEY}&q=bhopal,madhyapradesh&zoom=12`}
                               allowFullScreen
                               className="about-banner-img"
-                            />
+                            /> */}
             <div className="about-banner-overlay"></div>
             {/* <h1 className="about-banner-heading"></h1> */}
           </section>
     <section className="detail-section">
   {/* <h3>Book This Tour</h3> */}
-  <div className="enquiry-contact-grid">
+  <div className="enquiry-contact-grid" style={{padding: "20px" , margin: "10px 10px 0 0 ",}}>
     {/* Enquiry Form - Left Side */}
     <div className="enquiry-form-card" style={{width:`auto`}}>
       <h4>Send Enquiry</h4>

@@ -120,7 +120,17 @@
   }
 }
 
-
+@media screen and (max-width:480px) {
+  .event-birthday-image {
+    width: 300px !important;
+    height: 300px !important;
+    object-fit:cover ;
+    /* margin-left: 50px; */
+    padding: 10px 10px 10px 10px;
+    border-radius: 20%;
+  }
+  
+}
 .birthday p,
 .gettogether p,
 .corporateevent p,
