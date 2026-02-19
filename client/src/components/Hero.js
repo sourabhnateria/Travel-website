@@ -1532,9 +1532,9 @@ const Hero = () => {
               </div>
               <section className="detail-section">
   <h3>Book This Tour</h3>
-  <div className="enquiry-contact-grid">
+  <div className="enquiry-contact-grid" style={{marginLeft:`0`}}>
     {/* Enquiry Form - Left Side */}
-    <div className="enquiry-form-card">
+    <div className="enquiry-form-card" style={{width:`100%`}}>
       <h4>Send Enquiry</h4>
       {formSubmitted ? (
         <div className="success-message">

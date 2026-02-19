@@ -588,6 +588,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-top: 20px;
+
 }
 
 .enquiry-form-card,
@@ -596,6 +597,7 @@
   border-radius: 12px;
   padding: 30px;
   border: 1px solid #e5e7eb;
+  width: 100%;
 }
 
 .enquiry-form-card h4,

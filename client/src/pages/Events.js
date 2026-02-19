@@ -3,6 +3,10 @@ import { useState } from 'react';
 // import Navbar from '../components/Navbar';
 // import Footer from '../components/Footer';
 import eventBanner from '../assets/events/event_cover.jpg'; // Use your actual filename!
+import birthday from '../assets/events/birthday.jpg'; // Use your actual filename!
+import gettogether from '../assets/events/gettogether.jpg'; // Use your actual filename!
+import corporate from '../assets/events/corporate.jpg';
+import wedding from '../assets/events/wedding.jpg';
 import './Events.css';
 
 export default function Event() {
@@ -118,28 +122,28 @@ With a strong focus on organization, timely execution, and personalized service,
           <div className="birthday">
             <p>Celebrate in style with N N Travel Hub, a trusted birthday event planner in Bhopal, Madhya Pradesh, known for delivering elegant and well-curated celebrations for both children and adults. We specialize in luxury birthday event management, offering customized themes, premium décor styling, venue selection, entertainment coordination, and complete event execution. From intimate home gatherings to grand celebrations at banquet halls, lawns, or poolside venues, our team ensures flawless planning and sophisticated presentation. <br/> With attention to detail, high-quality setups, and seamless coordination, N N Travel Hub transforms birthdays into memorable, stress-free experiences. If you are looking for the best birthday event management company in Bhopal, we are here to create a celebration that truly reflects your style and vision.</p>
             
-            <img src={eventBanner} alt="Birthday Event" className="event-birthday-image" />
+            <img src={birthday} alt="Birthday Event" className="event-birthday-image" />
           </div>
         {/* </div> */}
         {/* <div style={{background:'#dada' , margin:`0 40px 0 40px`, borderRadius:`20px`}}> */}
           <h2 className="event-title">Get together Event Party in Bhopal</h2>
           <div className="gettogether" >
             <p>Host stylish and stress-free celebrations with N N Travel Hub, a trusted get-together event planner in Bhopal, Madhya Pradesh. Whether it’s a friends’ reunion, family gathering, or private party, we specialize in planning and executing elegant events with seamless coordination. From venue selection and theme décor to catering, DJ setups, live entertainment, and invitation support, we manage every detail with precision. Our team also assists with customized menus and transportation arrangements to ensure complete guest comfort.<br/> If you are searching for a professional party planner in Bhopal to create memorable and well-organized get-together events, N N Travel Hub delivers premium experiences tailored to your style and budget.</p>
-            <img src={eventBanner} alt="Birthday Event" className="event-birthday-image" />
+            <img src={gettogether} alt="Birthday Event" className="event-birthday-image" />
           </div>
         {/* </div>
         <div style={{background:'#dada' , margin:`0 40px 0 40px`, borderRadius:`20px`}}> */}
           <h2 className="event-title">Leading Corporate Event Management Company in Bhopal</h2>
           <div className="corporateevent">
             <p>N N Travel Hub is a trusted name for corporate event management in Bhopal, Madhya Pradesh, delivering professionally curated business events designed to inspire, engage, and strengthen teams. We specialize in organizing conferences, seminars, product launches, corporate dinners, board meetings, trade shows, team-building activities, and incentive programs with precision and sophistication.<br/> From strategic planning and venue sourcing to branding, décor, audio-visual setup, guest coordination, and hospitality management, our team ensures seamless execution at every stage. We focus on aligning each event with your company’s objectives, brand identity, and budget while maintaining the highest standards of professionalism.<br/> Whether you are hosting a high-level executive meeting or a large-scale corporate conference, N N Travel Hub provides structured planning, creative concepts, and flawless coordination. If you are searching for the best corporate event planner in Bhopal, we deliver impactful business events that leave a lasting impression.</p>
-            <img src={eventBanner} alt="Birthday Event" className="event-birthday-image" />
+            <img src={corporate} alt="Birthday Event" className="event-birthday-image" />
           </div>
         {/* </div>
         <div style={{background:'#dada' , margin:`0 40px 0 40px`, borderRadius:`20px`}}> */}
           <h2 className="event-title">Luxury Wedding & Destination Wedding Planner in Bhopal</h2>
           <div className="wedding">
             <p>Celebrate your special day with elegance through N N Travel Hub, a trusted wedding planner in Bhopal, Madhya Pradesh. We specialize in traditional and destination weddings, offering complete wedding event management from venue selection and décor styling to catering, entertainment, guest hospitality, and logistics.<br/> Our team focuses on personalized themes, seamless coordination, and premium execution to ensure a stress-free and memorable celebration. If you are looking for a professional destination wedding planner in Bhopal, N N Travel Hub is here to turn your dream wedding into reality.</p>
-            <img src={eventBanner} alt="Birthday Event" className="event-birthday-image" />
+            <img src={wedding} alt="Birthday Event" className="event-birthday-image" />
           </div>
         </div>
       </section>
