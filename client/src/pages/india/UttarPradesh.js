@@ -378,7 +378,7 @@ const handleFormSubmit = async (e) => {
               {/* Enquiry Form */}{/* Enquiry & Contact Section */}
 <section className="detail-section">
   <h3>Book This Tour</h3>
-  <div className="enquiry-contact-grid">
+  <div className="enquiry-contact-grid" style={{marginLeft:`0`}}>
     {/* Enquiry Form - Left Side */}
     <div className="enquiry-form-card">
       <h4>Send Enquiry</h4>

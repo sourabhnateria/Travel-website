@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from '../../components/Navbar';
 import aboutBanner from '../../assets/india/rajasthan/rajasthan_banner.jpg';
+import default_image from '../../assets/default.jpg';
 //tour-1/id:1
 // import pench from '../../assets/india/madhya-pradesh/tour-1/pench.jpg';
 // import pench1 from '../../assets/india/madhya-pradesh/tour-1/pench1.jpg';
@@ -16,7 +17,7 @@ export default function MadhyaPradesh() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [openItineraryDay, setOpenItineraryDay] = useState(null);
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
-  const default_image = "https://i.sstatic.net/LnEYQ.jpg";
+  
   const tourPackages = [
     {
       id: 1,
@@ -321,7 +322,7 @@ const handleFormSubmit = async (e) => {
               {/* Enquiry Form */}{/* Enquiry & Contact Section */}
 <section className="detail-section">
   <h3>Book This Tour</h3>
-  <div className="enquiry-contact-grid">
+  <div className="enquiry-contact-grid"style={{marginLeft:`0`}}>
     {/* Enquiry Form - Left Side */}
     <div className="enquiry-form-card">
       <h4>Send Enquiry</h4>
